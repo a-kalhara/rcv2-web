@@ -46,7 +46,7 @@
 
     var cardsHtml = categories.map(function(cat) {
       var articlesHtml = cat.articles.map(function(article) {
-        return '<li><a href="/help" class="text-sm text-zinc-400 hover:text-emerald-500 transition-colors">' + article + '</a></li>';
+        return '<li><a href="/help" class="text-sm text-zinc-300 hover:text-emerald-500 transition-colors">' + article + '</a></li>';
       }).join('');
 
       return '<div class="border border-zinc-800 rounded-lg p-5 hover:border-zinc-700 transition-colors">' +
@@ -72,7 +72,7 @@
 
       '<div class="border border-zinc-800 rounded-lg p-8 text-center">' +
         '<h2 class="text-lg font-semibold text-white mb-2">Still need help?</h2>' +
-        '<p class="text-sm text-zinc-400 mb-4">Our support team is here to assist you.</p>' +
+        '<p class="text-sm text-zinc-300 mb-4">Our support team is here to assist you.</p>' +
         '<a href="mailto:support@rapidcheck.com" class="inline-flex items-center gap-2 text-sm text-emerald-500 hover:text-emerald-400 transition-colors">' +
           'support@rapidcheck.com' +
           '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>' +

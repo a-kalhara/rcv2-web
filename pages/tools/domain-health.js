@@ -5,9 +5,10 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">Domain Health Checker</h1>
-        <p class="text-zinc-400 text-lg mb-10">Enter a domain to check its SSL, DNS, WHOIS, and blacklist status.</p>
+        <p class="text-zinc-300 text-lg mb-10">Enter a domain to check its SSL, DNS, WHOIS, and blacklist status.</p>
 
         <div class="flex gap-3 mb-8">
+          <label for="dh-domain-input" class="sr-only">Domain</label>
           <input
             id="dh-domain-input"
             type="text"
@@ -16,24 +17,25 @@
           />
           <button
             id="dh-check-btn"
-            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
           >Check</button>
         </div>
 
         <div id="dh-loading" class="hidden text-center py-16">
           <div class="inline-block w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-          <p class="text-zinc-400">Analyzing domain health...</p>
+          <p class="text-zinc-300">Analyzing domain health...</p>
         </div>
 
         <div id="dh-results" class="hidden">
+          <p class="text-xs text-zinc-500 mb-3 text-center italic">Example result — sign up for real-time domain monitoring</p>
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8 mb-6">
             <div class="flex items-center justify-between mb-6">
               <div>
-                <p class="text-zinc-400 text-sm mb-1">Overall Health Score</p>
+                <p class="text-zinc-300 text-sm mb-1">Overall Health Score</p>
                 <p class="text-5xl font-bold text-emerald-400" id="dh-score-grade">A+</p>
               </div>
               <div class="text-right">
-                <p class="text-zinc-400 text-sm mb-1">Score</p>
+                <p class="text-zinc-300 text-sm mb-1">Score</p>
                 <p class="text-5xl font-bold text-white" id="dh-score-num">92<span class="text-zinc-500 text-2xl">/100</span></p>
               </div>
             </div>
@@ -85,8 +87,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Monitor your domains 24/7</h2>
-          <p class="text-zinc-400 mb-6">Get instant alerts when SSL expires, DNS changes, or your domain gets blacklisted.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">Get instant alerts when SSL expires, DNS changes, or your domain gets blacklisted.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;

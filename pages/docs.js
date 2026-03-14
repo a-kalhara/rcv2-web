@@ -31,7 +31,7 @@
           '<span class="text-xs font-medium text-zinc-600 bg-zinc-900 border border-zinc-800 rounded-full px-3 py-1">Coming soon</span>' +
         '</div>' +
         '<h3 class="text-base font-semibold text-white mb-2">' + section.title + '</h3>' +
-        '<p class="text-sm text-zinc-400 leading-relaxed">' + section.description + '</p>' +
+        '<p class="text-sm text-zinc-300 leading-relaxed">' + section.description + '</p>' +
       '</div>';
     }).join('');
 

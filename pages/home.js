@@ -12,10 +12,10 @@
         </div>
         <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
         <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
-            <h1 class="text-[2.25rem] sm:text-5xl md:text-7xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-6 pb-2 leading-[1.1] reveal-up" style="animation-delay: 0.1s;">
+            <h1 class="text-[1.75rem] sm:text-[2.5rem] md:text-5xl lg:text-7xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-6 pb-2 leading-[1.1] reveal-up" style="animation-delay: 0.1s;">
                 Catch downtime early<br class="hidden sm:block"> before users start reporting it.
             </h1>
-            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+            <p class="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto mb-6 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
                 Monitor uptime. Protect your domain. Get alerted instantly.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto reveal-up" style="animation-delay: 0.3s;">
@@ -25,7 +25,7 @@
                 </button>
                 <a href="/pricing" class="w-full sm:w-auto justify-center h-11 sm:h-10 px-5 rounded-full border border-white/10 bg-white/[0.03] text-white text-sm font-medium hover:border-white/20 transition-colors flex items-center gap-2.5 no-underline">
                     <span class="text-xl font-bold">$2</span>
-                    <span class="text-zinc-400 text-xs leading-tight text-left">/monitor/mo.<br>That's it.</span>
+                    <span class="text-zinc-300 text-xs leading-tight text-left">/monitor/mo.<br>That's it.</span>
                 </a>
             </div>
             <p class="text-xs text-zinc-500 mt-6 reveal-up" style="animation-delay: 0.35s;">3 monitors free forever. No credit card required.</p>
@@ -40,27 +40,52 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">330+</div>
-                    <div class="text-xs text-zinc-400">Edge Locations</div>
+                    <div class="text-xs text-zinc-300">Edge Locations</div>
                     <div class="text-[10px] text-zinc-500 mt-0.5">Global monitoring coverage</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">99.99%</div>
-                    <div class="text-xs text-zinc-400">Platform Uptime</div>
+                    <div class="text-xs text-zinc-300">Platform Uptime</div>
                     <div class="text-[10px] text-zinc-500 mt-0.5">Enterprise-grade reliability</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-400 mb-1">&lt;100ms</div>
-                    <div class="text-xs text-zinc-400">Alert Latency</div>
+                    <div class="text-xs text-zinc-300">Alert Latency</div>
                     <div class="text-[10px] text-zinc-500 mt-0.5">Know instantly when things break</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">Free</div>
-                    <div class="text-xs text-zinc-400">SSL, DNS & Domain Monitoring</div>
+                    <div class="text-xs text-zinc-300">SSL, DNS & Domain Monitoring</div>
                     <div class="text-[10px] text-zinc-500 mt-0.5">Full intelligence on every plan</div>
                 </div>
             </div>
         </div>
         <div class="absolute inset-0 bg-noise opacity-20 pointer-events-none mix-blend-overlay"></div>
+    </section>
+
+    <!-- Infrastructure Trust -->
+    <section class="py-6 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-medium text-zinc-600 uppercase tracking-widest mb-5">Built on infrastructure you trust</p>
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-zinc-500 font-medium">
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-zinc-500"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    Cloudflare Workers
+                </span>
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="10" ry="4"></ellipse><path d="M2 12v4c0 2.2 4.5 4 10 4s10-1.8 10-4v-4"></path><path d="M2 8v4c0 2.2 4.5 4 10 4s10-1.8 10-4V8"></path></svg>
+                    Neon PostgreSQL
+                </span>
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    AES-256 Encryption
+                </span>
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    GDPR Compliant
+                </span>
+            </div>
+        </div>
     </section>
 
     <!-- Core Value Pillars -->
@@ -75,7 +100,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Simple pricing</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">$2 per monitor, per month. No complex tiers, no hidden fees. Start free and scale as you grow.</p>
+                            <p class="text-sm text-zinc-300 leading-relaxed">$2 per monitor, per month. No complex tiers, no hidden fees. Start free and scale as you grow.</p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +112,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Native mobile app</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">iOS and Android. Push notifications, incident acknowledgment, and real-time dashboard in your pocket.</p>
+                            <p class="text-sm text-zinc-300 leading-relaxed">iOS and Android. Push notifications, incident acknowledgment, and real-time dashboard in your pocket.</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +124,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Branded status pages</h3>
-                            <p class="text-sm text-zinc-400 leading-relaxed">Beautiful public status pages with custom domains. Keep your users informed automatically.</p>
+                            <p class="text-sm text-zinc-300 leading-relaxed">Beautiful public status pages with custom domains. Keep your users informed automatically.</p>
                         </div>
                     </div>
                 </div>
@@ -113,19 +138,19 @@
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-8">Get alerted wherever you work</p>
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-300"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                     <span class="text-xs text-zinc-300">Email</span>
                 </div>
                 <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     <span class="text-xs text-zinc-300">SMS & Phone</span>
                 </div>
                 <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-300"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                     <span class="text-xs text-zinc-300">Push Notifications</span>
                 </div>
                 <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-300"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                     <span class="text-xs text-zinc-300">Slack / Discord / Webhooks</span>
                 </div>
             </div>
@@ -201,7 +226,7 @@
                             <span class="px-2 py-1 rounded text-[10px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 uppercase tracking-wide">Domain Intelligence</span>
                         </div>
                         <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Complete domain health at a glance</h2>
-                        <p class="text-zinc-400 mb-8 leading-relaxed">Go beyond uptime. Monitor your SSL certificates, DNS records, domain reputation, and WHOIS data — all from one dashboard, free on every plan.</p>
+                        <p class="text-zinc-300 mb-8 leading-relaxed">Go beyond uptime. Monitor your SSL certificates, DNS records, domain reputation, and WHOIS data — all from one dashboard, free on every plan.</p>
                         <ul class="space-y-4 mb-8">
                             <li class="flex items-start gap-3 text-sm text-zinc-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 mt-0.5 shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
@@ -231,7 +256,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">A dashboard that stays out of your way</h2>
-                <p class="text-zinc-400 max-w-xl mx-auto leading-relaxed">Clean, fast, and focused. Everything you need to know at a glance — nothing you don't.</p>
+                <p class="text-zinc-300 max-w-xl mx-auto leading-relaxed">Clean, fast, and focused. Everything you need to know at a glance — nothing you don't.</p>
             </div>
             <div class="relative group" role="img" aria-label="Dashboard preview showing monitors with uptime statistics">
                 <div class="absolute -inset-1 bg-gradient-to-b from-emerald-500/20 via-emerald-500/5 to-transparent rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
@@ -289,7 +314,7 @@
                             </div>
                             <div class="bg-zinc-900/30 border border-white/5 rounded-lg overflow-hidden">
                                 <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/5">
-                                    <span class="text-[11px] font-medium text-zinc-400 uppercase tracking-wider">Monitors</span>
+                                    <span class="text-[11px] font-medium text-zinc-300 uppercase tracking-wider">Monitors</span>
                                     <span class="text-[10px] text-zinc-600">Last 24h</span>
                                 </div>
                                 <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
@@ -336,40 +361,65 @@
         </div>
     </section>
 
+    <!-- Why RapidCheck -->
+    <section class="py-12 relative reveal-on-scroll">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4 text-center">Why teams switch to RapidCheck</h2>
+            <p class="text-zinc-300 mb-12 max-w-xl mx-auto text-center leading-relaxed">Monitoring shouldn't cost a fortune or take a week to set up.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 hover:bg-zinc-900/40 hover:border-white/10 transition-colors">
+                    <div class="text-2xl font-bold text-emerald-400 mb-2">$2/mo</div>
+                    <h3 class="text-base font-medium text-white mb-2">Per monitor, flat rate</h3>
+                    <p class="text-sm text-zinc-300">No seat-based pricing, no tier gates. 10 monitors = $20/mo. Competitors charge $20-50/mo for comparable plans.</p>
+                </div>
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 hover:bg-zinc-900/40 hover:border-white/10 transition-colors">
+                    <div class="text-2xl font-bold text-emerald-400 mb-2">330+</div>
+                    <h3 class="text-base font-medium text-white mb-2">Edge locations, not 10</h3>
+                    <p class="text-sm text-zinc-300">Most competitors check from 10-20 data centers. We run on Cloudflare's entire edge network for truly global coverage.</p>
+                </div>
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 hover:bg-zinc-900/40 hover:border-white/10 transition-colors">
+                    <div class="text-2xl font-bold text-emerald-400 mb-2">Free</div>
+                    <h3 class="text-base font-medium text-white mb-2">Domain intelligence included</h3>
+                    <p class="text-sm text-zinc-300">SSL, DNS, WHOIS, and blacklist monitoring on every plan. Others charge extra or don't offer it at all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Use Cases -->
     <section class="py-12 border-y border-white/5 relative bg-zinc-900/10 reveal-on-scroll">
         <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Built for teams who ship</h2>
-            <p class="text-zinc-400 mb-12 max-w-xl mx-auto leading-relaxed">Whether you're a solo founder or a 100-person engineering team, RapidCheck scales with you.</p>
+            <p class="text-zinc-300 mb-12 max-w-xl mx-auto leading-relaxed">Whether you're a solo founder or a 100-person engineering team, RapidCheck scales with you.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
                     <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
                     </div>
                     <h3 class="text-base font-medium text-white mb-2">SaaS Teams</h3>
-                    <p class="text-xs text-zinc-400">Monitor APIs, dashboards, and customer-facing services around the clock.</p>
+                    <p class="text-xs text-zinc-300">Monitor APIs, dashboards, and customer-facing services around the clock.</p>
                 </div>
                 <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
                     <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                     </div>
                     <h3 class="text-base font-medium text-white mb-2">DevOps & SRE</h3>
-                    <p class="text-xs text-zinc-400">On-call scheduling, escalation policies, and incident management in one place.</p>
+                    <p class="text-xs text-zinc-300">On-call scheduling, escalation policies, and incident management in one place.</p>
                 </div>
                 <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
                     <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     </div>
                     <h3 class="text-base font-medium text-white mb-2">Agencies</h3>
-                    <p class="text-xs text-zinc-400">Monitor all client sites from one workspace. Branded status pages per client.</p>
+                    <p class="text-xs text-zinc-300">Monitor all client sites from one workspace. Branded status pages per client.</p>
                 </div>
                 <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
                     <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg>
                     </div>
                     <h3 class="text-base font-medium text-white mb-2">Solo Developers</h3>
-                    <p class="text-xs text-zinc-400">3 free monitors forever. Know your side project is up without paying a cent.</p>
+                    <p class="text-xs text-zinc-300">3 free monitors forever. Know your side project is up without paying a cent.</p>
                 </div>
             </div>
             <div class="mt-12">
@@ -391,42 +441,42 @@
                         What happens when my free trial ends?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Your workspace downgrades to the free plan. Monitors beyond the free limit (3) are paused — not deleted. Upgrade anytime to resume them instantly.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Your workspace downgrades to the free plan. Monitors beyond the free limit (3) are paused — not deleted. Upgrade anytime to resume them instantly.</div>
                 </details>
                 <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
                         How do you prevent false positives?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Every check runs from 3 edge regions simultaneously. We require 2-of-3 to confirm failure across 2 consecutive checks before triggering an alert. This eliminates transient network blips.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Every check runs from 3 edge regions simultaneously. We require 2-of-3 to confirm failure across 2 consecutive checks before triggering an alert. This eliminates transient network blips.</div>
                 </details>
                 <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
                         Is domain intelligence really free?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Yes. SSL monitoring, DNS checks, WHOIS tracking, blacklist scanning, and the domain health score are included on every plan — including free. No competitor bundles all of this at zero cost.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Yes. SSL monitoring, DNS checks, WHOIS tracking, blacklist scanning, and the domain health score are included on every plan — including free. No competitor bundles all of this at zero cost.</div>
                 </details>
                 <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
                         Can I import monitors from UptimeRobot or Better Stack?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Yes. You can import monitors via CSV or our API. Most teams are fully migrated within 10 minutes.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Yes. You can import monitors via CSV or our API. Most teams are fully migrated within 10 minutes.</div>
                 </details>
                 <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
                         Where are checks run from?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Checks run from Cloudflare's global edge network — 330+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Checks run from Cloudflare's global edge network — 330+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
                 </details>
                 <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
                         Is my data secure?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Enterprise-grade security. AES-256-GCM field-level encryption, automatic PII redaction, GDPR-compliant data handling, and full audit trails. Your monitoring data stays private.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-300 leading-relaxed">Enterprise-grade security. AES-256-GCM field-level encryption, automatic PII redaction, GDPR-compliant data handling, and full audit trails. Your monitoring data stays private.</div>
                 </details>
             </div>
         </div>
@@ -436,7 +486,7 @@
     <section class="py-12 text-center relative reveal-on-scroll">
         <div class="max-w-2xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Ready to stop guessing?</h2>
-            <p class="text-zinc-400 mb-8 leading-relaxed">Start with 3 free monitors. No credit card required.</p>
+            <p class="text-zinc-300 mb-8 leading-relaxed">Start with 3 free monitors. No credit card required.</p>
             <button onclick="alert('Registration coming soon')" class="inline-flex items-center gap-2 text-sm font-medium bg-white text-black px-8 py-3 rounded-full hover:bg-zinc-200 transition-colors cursor-pointer border-none">
                 Start monitoring free
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>

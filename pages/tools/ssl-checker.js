@@ -5,9 +5,10 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">SSL Certificate Checker</h1>
-        <p class="text-zinc-400 text-lg mb-10">Check SSL certificate details for any domain.</p>
+        <p class="text-zinc-300 text-lg mb-10">Check SSL certificate details for any domain.</p>
 
         <div class="flex gap-3 mb-8">
+          <label for="ssl-domain-input" class="sr-only">Domain</label>
           <input
             id="ssl-domain-input"
             type="text"
@@ -16,13 +17,13 @@
           />
           <button
             id="ssl-check-btn"
-            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
           >Check SSL</button>
         </div>
 
         <div id="ssl-loading" class="hidden text-center py-16">
           <div class="inline-block w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-          <p class="text-zinc-400">Checking SSL certificate...</p>
+          <p class="text-zinc-300">Checking SSL certificate...</p>
         </div>
 
         <div id="ssl-error" class="hidden bg-red-500/10 border border-red-500/30 rounded-xl p-6 mb-6">
@@ -30,6 +31,7 @@
         </div>
 
         <div id="ssl-results" class="hidden">
+          <p class="text-xs text-zinc-500 mb-3 text-center italic">Example result — sign up for real-time SSL monitoring</p>
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden mb-6">
             <div class="px-6 py-4 border-b border-zinc-800">
               <h3 class="text-white font-semibold">Certificate Details</h3>
@@ -38,27 +40,27 @@
 
             <div class="divide-y divide-zinc-800">
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Issuer</span>
+                <span class="text-zinc-300">Issuer</span>
                 <span class="text-white font-medium" id="ssl-issuer"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Subject</span>
+                <span class="text-zinc-300">Subject</span>
                 <span class="text-white font-medium" id="ssl-subject"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Valid From</span>
+                <span class="text-zinc-300">Valid From</span>
                 <span class="text-white font-medium" id="ssl-valid-from"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Valid To</span>
+                <span class="text-zinc-300">Valid To</span>
                 <span class="text-white font-medium" id="ssl-valid-to"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Days Until Expiry</span>
+                <span class="text-zinc-300">Days Until Expiry</span>
                 <span class="font-semibold" id="ssl-days-left"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-400">Status</span>
+                <span class="text-zinc-300">Status</span>
                 <span id="ssl-status-badge"></span>
               </div>
             </div>
@@ -67,8 +69,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Never let your SSL expire again</h2>
-          <p class="text-zinc-400 mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;

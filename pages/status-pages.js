@@ -13,7 +13,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-4 reveal-up" style="animation-delay: 0.1s;">
             Keep your customers informed and build trust
           </h1>
-          <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             Beautiful, branded status pages that update automatically from your monitors. Custom domains, subscriber notifications, and incident timelines.
           </p>
 
@@ -57,7 +57,7 @@
               <div class="px-5 py-3 border-t border-white/5" id="sp-uptime" style="opacity: 0; transition: opacity 0.5s;">
                 <div class="flex justify-between text-[10px] text-zinc-600 mb-2">
                   <span>90 days ago</span>
-                  <span class="text-zinc-400">99.95% uptime</span>
+                  <span class="text-zinc-300">99.95% uptime</span>
                   <span>today</span>
                 </div>
                 <div class="flex gap-[1px]" id="sp-uptime-bar"></div>
@@ -72,63 +72,63 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
-            <a href="/pricing" class="rounded-lg border border-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors">View pricing</a>
+            <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
+            <a href="/pricing" class="rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors">View pricing</a>
           </div>
         </div>
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
-        <div class="grid md:grid-cols-2 gap-4 mb-20">
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+        <div class="grid md:grid-cols-3 gap-4 mb-20">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Custom domains</h3>
-            <p class="text-sm text-zinc-400">Host your status page on status.yourcompany.com with a simple CNAME record. SSL included automatically via Cloudflare.</p>
+            <p class="text-sm text-zinc-300">Host your status page on status.yourcompany.com with a simple CNAME record. SSL included automatically via Cloudflare.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Component groups</h3>
-            <p class="text-sm text-zinc-400">Organize monitors into logical groups — API, Website, Database, CDN. Your users see exactly which parts of your service are affected.</p>
+            <p class="text-sm text-zinc-300">Organize monitors into logical groups — API, Website, Database, CDN. Your users see exactly which parts of your service are affected.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Incident timeline</h3>
-            <p class="text-sm text-zinc-400">Post updates as you investigate and resolve issues. Your users see a clear timeline of what happened and what you're doing about it.</p>
+            <p class="text-sm text-zinc-300">Post updates as you investigate and resolve issues. Your users see a clear timeline of what happened and what you're doing about it.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Subscriber notifications</h3>
-            <p class="text-sm text-zinc-400">Users can subscribe via email to get notified of incidents and maintenance windows. Proactive communication reduces support load.</p>
+            <p class="text-sm text-zinc-300">Users can subscribe via email to get notified of incidents and maintenance windows. Proactive communication reduces support load.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Custom branding</h3>
-            <p class="text-sm text-zinc-400">Your logo, colors, and favicon. The status page looks like part of your product, not a third-party tool.</p>
+            <p class="text-sm text-zinc-300">Your logo, colors, and favicon. The status page looks like part of your product, not a third-party tool.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Auto-updated from monitors</h3>
-            <p class="text-sm text-zinc-400">Status pages reflect your actual monitor status in real time. No manual updates needed — when a monitor goes down, the status page updates automatically.</p>
+            <p class="text-sm text-zinc-300">Status pages reflect your actual monitor status in real time. No manual updates needed — when a monitor goes down, the status page updates automatically.</p>
           </div>
         </div>
 
         <div class="mb-20">
           <h2 class="text-2xl font-bold text-white text-center mb-8">Why every product needs a status page</h2>
-          <p class="text-zinc-400 text-center max-w-2xl mx-auto mb-10">A public status page is the single most effective way to reduce support tickets during an outage. Instead of answering "Is it down?" a hundred times, point users to one page that always has the answer.</p>
+          <p class="text-zinc-300 text-center max-w-2xl mx-auto mb-10">A public status page is the single most effective way to reduce support tickets during an outage. Instead of answering "Is it down?" a hundred times, point users to one page that always has the answer.</p>
           <div class="grid md:grid-cols-3 gap-6">
             <div class="text-center">
               <div class="text-3xl font-bold text-emerald-400 mb-2">60%</div>
-              <p class="text-sm text-zinc-400">fewer support tickets during incidents when a status page is available</p>
+              <p class="text-sm text-zinc-300">fewer support tickets during incidents when a status page is available</p>
             </div>
             <div class="text-center">
               <div class="text-3xl font-bold text-emerald-400 mb-2">Real-time</div>
-              <p class="text-sm text-zinc-400">auto-updated from your monitors — no manual toggling required</p>
+              <p class="text-sm text-zinc-300">auto-updated from your monitors — no manual toggling required</p>
             </div>
             <div class="text-center">
               <div class="text-3xl font-bold text-emerald-400 mb-2">Free</div>
-              <p class="text-sm text-zinc-400">1 status page on the free plan. Unlimited on paid plans.</p>
+              <p class="text-sm text-zinc-300">1 status page on the free plan. Unlimited on paid plans.</p>
             </div>
           </div>
         </div>
 
         <div class="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-10 text-center">
           <h2 class="text-2xl font-bold text-white mb-3">Launch your status page today</h2>
-          <p class="text-zinc-400 mb-6">1 status page free. Unlimited on paid plans.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
+          <p class="text-zinc-300 mb-6">1 status page free. Unlimited on paid plans.</p>
+          <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
         </div>
       </div>
     `;

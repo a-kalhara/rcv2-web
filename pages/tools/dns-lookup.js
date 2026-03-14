@@ -5,9 +5,10 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">DNS Lookup</h1>
-        <p class="text-zinc-400 text-lg mb-10">Look up DNS records for any domain using Cloudflare DNS.</p>
+        <p class="text-zinc-300 text-lg mb-10">Look up DNS records for any domain using Cloudflare DNS.</p>
 
         <div class="flex gap-3 mb-8">
+          <label for="dns-domain-input" class="sr-only">Domain</label>
           <input
             id="dns-domain-input"
             type="text"
@@ -16,13 +17,13 @@
           />
           <button
             id="dns-lookup-btn"
-            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
           >Lookup</button>
         </div>
 
         <div id="dns-loading" class="hidden text-center py-16">
           <div class="inline-block w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-          <p class="text-zinc-400">Querying DNS records...</p>
+          <p class="text-zinc-300">Querying DNS records...</p>
         </div>
 
         <div id="dns-error" class="hidden bg-red-500/10 border border-red-500/30 rounded-xl p-6 mb-6">
@@ -40,10 +41,10 @@
               <table class="w-full text-left">
                 <thead>
                   <tr class="border-b border-zinc-800">
-                    <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Type</th>
-                    <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Name</th>
-                    <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Value</th>
-                    <th class="px-6 py-3 text-zinc-400 text-sm font-medium">TTL</th>
+                    <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Type</th>
+                    <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Name</th>
+                    <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Value</th>
+                    <th class="px-6 py-3 text-zinc-300 text-sm font-medium">TTL</th>
                   </tr>
                 </thead>
                 <tbody id="dns-table-body" class="divide-y divide-zinc-800">
@@ -57,8 +58,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Track DNS changes automatically</h2>
-          <p class="text-zinc-400 mb-6">Get alerted when DNS records change unexpectedly. Catch hijacking and misconfigurations.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">Get alerted when DNS records change unexpectedly. Catch hijacking and misconfigurations.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;
@@ -79,7 +80,7 @@
       A: 'bg-blue-500/20 text-blue-400',
       AAAA: 'bg-purple-500/20 text-purple-400',
       MX: 'bg-orange-500/20 text-orange-400',
-      TXT: 'bg-zinc-500/20 text-zinc-400',
+      TXT: 'bg-zinc-500/20 text-zinc-300',
       NS: 'bg-emerald-500/20 text-emerald-400',
       CNAME: 'bg-yellow-500/20 text-yellow-400'
     };
@@ -99,12 +100,12 @@
     }
 
     function renderRow(type, name, value, ttl) {
-      var colorClass = typeColors[type] || 'bg-zinc-500/20 text-zinc-400';
+      var colorClass = typeColors[type] || 'bg-zinc-500/20 text-zinc-300';
       return '<tr>' +
         '<td class="px-6 py-3"><span class="inline-block text-xs font-mono font-semibold px-2 py-1 rounded ' + colorClass + '">' + type + '</span></td>' +
         '<td class="px-6 py-3 text-zinc-300 text-sm font-mono">' + escapeHtml(name) + '</td>' +
         '<td class="px-6 py-3 text-white text-sm font-mono break-all max-w-xs">' + escapeHtml(value) + '</td>' +
-        '<td class="px-6 py-3 text-zinc-400 text-sm">' + formatTTL(ttl) + '</td>' +
+        '<td class="px-6 py-3 text-zinc-300 text-sm">' + formatTTL(ttl) + '</td>' +
         '</tr>';
     }
 

@@ -13,7 +13,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-4 reveal-up" style="animation-delay: 0.1s;">
             Know your website is down before your customers do
           </h1>
-          <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             Monitor any URL from 330+ edge locations. Get alerted in seconds via email, Slack, SMS, or phone — with zero false positives.
           </p>
 
@@ -58,37 +58,37 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
-            <a href="/pricing" class="rounded-lg border border-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors">View pricing</a>
+            <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
+            <a href="/pricing" class="rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors">View pricing</a>
           </div>
         </div>
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
         <div class="grid md:grid-cols-2 gap-4 mb-20">
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">330+ global edge locations</h3>
-            <p class="text-sm text-zinc-400">Checks run from Cloudflare's worldwide network, so you see performance and availability from your users' perspective — not just one data center.</p>
+            <p class="text-sm text-zinc-300">Checks run from Cloudflare's worldwide network, so you see performance and availability from your users' perspective — not just one data center.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">30-second check intervals</h3>
-            <p class="text-sm text-zinc-400">Paid plans check every 30 seconds, so you catch downtime fast. Free plans check every 3 minutes — still faster than most competitors.</p>
+            <p class="text-sm text-zinc-300">Paid plans check every 30 seconds, so you catch downtime fast. Free plans check every 3 minutes — still faster than most competitors.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Zero false positives</h3>
-            <p class="text-sm text-zinc-400">Every check runs from 3 regions simultaneously. 2-of-3 must confirm failure before we alert you. No more 3 AM wake-ups for a network blip.</p>
+            <p class="text-sm text-zinc-300">Every check runs from 3 regions simultaneously. 2-of-3 must confirm failure before we alert you. No more 3 AM wake-ups for a network blip.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Custom assertions</h3>
-            <p class="text-sm text-zinc-400">Verify status codes, response bodies, headers, and response times. A 200 OK doesn't mean your app is working — assert on what matters.</p>
+            <p class="text-sm text-zinc-300">Verify status codes, response bodies, headers, and response times. A 200 OK doesn't mean your app is working — assert on what matters.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Response time tracking</h3>
-            <p class="text-sm text-zinc-400">Historical charts showing latency trends across regions. Spot degradation before it becomes downtime.</p>
+            <p class="text-sm text-zinc-300">Historical charts showing latency trends across regions. Spot degradation before it becomes downtime.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Instant alerts</h3>
-            <p class="text-sm text-zinc-400">Email, Slack, Discord, SMS, phone calls, and webhooks. Route alerts to the right people at the right time with escalation policies.</p>
+            <p class="text-sm text-zinc-300">Email, Slack, Discord, SMS, phone calls, and webhooks. Route alerts to the right people at the right time with escalation policies.</p>
           </div>
         </div>
 
@@ -98,25 +98,25 @@
             <div class="text-center">
               <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mx-auto mb-4">1</div>
               <h3 class="text-white font-semibold mb-2">Add your URL</h3>
-              <p class="text-sm text-zinc-400">Enter any URL and configure your check settings. Choose your regions, interval, and assertion rules.</p>
+              <p class="text-sm text-zinc-300">Enter any URL and configure your check settings. Choose your regions, interval, and assertion rules.</p>
             </div>
             <div class="text-center">
               <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mx-auto mb-4">2</div>
               <h3 class="text-white font-semibold mb-2">We monitor from the edge</h3>
-              <p class="text-sm text-zinc-400">Our global network checks your site from 330+ locations every 30 seconds. Three regions verify each result to eliminate false positives.</p>
+              <p class="text-sm text-zinc-300">Our global network checks your site from 330+ locations every 30 seconds. Three regions verify each result to eliminate false positives.</p>
             </div>
             <div class="text-center">
               <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold mx-auto mb-4">3</div>
               <h3 class="text-white font-semibold mb-2">Get alerted instantly</h3>
-              <p class="text-sm text-zinc-400">When something goes wrong, you know immediately. Email, Slack, SMS, phone — however you want to be reached.</p>
+              <p class="text-sm text-zinc-300">When something goes wrong, you know immediately. Email, Slack, SMS, phone — however you want to be reached.</p>
             </div>
           </div>
         </div>
 
         <div class="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-10 text-center">
           <h2 class="text-2xl font-bold text-white mb-3">Start monitoring in 2 minutes</h2>
-          <p class="text-zinc-400 mb-6">3 monitors free forever. No credit card required.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
+          <p class="text-zinc-300 mb-6">3 monitors free forever. No credit card required.</p>
+          <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
         </div>
       </div>
     `;

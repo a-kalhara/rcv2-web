@@ -42,6 +42,14 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
 @keyframes heroGlow2 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.05; } 50% { transform: translate(-50px,40px) scale(1.15); opacity: 0.08; } }
 @keyframes heroGlow3 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.04; } 40% { transform: translate(40px,-30px) scale(1.1); opacity: 0.07; } 70% { transform: translate(-30px,20px) scale(0.9); opacity: 0.03; } }
 .dropdown-closed .dropdown-panel { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+/* Focus states for accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 2px;
+}
+input:focus-visible { outline-offset: 0; }
+/* sr-only utility for visually hidden labels */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
 @media (prefers-reduced-motion: reduce) {
   .reveal-up { animation: none; opacity: 1; transform: none; }
   .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
@@ -73,12 +81,11 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
                 <span class="font-semibold tracking-tighter">RapidCheck</span>
             </a>
             <div class="hidden md:flex items-center gap-6 text-[13px] font-medium text-zinc-400">
-                <a href="/tools/domain-health" class="text-emerald-400 hover:text-emerald-300 transition-colors">Website down checker</a>
                 <!-- Product Dropdown -->
                 <div class="relative group/nav" id="dropdown-product">
                     <button aria-haspopup="true" aria-expanded="false" class="hover:text-white transition-colors flex items-center gap-1">Product <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover/nav:rotate-180 group-focus-within/nav:rotate-180 transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
                     <div class="dropdown-panel absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:opacity-100 group-focus-within/nav:visible transition-[opacity,visibility,transform] duration-200 translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0">
-                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[340px] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
+                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[min(340px,90vw)] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
                             <a href="/features/website-monitoring" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
                                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                                 <div>
@@ -128,7 +135,7 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
                 <div class="relative group/nav2" id="dropdown-resources">
                     <button aria-haspopup="true" aria-expanded="false" class="hover:text-white transition-colors flex items-center gap-1">Resources <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover/nav2:rotate-180 group-focus-within/nav2:rotate-180 transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
                     <div class="dropdown-panel absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover/nav2:opacity-100 group-hover/nav2:visible group-focus-within/nav2:opacity-100 group-focus-within/nav2:visible transition-[opacity,visibility,transform] duration-200 translate-y-1 group-hover/nav2:translate-y-0 group-focus-within/nav2:translate-y-0">
-                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[280px] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
+                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[min(280px,90vw)] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
                             <a href="/docs" class="flex items-center gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 shrink-0"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
                                 <span class="text-[13px] font-semibold text-white">Documentation</span>
@@ -136,6 +143,10 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
                             <a href="/tools" class="flex items-center gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 shrink-0"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
                                 <span class="text-[13px] font-semibold text-white">Tools</span>
+                            </a>
+                            <a href="/tools/domain-health" class="flex items-center gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 shrink-0"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                                <span class="text-[13px] font-semibold text-emerald-400">Website Down Checker</span>
                             </a>
                         </div>
                     </div>
@@ -170,7 +181,7 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
             <div class="pt-3 mt-2 border-t border-white/5 flex flex-col gap-2">
                 <a href="/pricing" class="text-sm text-zinc-400 hover:text-white transition-colors py-3">Pricing</a>
                 <button onclick="alert('Sign in coming soon')" class="text-sm text-zinc-400 hover:text-white transition-colors py-3 text-left bg-transparent border-none cursor-pointer">Sign in</button>
-                <button onclick="alert('Registration coming soon')" class="block w-full text-center text-sm font-medium bg-white text-black px-4 py-3 rounded-full mt-1 cursor-pointer border-none">Start monitoring free</button>
+                <button onclick="alert('Registration coming soon')" class="block w-full text-center text-sm font-medium bg-white text-black px-4 py-3 rounded-full mt-1 cursor-pointer border-none hover:bg-zinc-200 transition-colors">Start monitoring free</button>
             </div>
         </div>
     </div>
@@ -178,7 +189,7 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
 </nav>
 
 <!-- Main Content Area -->
-<div id="app" class="relative z-10"></div>
+<main id="app" class="relative z-10"></main>
 
 <!-- Footer -->
 <footer class="bg-[#020202] pt-12 pb-6 border-t border-white/5 relative">
@@ -235,6 +246,16 @@ body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4
                     <li><a href="/legal/acceptable-use" class="hover:text-zinc-300 transition-colors">Acceptable Use</a></li>
                 </ul>
             </div>
+        </div>
+        <!-- Newsletter signup -->
+        <div class="mb-10 max-w-md mx-auto text-center">
+            <h4 class="text-sm font-medium text-white mb-2">Stay in the loop</h4>
+            <p class="text-xs text-zinc-500 mb-4">Weekly monitoring tips, security alerts, and product updates.</p>
+            <form onsubmit="event.preventDefault(); alert('Newsletter signup coming soon')" class="flex gap-2">
+                <label for="footer-email" class="sr-only">Email address</label>
+                <input id="footer-email" type="email" placeholder="you@example.com" required class="flex-1 bg-zinc-900 border border-zinc-700 rounded-full px-4 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors" />
+                <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-5 py-2 rounded-full transition-colors text-sm cursor-pointer border-none whitespace-nowrap">Subscribe</button>
+            </form>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs text-zinc-600">
             <p>&copy; 2026 RapidCheck. All rights reserved.</p>

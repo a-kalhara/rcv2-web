@@ -13,7 +13,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-4 reveal-up" style="animation-delay: 0.1s;">
             Use real browsers to check your web app
           </h1>
-          <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             HTTP checks can't catch JavaScript errors, broken renders, or missing elements. Browser checks can.
           </p>
 
@@ -53,53 +53,53 @@
               <!-- Check results -->
               <div class="px-4 py-3 border-t border-white/5 space-y-1.5" id="bc-results">
                 <div class="flex items-center gap-2 text-xs font-mono opacity-0 transition-all duration-300" data-check="0">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">Page loaded in 1.2s</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">Page loaded in 1.2s</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs font-mono opacity-0 transition-all duration-300" data-check="1">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">Element #dashboard-chart visible</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">Element #dashboard-chart visible</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs font-mono opacity-0 transition-all duration-300" data-check="2">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">No console errors</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">No console errors</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs font-mono opacity-0 transition-all duration-300" data-check="3">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">LCP &lt; 2.5s — Core Web Vitals pass</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">LCP &lt; 2.5s — Core Web Vitals pass</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
-            <a href="/pricing" class="rounded-lg border border-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors">View pricing</a>
+            <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
+            <a href="/pricing" class="rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors">View pricing</a>
           </div>
         </div>
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
         <div class="grid md:grid-cols-2 gap-4 mb-20">
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Real browser execution</h3>
-            <p class="text-sm text-zinc-400">Headless Chromium runs your checks exactly like a real user's browser. No simulations, no shortcuts — actual rendering and JavaScript execution.</p>
+            <p class="text-sm text-zinc-300">Headless Chromium runs your checks exactly like a real user's browser. No simulations, no shortcuts — actual rendering and JavaScript execution.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">JavaScript rendering</h3>
-            <p class="text-sm text-zinc-400">SPAs, client-side rendered apps, dynamic content — browser checks see what your users see, including content loaded after the initial page load.</p>
+            <p class="text-sm text-zinc-300">SPAs, client-side rendered apps, dynamic content — browser checks see what your users see, including content loaded after the initial page load.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Visual assertions</h3>
-            <p class="text-sm text-zinc-400">Verify specific elements are visible, text content matches, buttons are clickable. Go beyond "page loaded" to "page works correctly."</p>
+            <p class="text-sm text-zinc-300">Verify specific elements are visible, text content matches, buttons are clickable. Go beyond "page loaded" to "page works correctly."</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Screenshot on failure</h3>
-            <p class="text-sm text-zinc-400">When a check fails, get a screenshot of exactly what the browser saw. Debug issues instantly without trying to reproduce them.</p>
+            <p class="text-sm text-zinc-300">When a check fails, get a screenshot of exactly what the browser saw. Debug issues instantly without trying to reproduce them.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Performance metrics</h3>
-            <p class="text-sm text-zinc-400">Core Web Vitals, DOM load time, time to interactive, and more. Track real browser performance over time and catch regressions early.</p>
+            <p class="text-sm text-zinc-300">Core Web Vitals, DOM load time, time to interactive, and more. Track real browser performance over time and catch regressions early.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Cloudflare Browser Rendering</h3>
-            <p class="text-sm text-zinc-400">Powered by Cloudflare's Browser Rendering API. No browser infrastructure to manage — scales automatically with your monitoring needs.</p>
+            <p class="text-sm text-zinc-300">Powered by Cloudflare's Browser Rendering API. No browser infrastructure to manage — scales automatically with your monitoring needs.</p>
           </div>
         </div>
 
@@ -127,8 +127,8 @@
 
         <div class="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-10 text-center">
           <h2 class="text-2xl font-bold text-white mb-3">Try browser checks today</h2>
-          <p class="text-zinc-400 mb-6">Included on all paid plans. Start with a free trial.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
+          <p class="text-zinc-300 mb-6">Included on all paid plans. Start with a free trial.</p>
+          <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
         </div>
       </div>
     `;

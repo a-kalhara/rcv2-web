@@ -5,9 +5,10 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">Response Time Test</h1>
-        <p class="text-zinc-400 text-lg mb-10">Test how fast a URL responds from your browser.</p>
+        <p class="text-zinc-300 text-lg mb-10">Test how fast a URL responds from your browser.</p>
 
         <div class="flex gap-3 mb-8">
+          <label for="rt-url-input" class="sr-only">URL</label>
           <input
             id="rt-url-input"
             type="text"
@@ -16,13 +17,13 @@
           />
           <button
             id="rt-test-btn"
-            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
           >Test</button>
         </div>
 
         <div id="rt-loading" class="hidden text-center py-16">
           <div class="inline-block w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-          <p class="text-zinc-400">Measuring response time...</p>
+          <p class="text-zinc-300">Measuring response time...</p>
         </div>
 
         <div id="rt-cors-error" class="hidden bg-amber-500/10 border border-amber-500/30 rounded-xl p-6 mb-6">
@@ -30,8 +31,8 @@
             <span class="text-amber-400 text-xl mt-0.5">&#9888;</span>
             <div>
               <p class="text-amber-400 font-medium mb-2">CORS Blocked</p>
-              <p class="text-zinc-400 text-sm">This URL cannot be tested from the browser due to CORS (Cross-Origin Resource Sharing) restrictions. This is a client-side limitation.</p>
-              <p class="text-zinc-400 text-sm mt-2">For accurate server-side response time checks from 330+ global locations, use RapidCheck's full monitoring platform.</p>
+              <p class="text-zinc-300 text-sm">This URL cannot be tested from the browser due to CORS (Cross-Origin Resource Sharing) restrictions. This is a client-side limitation.</p>
+              <p class="text-zinc-300 text-sm mt-2">For accurate server-side response time checks from 330+ global locations, use RapidCheck's full monitoring platform.</p>
             </div>
           </div>
         </div>
@@ -39,19 +40,19 @@
         <div id="rt-results" class="hidden">
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-              <p class="text-zinc-400 text-sm mb-2">Response Time</p>
+              <p class="text-zinc-300 text-sm mb-2">Response Time</p>
               <p class="text-3xl font-bold" id="rt-time"></p>
               <p class="text-sm mt-1" id="rt-rating"></p>
             </div>
 
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-              <p class="text-zinc-400 text-sm mb-2">Status Code</p>
+              <p class="text-zinc-300 text-sm mb-2">Status Code</p>
               <p class="text-3xl font-bold text-white" id="rt-status"></p>
               <p class="text-zinc-500 text-sm mt-1" id="rt-status-text"></p>
             </div>
 
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-              <p class="text-zinc-400 text-sm mb-2">Content Type</p>
+              <p class="text-zinc-300 text-sm mb-2">Content Type</p>
               <p class="text-lg font-medium text-white mt-2" id="rt-content-type"></p>
             </div>
           </div>
@@ -75,8 +76,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Monitor response times 24/7</h2>
-          <p class="text-zinc-400 mb-6">Track performance from 330+ locations worldwide. Get alerts when things slow down.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">Track performance from 330+ locations worldwide. Get alerts when things slow down.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;

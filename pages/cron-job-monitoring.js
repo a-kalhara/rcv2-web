@@ -13,7 +13,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-4 reveal-up" style="animation-delay: 0.1s;">
             Monitor cron jobs, scheduled tasks, and pipelines
           </h1>
-          <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             Know immediately when a background job fails to run, runs late, or takes too long. One line of code to integrate.
           </p>
 
@@ -67,37 +67,37 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
-            <a href="/pricing" class="rounded-lg border border-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors">View pricing</a>
+            <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
+            <a href="/pricing" class="rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors">View pricing</a>
           </div>
         </div>
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
         <div class="grid md:grid-cols-2 gap-4 mb-20">
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Expected schedule detection</h3>
-            <p class="text-sm text-zinc-400">Tell us when your job should run — every 5 minutes, hourly, daily. We'll alert you the moment it misses its window.</p>
+            <p class="text-sm text-zinc-300">Tell us when your job should run — every 5 minutes, hourly, daily. We'll alert you the moment it misses its window.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Grace periods</h3>
-            <p class="text-sm text-zinc-400">Jobs don't always run at the exact second. Set a grace period to allow for natural variance without triggering false alerts.</p>
+            <p class="text-sm text-zinc-300">Jobs don't always run at the exact second. Set a grace period to allow for natural variance without triggering false alerts.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Execution time tracking</h3>
-            <p class="text-sm text-zinc-400">Monitor how long your jobs take. Get alerted when execution time exceeds your threshold — catch performance degradation early.</p>
+            <p class="text-sm text-zinc-300">Monitor how long your jobs take. Get alerted when execution time exceeds your threshold — catch performance degradation early.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Failure payload capture</h3>
-            <p class="text-sm text-zinc-400">Send exit codes, error messages, or custom data with your ping. Debug failed jobs without digging through server logs.</p>
+            <p class="text-sm text-zinc-300">Send exit codes, error messages, or custom data with your ping. Debug failed jobs without digging through server logs.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Simple ping integration</h3>
-            <p class="text-sm text-zinc-400">Add one HTTP call to the end of your cron job. Works with any language, any platform, any scheduler. No SDK required.</p>
+            <p class="text-sm text-zinc-300">Add one HTTP call to the end of your cron job. Works with any language, any platform, any scheduler. No SDK required.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Team alerts</h3>
-            <p class="text-sm text-zinc-400">Route alerts to the right team. Backend cron failures go to backend engineers. Data pipeline issues go to the data team.</p>
+            <p class="text-sm text-zinc-300">Route alerts to the right team. Backend cron failures go to backend engineers. Data pipeline issues go to the data team.</p>
           </div>
         </div>
 
@@ -117,8 +117,8 @@
 
         <div class="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-10 text-center">
           <h2 class="text-2xl font-bold text-white mb-3">Never miss a failed cron job</h2>
-          <p class="text-zinc-400 mb-6">3 monitors free forever. No credit card required.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
+          <p class="text-zinc-300 mb-6">3 monitors free forever. No credit card required.</p>
+          <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
         </div>
       </div>
     `;

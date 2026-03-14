@@ -5,11 +5,12 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">SLA Uptime Calculator</h1>
-        <p class="text-zinc-400 text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
+        <p class="text-zinc-300 text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
 
         <div class="mb-6">
           <label class="text-zinc-300 text-sm font-medium mb-2 block">Uptime Percentage</label>
           <div class="flex gap-3 items-center">
+            <label for="uc-input" class="sr-only">Uptime percentage</label>
             <input
               id="uc-input"
               type="number"
@@ -19,7 +20,7 @@
               max="100"
               class="w-40 bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white text-lg font-mono focus:outline-none focus:border-emerald-500 transition-colors"
             />
-            <span class="text-zinc-400 text-lg">%</span>
+            <span class="text-zinc-300 text-lg">%</span>
           </div>
         </div>
 
@@ -35,19 +36,19 @@
         <h3 class="text-white font-semibold text-lg mb-4">Allowed Downtime</h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12" id="uc-results">
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-400 text-sm mb-2">Daily</p>
+            <p class="text-zinc-300 text-sm mb-2">Daily</p>
             <p class="text-xl font-bold text-white font-mono" id="uc-daily"></p>
           </div>
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-400 text-sm mb-2">Weekly</p>
+            <p class="text-zinc-300 text-sm mb-2">Weekly</p>
             <p class="text-xl font-bold text-white font-mono" id="uc-weekly"></p>
           </div>
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-400 text-sm mb-2">Monthly</p>
+            <p class="text-zinc-300 text-sm mb-2">Monthly</p>
             <p class="text-xl font-bold text-white font-mono" id="uc-monthly"></p>
           </div>
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-400 text-sm mb-2">Yearly</p>
+            <p class="text-zinc-300 text-sm mb-2">Yearly</p>
             <p class="text-xl font-bold text-white font-mono" id="uc-yearly"></p>
           </div>
         </div>
@@ -58,10 +59,10 @@
             <table class="w-full text-left">
               <thead>
                 <tr class="border-b border-zinc-800">
-                  <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Uptime</th>
-                  <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Daily</th>
-                  <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Monthly</th>
-                  <th class="px-6 py-3 text-zinc-400 text-sm font-medium">Yearly</th>
+                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Uptime</th>
+                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Daily</th>
+                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Monthly</th>
+                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Yearly</th>
                 </tr>
               </thead>
               <tbody id="uc-comparison-body" class="divide-y divide-zinc-800">
@@ -72,8 +73,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Hit your SLA targets with confidence</h2>
-          <p class="text-zinc-400 mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;

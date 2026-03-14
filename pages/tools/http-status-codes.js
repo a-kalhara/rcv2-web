@@ -5,9 +5,10 @@
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
         <h1 class="text-4xl font-bold text-white mb-3">HTTP Status Codes Reference</h1>
-        <p class="text-zinc-400 text-lg mb-10">Quick reference for all common HTTP status codes.</p>
+        <p class="text-zinc-300 text-lg mb-10">Quick reference for all common HTTP status codes.</p>
 
         <div class="mb-8">
+          <label for="hsc-search" class="sr-only">Search status codes</label>
           <input
             id="hsc-search"
             type="text"
@@ -24,8 +25,8 @@
 
         <div class="mt-16 text-center border-t border-zinc-800 pt-12">
           <h2 class="text-2xl font-bold text-white mb-3">Monitor your HTTP responses</h2>
-          <p class="text-zinc-400 mb-6">Get alerted when your endpoints return unexpected status codes.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-8 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-zinc-300 mb-6">Get alerted when your endpoints return unexpected status codes.</p>
+          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;
@@ -127,7 +128,7 @@
           html += '<span class="inline-block text-sm font-mono font-bold px-3 py-1 rounded-lg shrink-0 ' + meta.badge + '">' + c.code + '</span>';
           html += '<div>';
           html += '<p class="text-white font-medium">' + escapeHtml(c.name) + '</p>';
-          html += '<p class="text-zinc-400 text-sm mt-1">' + escapeHtml(c.desc) + '</p>';
+          html += '<p class="text-zinc-300 text-sm mt-1">' + escapeHtml(c.desc) + '</p>';
           html += '</div>';
           html += '</div>';
           html += '</div>';

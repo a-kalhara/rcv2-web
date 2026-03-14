@@ -13,7 +13,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-4 reveal-up" style="animation-delay: 0.1s;">
             Your API might be up, but is the data correct?
           </h1>
-          <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             Go beyond status codes. Validate response bodies, headers, and latency with custom assertions from 330+ global locations.
           </p>
 
@@ -48,53 +48,53 @@
               <!-- Assertions -->
               <div id="api-assertions" class="mt-4 pt-3 border-t border-white/5 space-y-1.5">
                 <div class="flex items-center gap-2 text-xs opacity-0 transition-all duration-300" data-assert="0">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">Status code equals 200</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">Status code equals 200</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs opacity-0 transition-all duration-300" data-assert="1">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">$.status equals "active"</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">$.status equals "active"</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs opacity-0 transition-all duration-300" data-assert="2">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">$.email is not null</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">$.email is not null</span>
                 </div>
                 <div class="flex items-center gap-2 text-xs opacity-0 transition-all duration-300" data-assert="3">
-                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-400">Response time &lt; 500ms</span>
+                  <span class="text-emerald-400">&#10003;</span><span class="text-zinc-300">Response time &lt; 500ms</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
-            <a href="/pricing" class="rounded-lg border border-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/5 transition-colors">View pricing</a>
+            <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
+            <a href="/pricing" class="rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors">View pricing</a>
           </div>
         </div>
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
-        <div class="grid md:grid-cols-2 gap-4 mb-20">
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+        <div class="grid md:grid-cols-3 gap-4 mb-20">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Custom HTTP requests</h3>
-            <p class="text-sm text-zinc-400">Send GET, POST, PUT, PATCH, DELETE with custom headers, body, and authentication. Test your API exactly how your clients use it.</p>
+            <p class="text-sm text-zinc-300">Send GET, POST, PUT, PATCH, DELETE with custom headers, body, and authentication. Test your API exactly how your clients use it.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">JSON path assertions</h3>
-            <p class="text-sm text-zinc-400">Verify specific fields in your API response. Assert that <code class="text-emerald-400">$.data.status</code> equals "active" or <code class="text-emerald-400">$.items.length</code> is greater than 0.</p>
+            <p class="text-sm text-zinc-300">Verify specific fields in your API response. Assert that <code class="text-emerald-400">$.data.status</code> equals "active" or <code class="text-emerald-400">$.items.length</code> is greater than 0.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Response time thresholds</h3>
-            <p class="text-sm text-zinc-400">Set latency budgets per endpoint. Get alerted when your P95 response time exceeds your SLA target.</p>
+            <p class="text-sm text-zinc-300">Set latency budgets per endpoint. Get alerted when your P95 response time exceeds your SLA target.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Multi-step checks</h3>
-            <p class="text-sm text-zinc-400">Chain requests together — authenticate, then hit protected endpoint. Verify complete API workflows, not just individual endpoints.</p>
+            <p class="text-sm text-zinc-300">Chain requests together — authenticate, then hit protected endpoint. Verify complete API workflows, not just individual endpoints.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Header & body validation</h3>
-            <p class="text-sm text-zinc-400">Assert on response headers, content type, body content, and more. Catch schema changes, missing CORS headers, and broken responses.</p>
+            <p class="text-sm text-zinc-300">Assert on response headers, content type, body content, and more. Catch schema changes, missing CORS headers, and broken responses.</p>
           </div>
-          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6">
+          <div class="rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors">
             <h3 class="text-white font-semibold mb-2">Global edge execution</h3>
-            <p class="text-sm text-zinc-400">API checks run from 330+ locations. Verify your API performs well for users everywhere, not just near your origin server.</p>
+            <p class="text-sm text-zinc-300">API checks run from 330+ locations. Verify your API performs well for users everywhere, not just near your origin server.</p>
           </div>
         </div>
 
@@ -123,8 +123,8 @@
 
         <div class="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-10 text-center">
           <h2 class="text-2xl font-bold text-white mb-3">Monitor your APIs in 2 minutes</h2>
-          <p class="text-zinc-400 mb-6">3 monitors free forever. No credit card required.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90 cursor-pointer border-none">Start monitoring free</button>
+          <p class="text-zinc-300 mb-6">3 monitors free forever. No credit card required.</p>
+          <button onclick="alert('Registration coming soon')" class="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none">Start monitoring free</button>
         </div>
       </div>
     `;
