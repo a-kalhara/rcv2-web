@@ -40,6 +40,14 @@ The router in `index.html` intercepts navigation, looks up the route in `window.
 - Color scheme: emerald accent (#10b981), dark background (#050505)
 - Responsive: mobile-first with Tailwind breakpoints
 
+## Workflow
+
+Inherits all workflow orchestration from root CLAUDE.md. Additionally:
+- Review `tasks/lessons.md` at session start
+- After any user correction: immediately update `tasks/lessons.md`
+- Test pages by opening in browser — verify router, scroll animations, responsive layout
+- No build step means changes are instant — verify in browser directly
+
 ## Skills
 
 - `/add-page` — Scaffold a new marketing page
