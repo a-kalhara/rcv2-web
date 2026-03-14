@@ -4,7 +4,7 @@
   window.__pages['/pricing'] = function() {
     return `
     <!-- Pricing Hero -->
-    <section class="pt-24 sm:pt-28 md:pt-32 pb-16 relative">
+    <section class="pt-24 sm:pt-28 md:pt-32 pb-20 relative">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-[-10%] left-[30%] w-[500px] h-[500px] bg-emerald-500/[0.06] rounded-full blur-[120px]"></div>
             <div class="absolute top-[20%] right-[20%] w-[400px] h-[400px] bg-emerald-500/[0.04] rounded-full blur-[100px]"></div>
@@ -24,17 +24,16 @@
     </section>
 
     <main>
-    <!-- Trust Signal -->
-    <section class="pb-10 relative">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-zinc-500">
-                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card required</span>
-                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial on paid plans</span>
-                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
-                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>GDPR compliant</span>
-            </div>
+
+    <!-- Trust Signals -->
+    <div class="max-w-3xl mx-auto px-6 text-center pb-14">
+        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-zinc-500 border border-white/5 rounded-full px-8 py-4 bg-zinc-900/20">
+            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card required</span>
+            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial on paid plans</span>
+            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
+            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>GDPR compliant</span>
         </div>
-    </section>
+    </div>
 
     <!-- Plan Cards -->
     <section class="pb-20 relative">
