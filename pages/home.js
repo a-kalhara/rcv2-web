@@ -1,0 +1,448 @@
+// Home / Landing page
+(function() {
+  window.__pages = window.__pages || {};
+  window.__pages['/'] = function() {
+    return `
+    <!-- Hero Section -->
+    <header class="md:pt-44 md:pb-24 overflow-hidden pt-24 sm:pt-28 pb-12 sm:pb-14 relative">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-[-20%] left-[20%] w-[600px] h-[600px] bg-emerald-500/[0.07] rounded-full blur-[120px] animate-[heroGlow1_8s_ease-in-out_infinite]"></div>
+            <div class="absolute top-[10%] right-[10%] w-[500px] h-[500px] bg-purple-500/[0.05] rounded-full blur-[100px] animate-[heroGlow2_10s_ease-in-out_infinite]"></div>
+            <div class="absolute bottom-[-10%] left-[40%] w-[700px] h-[700px] bg-cyan-500/[0.04] rounded-full blur-[130px] animate-[heroGlow3_12s_ease-in-out_infinite]"></div>
+        </div>
+        <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
+        <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
+            <h1 class="text-[2.25rem] sm:text-5xl md:text-7xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-500 mb-6 pb-2 leading-[1.1] reveal-up" style="animation-delay: 0.1s;">
+                Catch downtime early<br class="hidden sm:block"> before users start reporting it.
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-6 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
+                Monitor uptime. Protect your domain. Get alerted instantly.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto reveal-up" style="animation-delay: 0.3s;">
+                <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto justify-center h-11 sm:h-10 px-6 rounded-full bg-white text-black text-sm font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2 group cursor-pointer border-none">
+                    Start monitoring free
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                </button>
+                <a href="/pricing" class="w-full sm:w-auto justify-center h-11 sm:h-10 px-5 rounded-full border border-white/10 bg-white/[0.03] text-white text-sm font-medium hover:border-white/20 transition-colors flex items-center gap-2.5 no-underline">
+                    <span class="text-xl font-bold">$2</span>
+                    <span class="text-zinc-400 text-xs leading-tight text-left">/monitor/mo.<br>That's it.</span>
+                </a>
+            </div>
+            <p class="text-xs text-zinc-500 mt-6 reveal-up" style="animation-delay: 0.35s;">3 monitors free forever. No credit card required.</p>
+        </div>
+    </header>
+
+    <main>
+    <!-- Platform Metrics -->
+    <section class="border-y bg-zinc-900/20 border-white/5 py-8 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-center text-[10px] font-medium text-zinc-500 uppercase tracking-widest mb-8">Built for scale. Trusted by teams worldwide.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+                <div class="text-center">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">330+</div>
+                    <div class="text-xs text-zinc-400">Edge Locations</div>
+                    <div class="text-[10px] text-zinc-500 mt-0.5">Global monitoring coverage</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">99.99%</div>
+                    <div class="text-xs text-zinc-400">Platform Uptime</div>
+                    <div class="text-[10px] text-zinc-500 mt-0.5">Enterprise-grade reliability</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-400 mb-1">&lt;100ms</div>
+                    <div class="text-xs text-zinc-400">Alert Latency</div>
+                    <div class="text-[10px] text-zinc-500 mt-0.5">Know instantly when things break</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">Free</div>
+                    <div class="text-xs text-zinc-400">SSL, DNS & Domain Monitoring</div>
+                    <div class="text-[10px] text-zinc-500 mt-0.5">Full intelligence on every plan</div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-noise opacity-20 pointer-events-none mix-blend-overlay"></div>
+    </section>
+
+    <!-- Core Value Pillars -->
+    <section class="pt-12 pb-12 relative reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative bg-zinc-900/30 border border-white/5 rounded-2xl p-6 overflow-hidden hover:border-white/10 transition-colors shadow-lg shadow-black/20">
+                    <div class="absolute inset-0 pattern-dots opacity-20"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Simple pricing</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">$2 per monitor, per month. No complex tiers, no hidden fees. Start free and scale as you grow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative bg-zinc-900/30 border border-white/5 rounded-2xl p-6 overflow-hidden hover:border-white/10 transition-colors shadow-lg shadow-black/20">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Native mobile app</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">iOS and Android. Push notifications, incident acknowledgment, and real-time dashboard in your pocket.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative bg-zinc-900/30 border border-white/5 rounded-2xl p-6 overflow-hidden hover:border-white/10 transition-colors shadow-lg shadow-black/20">
+                    <div class="absolute inset-0 pattern-grid opacity-10"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-white mb-2 tracking-tight">Branded status pages</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">Beautiful public status pages with custom domains. Keep your users informed automatically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Channels -->
+    <section class="py-8 relative">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-8">Get alerted wherever you work</p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    <span class="text-xs text-zinc-300">Email</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span class="text-xs text-zinc-300">SMS & Phone</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    <span class="text-xs text-zinc-300">Push Notifications</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/40 border border-white/5 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-400"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <span class="text-xs text-zinc-300">Slack / Discord / Webhooks</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Intelligence -->
+    <section class="pt-16 pb-12 sm:py-12 relative reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/10 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                <div class="relative min-h-[400px] bg-gradient-to-br from-zinc-800/30 to-black p-6 sm:p-12 flex items-center justify-center overflow-hidden">
+                    <div class="absolute inset-0 z-20 w-full h-full bg-[#050505] flex flex-col items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-noise opacity-20 mix-blend-overlay pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(circle_at_center,black_60%,transparent_100%)]"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-emerald-500/10 blur-[90px] rounded-full pointer-events-none"></div>
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 bg-emerald-500/20 blur-xl rounded-full opacity-50"></div>
+                            <div class="relative w-24 h-24 rounded-full bg-zinc-900 border border-emerald-500/30 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.15)]">
+                                <svg class="absolute inset-0" width="96" height="96" viewBox="0 0 96 96">
+                                    <circle cx="48" cy="48" r="42" fill="none" stroke="rgba(39,39,42,0.5)" stroke-width="3"/>
+                                    <circle cx="48" cy="48" r="42" fill="none" stroke="rgb(16,185,129)" stroke-width="3" stroke-dasharray="242 264" stroke-linecap="round" transform="rotate(-90 48 48)" class="drop-shadow-[0_0_6px_rgba(16,185,129,0.5)]"/>
+                                </svg>
+                                <span class="text-2xl font-bold text-white">A+</span>
+                                <span class="text-[8px] text-emerald-400 uppercase tracking-wider">Health</span>
+                            </div>
+                            <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                                <div class="flex items-center gap-2 px-4 py-2 bg-zinc-900/90 border border-emerald-500/20 rounded-full shadow-lg backdrop-blur-md">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                    <span class="text-[10px] font-semibold text-emerald-300 uppercase tracking-wide">SSL Valid — 247 days</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full max-w-[300px] translate-y-8 bg-zinc-950/80 backdrop-blur-xl border border-white/5 rounded-xl shadow-2xl overflow-hidden relative">
+                            <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent opacity-50"></div>
+                            <div class="p-5">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div>
+                                        <div class="text-[10px] text-zinc-500 font-medium mb-1 uppercase tracking-wider">Domain Health</div>
+                                        <div class="text-lg font-semibold text-white tracking-tight">example.com</div>
+                                    </div>
+                                    <div class="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded font-medium flex items-center gap-1 border border-emerald-500/20">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                        All Clear
+                                    </div>
+                                </div>
+                                <div class="space-y-2.5">
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-zinc-500">SSL Certificate</span><span class="text-emerald-400 font-medium">Valid — 247 days</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-zinc-500">SPF / DKIM / DMARC</span><span class="text-emerald-400 font-medium">Pass</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-zinc-500">Subdomains</span><span class="text-zinc-300 font-medium">8 found</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-zinc-500">Blacklist Status</span><span class="text-emerald-400 font-medium">Clean</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-zinc-500">WHOIS Expiry</span><span class="text-zinc-300 font-medium">Mar 2027</span></div>
+                                </div>
+                                <div class="mt-4 pt-3 border-t border-white/5">
+                                    <div class="text-[9px] text-zinc-500 uppercase tracking-wider mb-2">DNS Response (ms)</div>
+                                    <div class="h-8 flex items-end gap-1">
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[40%]"></div>
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[35%]"></div>
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[45%]"></div>
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[30%]"></div>
+                                        <div class="flex-1 bg-emerald-500 rounded-sm h-[25%] shadow-[0_0_8px_rgba(16,185,129,0.3)]"></div>
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[38%]"></div>
+                                        <div class="flex-1 bg-emerald-500/30 rounded-sm h-[32%]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center relative">
+                    <div class="absolute inset-0 pattern-grid opacity-[0.03]"></div>
+                    <div class="z-10 relative">
+                        <div class="flex items-center gap-2 mb-6">
+                            <span class="px-2 py-1 rounded text-[10px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 uppercase tracking-wide">Domain Intelligence</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Complete domain health at a glance</h2>
+                        <p class="text-zinc-400 mb-8 leading-relaxed">Go beyond uptime. Monitor your SSL certificates, DNS records, domain reputation, and WHOIS data — all from one dashboard, free on every plan.</p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3 text-sm text-zinc-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 mt-0.5 shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                SSL expiry alerts and certificate chain validation
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-zinc-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 mt-0.5 shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Email DNS compliance — SPF, DKIM, and DMARC checks
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-zinc-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400 mt-0.5 shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Subdomain discovery and blacklist monitoring
+                            </li>
+                        </ul>
+                        <a href="/tools/domain-health" class="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-emerald-300 transition-colors">
+                            Explore domain tools
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="pt-12 pb-12 relative reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">A dashboard that stays out of your way</h2>
+                <p class="text-zinc-400 max-w-xl mx-auto leading-relaxed">Clean, fast, and focused. Everything you need to know at a glance — nothing you don't.</p>
+            </div>
+            <div class="relative group" role="img" aria-label="Dashboard preview showing monitors with uptime statistics">
+                <div class="absolute -inset-1 bg-gradient-to-b from-emerald-500/20 via-emerald-500/5 to-transparent rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                <div aria-hidden="true" class="relative bg-[#0A0A0A] border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-white/[0.02]">
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-zinc-800 border border-white/10"></div>
+                            <div class="w-3 h-3 rounded-full bg-zinc-800 border border-white/10"></div>
+                            <div class="w-3 h-3 rounded-full bg-zinc-800 border border-white/10"></div>
+                        </div>
+                        <div class="flex-1 flex justify-center">
+                            <div class="flex items-center gap-2 px-3 py-1 bg-zinc-900 rounded-md border border-white/5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-600"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span class="text-[10px] text-zinc-500 font-mono">app.rapidcheck.io/dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-48 border-r border-white/5 bg-[#080808] p-4 hidden md:block">
+                            <div class="flex items-center gap-2 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><path d="M12 16V5" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M8.5 8.5L12 5l3.5 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.4" cy="7.2" r="1.5" fill="#10b981"/></svg>
+                                <span class="text-xs font-semibold text-white">RapidCheck</span>
+                            </div>
+                            <div class="space-y-1">
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md bg-emerald-500/10 border border-emerald-500/20"><span class="text-[11px] text-emerald-300 font-medium">Dashboard</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-zinc-500">Monitors</span><span class="ml-auto text-[9px] text-zinc-600 bg-zinc-800 px-1.5 rounded">12</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-zinc-500">Incidents</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-zinc-500">Domains</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-zinc-500">Status Pages</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-zinc-500">Alerts</span></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-6">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                                <div class="bg-zinc-900/50 border border-white/5 rounded-lg p-3">
+                                    <div class="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Monitors</div>
+                                    <div class="text-lg font-semibold text-white">12</div>
+                                    <div class="text-[10px] text-emerald-400">all operational</div>
+                                </div>
+                                <div class="bg-zinc-900/50 border border-white/5 rounded-lg p-3">
+                                    <div class="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Avg Response</div>
+                                    <div class="text-lg font-semibold text-white">48ms</div>
+                                    <div class="text-[10px] text-emerald-400">-12ms vs last week</div>
+                                </div>
+                                <div class="bg-zinc-900/50 border border-white/5 rounded-lg p-3">
+                                    <div class="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Uptime (30d)</div>
+                                    <div class="text-lg font-semibold text-white">99.98%</div>
+                                    <div class="text-[10px] text-zinc-500">2 incidents</div>
+                                </div>
+                                <div class="bg-zinc-900/50 border border-white/5 rounded-lg p-3">
+                                    <div class="text-[10px] text-zinc-500 uppercase tracking-wider mb-1">Domain Health</div>
+                                    <div class="text-lg font-semibold text-emerald-400">A+</div>
+                                    <div class="text-[10px] text-emerald-400">all checks pass</div>
+                                </div>
+                            </div>
+                            <div class="bg-zinc-900/30 border border-white/5 rounded-lg overflow-hidden">
+                                <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/5">
+                                    <span class="text-[11px] font-medium text-zinc-400 uppercase tracking-wider">Monitors</span>
+                                    <span class="text-[10px] text-zinc-600">Last 24h</span>
+                                </div>
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
+                                    <div class="flex items-center gap-3 min-w-0">
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-zinc-200 font-medium truncate">api.rapidcheck.io</div><div class="text-[9px] text-zinc-600">HTTPS · 30s · 3 regions</div></div>
+                                    </div>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div></div>
+                                    <span class="text-[10px] text-zinc-500 font-mono text-right">32ms</span>
+                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">99.99%</span>
+                                </div>
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
+                                    <div class="flex items-center gap-3 min-w-0">
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-zinc-200 font-medium truncate">app.rapidcheck.io</div><div class="text-[9px] text-zinc-600">HTTPS · 30s · 3 regions</div></div>
+                                    </div>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-amber-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div></div>
+                                    <span class="text-[10px] text-zinc-500 font-mono text-right">87ms</span>
+                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">99.94%</span>
+                                </div>
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
+                                    <div class="flex items-center gap-3 min-w-0">
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-zinc-200 font-medium truncate">docs.rapidcheck.io</div><div class="text-[9px] text-zinc-600">HTTPS · 3m · 1 region</div></div>
+                                    </div>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div></div>
+                                    <span class="text-[10px] text-zinc-500 font-mono text-right">145ms</span>
+                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">100%</span>
+                                </div>
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 hover:bg-white/[0.02] transition-colors">
+                                    <div class="flex items-center gap-3 min-w-0">
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-zinc-200 font-medium truncate">payments.rapidcheck.io</div><div class="text-[9px] text-zinc-600">HTTPS · 30s · 5 regions</div></div>
+                                    </div>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/75"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/70"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/70"></div></div>
+                                    <span class="text-[10px] text-zinc-500 font-mono text-right">28ms</span>
+                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-12 border-y border-white/5 relative bg-zinc-900/10 reveal-on-scroll">
+        <div class="absolute inset-0 bg-noise opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Built for teams who ship</h2>
+            <p class="text-zinc-400 mb-12 max-w-xl mx-auto leading-relaxed">Whether you're a solo founder or a 100-person engineering team, RapidCheck scales with you.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
+                    <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+                    </div>
+                    <h3 class="text-base font-medium text-white mb-2">SaaS Teams</h3>
+                    <p class="text-xs text-zinc-400">Monitor APIs, dashboards, and customer-facing services around the clock.</p>
+                </div>
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
+                    <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    </div>
+                    <h3 class="text-base font-medium text-white mb-2">DevOps & SRE</h3>
+                    <p class="text-xs text-zinc-400">On-call scheduling, escalation policies, and incident management in one place.</p>
+                </div>
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
+                    <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="text-base font-medium text-white mb-2">Agencies</h3>
+                    <p class="text-xs text-zinc-400">Monitor all client sites from one workspace. Branded status pages per client.</p>
+                </div>
+                <div class="bg-zinc-900/30 border border-white/5 rounded-2xl p-6 text-center hover:border-emerald-500/20 transition-colors">
+                    <div class="w-10 h-10 mx-auto mb-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg>
+                    </div>
+                    <h3 class="text-base font-medium text-white mb-2">Solo Developers</h3>
+                    <p class="text-xs text-zinc-400">3 free monitors forever. Know your side project is up without paying a cent.</p>
+                </div>
+            </div>
+            <div class="mt-12">
+                <button onclick="alert('Registration coming soon')" class="inline-flex items-center gap-2 text-sm font-medium bg-white text-black px-6 py-2.5 rounded-full hover:bg-zinc-200 transition-colors cursor-pointer border-none">
+                    Start monitoring free
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-12 relative reveal-on-scroll">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-12 text-center">Frequently asked questions</h2>
+            <div class="space-y-4">
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        What happens when my free trial ends?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Your workspace downgrades to the free plan. Monitors beyond the free limit (3) are paused — not deleted. Upgrade anytime to resume them instantly.</div>
+                </details>
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        How do you prevent false positives?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Every check runs from 3 edge regions simultaneously. We require 2-of-3 to confirm failure across 2 consecutive checks before triggering an alert. This eliminates transient network blips.</div>
+                </details>
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        Is domain intelligence really free?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Yes. SSL monitoring, DNS checks, WHOIS tracking, blacklist scanning, and the domain health score are included on every plan — including free. No competitor bundles all of this at zero cost.</div>
+                </details>
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        Can I import monitors from UptimeRobot or Better Stack?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Yes. You can import monitors via CSV or our API. Most teams are fully migrated within 10 minutes.</div>
+                </details>
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        Where are checks run from?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Checks run from Cloudflare's global edge network — 330+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
+                </details>
+                <details class="group border border-white/5 rounded-2xl bg-zinc-900/20 overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-white hover:text-emerald-400 transition-colors list-none">
+                        Is my data secure?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </summary>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-zinc-400 leading-relaxed">Enterprise-grade security. AES-256-GCM field-level encryption, automatic PII redaction, GDPR-compliant data handling, and full audit trails. Your monitoring data stays private.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-12 text-center relative reveal-on-scroll">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">Ready to stop guessing?</h2>
+            <p class="text-zinc-400 mb-8 leading-relaxed">Start with 3 free monitors. No credit card required.</p>
+            <button onclick="alert('Registration coming soon')" class="inline-flex items-center gap-2 text-sm font-medium bg-white text-black px-8 py-3 rounded-full hover:bg-zinc-200 transition-colors cursor-pointer border-none">
+                Start monitoring free
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </section>
+    </main>`;
+  };
+})();

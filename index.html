@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RapidCheck — Uptime Monitoring & Domain Intelligence</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<script src="https://www.aura.build/FxFilter.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        accent: '#10b981',
+        surface: 'rgba(24,24,27,0.3)',
+        'surface-hover': 'rgba(24,24,27,0.6)',
+        border: 'rgba(255,255,255,0.08)',
+        muted: '#a1a1aa',
+        background: '#050505',
+      }
+    }
+  }
+}
+</script>
+<style>
+html, body { overflow-x: hidden; }
+body { font-family: 'Inter', sans-serif; background-color: #050505; color: #d4d4d8; }
+.bg-noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+.pattern-dots { background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px; }
+.pattern-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); }
+.reveal-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+.font-mono { font-family: 'IBM Plex Mono', monospace; }
+.reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.reveal-on-scroll.visible { opacity: 1; transform: translateY(0); }
+@keyframes heroGlow1 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.07; } 33% { transform: translate(60px,30px) scale(1.1); opacity: 0.1; } 66% { transform: translate(-40px,-20px) scale(0.95); opacity: 0.05; } }
+@keyframes heroGlow2 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.05; } 50% { transform: translate(-50px,40px) scale(1.15); opacity: 0.08; } }
+@keyframes heroGlow3 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.04; } 40% { transform: translate(40px,-30px) scale(1.1); opacity: 0.07; } 70% { transform: translate(-30px,20px) scale(0.9); opacity: 0.03; } }
+.dropdown-closed .dropdown-panel { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up { animation: none; opacity: 1; transform: none; }
+  .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body class="bg-[#050505] text-zinc-300 antialiased selection:bg-white/20 selection:text-white overflow-x-hidden">
+
+<!-- Aura animated background -->
+<div aria-hidden="true" class="aura-background-component w-full h-screen absolute" data-alpha-mask="80" style="top: -15%; mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 60%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 60%, transparent 100%)"><div class="aura-background-component top-0 w-full -z-10 absolute h-full">
+  <div data-us-project="EET25BiXxR2StNXZvAzF" class="absolute w-full h-full left-0 top-0 -z-10"></div>
+  <script type="text/javascript">
+    !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+  </script>
+</div></div>
+
+<!-- Sticky Navigation -->
+<nav class="fixed top-0 inset-x-0 z-50 border-b border-white/[0.08] bg-[#050505]/80 backdrop-blur-md saturate-150">
+    <div class="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
+        <div class="flex items-center gap-8">
+            <a href="/" class="text-lg font-medium tracking-tight text-white flex items-center gap-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M12 16V5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8.5 8.5L12 5l3.5 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="18.4" cy="7.2" r="1.5" fill="#10b981"/>
+                </svg>
+                <span class="font-semibold tracking-tighter">RapidCheck</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-[13px] font-medium text-zinc-400">
+                <a href="/tools/domain-health" class="text-emerald-400 hover:text-emerald-300 transition-colors">Website down checker</a>
+                <!-- Product Dropdown -->
+                <div class="relative group/nav" id="dropdown-product">
+                    <button aria-haspopup="true" aria-expanded="false" class="hover:text-white transition-colors flex items-center gap-1">Product <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover/nav:rotate-180 group-focus-within/nav:rotate-180 transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="dropdown-panel absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible group-focus-within/nav:opacity-100 group-focus-within/nav:visible transition-[opacity,visibility,transform] duration-200 translate-y-1 group-hover/nav:translate-y-0 group-focus-within/nav:translate-y-0">
+                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[340px] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
+                            <a href="/features/website-monitoring" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">Website Monitoring</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Know your website is down, before your customers do</div>
+                                </div>
+                            </a>
+                            <a href="/features/api-monitoring" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">API Monitoring</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Your API might be up, but is the data correct?</div>
+                                </div>
+                            </a>
+                            <a href="/features/browser-checks" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">Browser Checks</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Use real browsers to check your web app</div>
+                                </div>
+                            </a>
+                            <a href="/features/cron-job-monitoring" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">Cron Job Monitoring</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Monitor cron jobs, devices, and other scheduled tasks</div>
+                                </div>
+                            </a>
+                            <a href="/features/heartbeat-monitoring" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">Heartbeat Monitoring</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Simple health checks for servers, applications, and IoT devices</div>
+                                </div>
+                            </a>
+                            <a href="/features/status-pages" class="flex items-start gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 mt-0.5 shrink-0"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <div>
+                                    <div class="text-[13px] font-semibold text-white">Status Pages</div>
+                                    <div class="text-[12px] text-zinc-500 mt-0.5">Keep your customers happy, and build trust</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Resources Dropdown -->
+                <div class="relative group/nav2" id="dropdown-resources">
+                    <button aria-haspopup="true" aria-expanded="false" class="hover:text-white transition-colors flex items-center gap-1">Resources <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 group-hover/nav2:rotate-180 group-focus-within/nav2:rotate-180 transition-transform duration-200"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+                    <div class="dropdown-panel absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover/nav2:opacity-100 group-hover/nav2:visible group-focus-within/nav2:opacity-100 group-focus-within/nav2:visible transition-[opacity,visibility,transform] duration-200 translate-y-1 group-hover/nav2:translate-y-0 group-focus-within/nav2:translate-y-0">
+                        <div class="bg-[#0A0A0A] border border-white/10 rounded-xl p-3 min-w-[280px] shadow-2xl shadow-black/50 backdrop-blur-md space-y-1">
+                            <a href="/docs" class="flex items-center gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 shrink-0"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                                <span class="text-[13px] font-semibold text-white">Documentation</span>
+                            </a>
+                            <a href="/tools" class="flex items-center gap-3.5 px-3 py-3 rounded-lg hover:bg-white/5 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-zinc-500 shrink-0"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                                <span class="text-[13px] font-semibold text-white">Tools</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/pricing" class="hover:text-white transition-colors">Pricing</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-3 sm:gap-4">
+            <div class="hidden sm:block w-px h-4 bg-white/10"></div>
+            <button onclick="alert('Sign in coming soon')" class="hidden sm:block text-[13px] font-medium text-zinc-400 hover:text-white transition-colors cursor-pointer bg-transparent border-none">Sign in</button>
+            <button onclick="alert('Registration coming soon')" class="inline-flex text-[11px] sm:text-[12px] font-medium bg-white text-black px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full hover:bg-zinc-200 transition-colors shadow-sm shadow-white/10 cursor-pointer border-none">Start free</button>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden p-3 -mr-3 text-zinc-400 hover:text-white transition-colors" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-[#050505]/95 backdrop-blur-md overflow-hidden transition-all duration-300">
+        <div class="px-6 py-4 space-y-1">
+            <a href="/tools/domain-health" class="flex items-center gap-3 py-3 text-sm text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Website down checker</a>
+            <div class="text-[10px] text-zinc-600 uppercase tracking-widest pb-1 pt-3">Product</div>
+            <a href="/features/website-monitoring" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Website Monitoring</a>
+            <a href="/features/api-monitoring" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">API Monitoring</a>
+            <a href="/features/browser-checks" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Browser Checks</a>
+            <a href="/features/cron-job-monitoring" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Cron Job Monitoring</a>
+            <a href="/features/heartbeat-monitoring" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Heartbeat Monitoring</a>
+            <a href="/features/status-pages" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Status Pages</a>
+            <div class="text-[10px] text-zinc-600 uppercase tracking-widest pb-1 pt-3">Resources</div>
+            <a href="/docs" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Documentation</a>
+            <a href="/tools" class="flex items-center gap-3 py-3 text-sm text-zinc-400 hover:text-white transition-colors">Tools</a>
+            <div class="pt-3 mt-2 border-t border-white/5 flex flex-col gap-2">
+                <a href="/pricing" class="text-sm text-zinc-400 hover:text-white transition-colors py-3">Pricing</a>
+                <button onclick="alert('Sign in coming soon')" class="text-sm text-zinc-400 hover:text-white transition-colors py-3 text-left bg-transparent border-none cursor-pointer">Sign in</button>
+                <button onclick="alert('Registration coming soon')" class="block w-full text-center text-sm font-medium bg-white text-black px-4 py-3 rounded-full mt-1 cursor-pointer border-none">Start monitoring free</button>
+            </div>
+        </div>
+    </div>
+    <div class="absolute inset-0 bg-noise opacity-50 pointer-events-none mix-blend-overlay"></div>
+</nav>
+
+<!-- Main Content Area -->
+<div id="app" class="relative z-10"></div>
+
+<!-- Footer -->
+<footer class="bg-[#020202] pt-12 pb-6 border-t border-white/5 relative">
+    <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-8 text-center">
+            <a href="/" class="text-lg font-medium tracking-tight text-white inline-flex items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><path d="M12 16V5" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M8.5 8.5L12 5l3.5 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.4" cy="7.2" r="1.5" fill="#10b981"/></svg>
+                <span class="font-semibold tracking-tighter">RapidCheck</span>
+            </a>
+            <p class="text-xs text-zinc-500 leading-relaxed mb-4">Uptime monitoring & domain intelligence for modern teams.</p>
+            <div class="flex gap-1 text-zinc-500 justify-center">
+                <a href="https://x.com/rapidcheck" class="hover:text-white transition-colors p-2 -ml-2" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"></path></svg></a>
+                <a href="https://github.com/rapidcheck" class="hover:text-white transition-colors p-2" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+                <a href="https://discord.gg/rapidcheck" class="hover:text-white transition-colors p-2" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53.05S36 40.33 42.45 40.33 54 46.06 53.97 53.05 48.78 65.69 42.45 65.69Zm47.24 0C83.36 65.69 78.2 60 78.2 53.05s5-12.72 11.49-12.72S101.2 46.06 101.17 53.05 95.98 65.69 89.69 65.69Z"/></svg></a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-6 sm:gap-x-10 lg:gap-x-16 mb-10 max-w-3xl sm:max-w-4xl mx-auto">
+            <div>
+                <h4 class="text-sm font-medium text-white mb-4">Product</h4>
+                <ul class="space-y-2.5 text-xs text-zinc-500">
+                    <li><a href="/features/website-monitoring" class="hover:text-zinc-300 transition-colors">Website Monitoring</a></li>
+                    <li><a href="/features/status-pages" class="hover:text-zinc-300 transition-colors">Status Pages</a></li>
+                    <li><a href="/features/heartbeat-monitoring" class="hover:text-zinc-300 transition-colors">Heartbeat Monitoring</a></li>
+                    <li><a href="/features/api-monitoring" class="hover:text-zinc-300 transition-colors">API Monitoring</a></li>
+                    <li><a href="/features/cron-job-monitoring" class="hover:text-zinc-300 transition-colors">Cron Job Monitoring</a></li>
+                    <li><a href="/pricing" class="hover:text-zinc-300 transition-colors">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-medium text-white mb-4">Free Tools</h4>
+                <ul class="space-y-2.5 text-xs text-zinc-500">
+                    <li><a href="/tools/domain-health" class="hover:text-zinc-300 transition-colors">Domain Health Checker</a></li>
+                    <li><a href="/tools/ssl-checker" class="hover:text-zinc-300 transition-colors">SSL Certificate Checker</a></li>
+                    <li><a href="/tools/dns-lookup" class="hover:text-zinc-300 transition-colors">DNS Lookup</a></li>
+                    <li><a href="/tools/response-time-test" class="hover:text-zinc-300 transition-colors">Response Time Test</a></li>
+                    <li><a href="/tools/uptime-calculator" class="hover:text-zinc-300 transition-colors">SLA Uptime Calculator</a></li>
+                    <li><a href="/tools/http-status-codes" class="hover:text-zinc-300 transition-colors">HTTP Status Codes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-medium text-white mb-4">Resources</h4>
+                <ul class="space-y-2.5 text-xs text-zinc-500">
+                    <li><a href="/docs" class="hover:text-zinc-300 transition-colors">Documentation</a></li>
+                    <li><a href="/help" class="hover:text-zinc-300 transition-colors">Help Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-medium text-white mb-4">Company</h4>
+                <ul class="space-y-2.5 text-xs text-zinc-500">
+                    <li><a href="/legal/privacy" class="hover:text-zinc-300 transition-colors">Privacy Policy</a></li>
+                    <li><a href="/legal/terms" class="hover:text-zinc-300 transition-colors">Terms of Service</a></li>
+                    <li><a href="/legal/cookies" class="hover:text-zinc-300 transition-colors">Cookie Policy</a></li>
+                    <li><a href="/legal/acceptable-use" class="hover:text-zinc-300 transition-colors">Acceptable Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs text-zinc-600">
+            <p>&copy; 2026 RapidCheck. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Monitoring from 330+ edge locations worldwide.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Page modules loaded dynamically -->
+<script src="pages/home.js"></script>
+<script src="pages/pricing.js"></script>
+<script src="pages/website-monitoring.js"></script>
+<script src="pages/api-monitoring.js"></script>
+<script src="pages/browser-checks.js"></script>
+<script src="pages/cron-job-monitoring.js"></script>
+<script src="pages/heartbeat-monitoring.js"></script>
+<script src="pages/status-pages.js"></script>
+<script src="pages/privacy.js"></script>
+<script src="pages/terms.js"></script>
+<script src="pages/cookies.js"></script>
+<script src="pages/acceptable-use.js"></script>
+<script src="pages/help.js"></script>
+<script src="pages/docs.js"></script>
+<script src="pages/tools-index.js"></script>
+<script src="pages/tools/domain-health.js"></script>
+<script src="pages/tools/ssl-checker.js"></script>
+<script src="pages/tools/dns-lookup.js"></script>
+<script src="pages/tools/response-time-test.js"></script>
+<script src="pages/tools/uptime-calculator.js"></script>
+<script src="pages/tools/http-status-codes.js"></script>
+
+<script>
+// SPA Router (History API — clean URLs)
+const pages = window.__pages = window.__pages || {};
+
+function getRoute() {
+    return window.location.pathname || '/';
+}
+
+function navigate(pushState) {
+    const route = getRoute();
+    const app = document.getElementById('app');
+    const pageFn = pages[route];
+
+    if (pageFn) {
+        app.innerHTML = pageFn();
+    } else {
+        app.innerHTML = `
+            <div class="pt-32 pb-20 text-center max-w-2xl mx-auto px-6">
+                <h1 class="text-4xl font-bold text-white mb-4">Page not found</h1>
+                <p class="text-zinc-400 mb-8">The page you're looking for doesn't exist.</p>
+                <a href="/" class="inline-flex items-center gap-2 text-sm font-medium bg-white text-black px-6 py-2.5 rounded-full hover:bg-zinc-200 transition-colors">Go home</a>
+            </div>`;
+    }
+
+    window.scrollTo(0, 0);
+    const menu = document.getElementById('mobile-menu');
+    if (menu) menu.classList.add('hidden');
+
+    // Only show aura background on homepage
+    const auraBg = document.querySelector('.aura-background-component');
+    if (auraBg) auraBg.style.display = route === '/' ? '' : 'none';
+
+    initReveal();
+    if (pageFn && pageFn.init) pageFn.init();
+}
+
+function initReveal() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal-on-scroll:not(.visible)').forEach(el => observer.observe(el));
+}
+
+// Intercept all internal link clicks for SPA navigation
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    // Skip external links, mailto, tel, javascript, etc.
+    if (!href || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+    // Internal SPA link
+    if (href.startsWith('/')) {
+        e.preventDefault();
+        if (href !== window.location.pathname) {
+            history.pushState(null, '', href);
+        }
+        navigate();
+        // Close dropdowns
+        document.activeElement && document.activeElement.blur();
+        document.querySelectorAll('[id^="dropdown-"]').forEach(d => d.classList.add('dropdown-closed'));
+        setTimeout(() => document.querySelectorAll('[id^="dropdown-"]').forEach(d => d.classList.remove('dropdown-closed')), 600);
+    }
+});
+
+// Handle browser back/forward
+window.addEventListener('popstate', () => navigate());
+
+// Mobile menu toggle
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        menuBtn.setAttribute('aria-expanded', isOpen);
+        menuBtn.innerHTML = isOpen
+            ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>'
+            : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>';
+    });
+}
+
+// Initial load
+document.addEventListener('DOMContentLoaded', () => navigate());
+</script>
+</body>
+</html>
