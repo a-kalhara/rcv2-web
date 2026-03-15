@@ -13,8 +13,9 @@
                         Catch downtime early, before users
                         <span class="text-[#F9A825]">start reporting it.</span>
                     </h1>
-                    <p class="text-lg text-[#4a4a6a] max-w-lg mb-8 leading-relaxed reveal-up" style="animation-delay: 0.15s;">
-                        Monitor uptime. Protect your domain. Get alerted instantly — from 330+ edge locations worldwide.
+                    <p class="text-base sm:text-lg text-[#4a4a6a] max-w-lg mb-8 leading-relaxed reveal-up" style="animation-delay: 0.15s;">
+                        Monitor uptime. Protect your domain.<br>
+                        Get alerted instantly — from 330+ edge locations worldwide.
                     </p>
                     <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 reveal-up" style="animation-delay: 0.25s;">
                         <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-base font-semibold hover:bg-[#FFB830] transition-all flex items-center gap-2 group cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">
