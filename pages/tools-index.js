@@ -52,8 +52,8 @@
       '</a>';
     }).join('');
 
-    return '<div class="mx-auto max-w-4xl px-6 py-20">' +
-      '<h1 class="text-3xl font-bold text-[#1B1B4B] mb-2">Free Tools</h1>' +
+    return '<div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">' +
+      '<h1 class="text-2xl sm:text-3xl font-bold text-[#1B1B4B] mb-2">Free Tools</h1>' +
       '<p class="text-sm text-[#6a6a8a] mb-10">Useful tools for developers and site owners — no account required.</p>' +
 
       '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">' +

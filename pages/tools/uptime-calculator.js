@@ -3,9 +3,9 @@
 
   window.__pages['/tools/uptime-calculator'] = function() {
     return `
-      <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">SLA Uptime Calculator</h1>
-        <p class="text-[#4a4a6a] text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-3">SLA Uptime Calculator</h1>
+        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
 
         <div class="mb-6">
           <label class="text-[#4a4a6a] text-sm font-medium mb-2 block">Uptime Percentage</label>
@@ -34,7 +34,7 @@
         </div>
 
         <h3 class="text-[#1B1B4B] font-semibold text-lg mb-4">Allowed Downtime</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12" id="uc-results">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-12" id="uc-results">
           <div class="bg-white border border-[#F9A825]/15 rounded-xl p-6 text-center">
             <p class="text-[#4a4a6a] text-sm mb-2">Daily</p>
             <p class="text-xl font-bold text-[#1B1B4B] font-mono" id="uc-daily"></p>
@@ -71,9 +71,9 @@
           </div>
         </div>
 
-        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
-          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Hit your SLA targets with confidence</h2>
-          <p class="text-[#4a4a6a] mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
+        <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Hit your SLA targets with confidence</h2>
+          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
           <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>

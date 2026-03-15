@@ -3,9 +3,9 @@
 
   window.__pages['/tools/http-status-codes'] = function() {
     return `
-      <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">HTTP Status Codes Reference</h1>
-        <p class="text-[#4a4a6a] text-lg mb-10">Quick reference for all common HTTP status codes.</p>
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-3">HTTP Status Codes Reference</h1>
+        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Quick reference for all common HTTP status codes.</p>
 
         <div class="mb-8">
           <label for="hsc-search" class="sr-only">Search status codes</label>
@@ -23,9 +23,9 @@
           <p class="text-[#6a6a8a] text-lg">No matching status codes found.</p>
         </div>
 
-        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
-          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Monitor your HTTP responses</h2>
-          <p class="text-[#4a4a6a] mb-6">Get alerted when your endpoints return unexpected status codes.</p>
+        <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Monitor your HTTP responses</h2>
+          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">Get alerted when your endpoints return unexpected status codes.</p>
           <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>

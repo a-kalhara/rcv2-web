@@ -3,11 +3,11 @@
 
   window.__pages['/tools/ssl-checker'] = function() {
     return `
-      <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">SSL Certificate Checker</h1>
-        <p class="text-[#4a4a6a] text-lg mb-10">Check SSL certificate details for any domain.</p>
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-3">SSL Certificate Checker</h1>
+        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Check SSL certificate details for any domain.</p>
 
-        <div class="flex gap-3 mb-8">
+        <div class="flex flex-col sm:flex-row gap-3 mb-8">
           <label for="ssl-domain-input" class="sr-only">Domain</label>
           <input
             id="ssl-domain-input"
@@ -17,7 +17,7 @@
           />
           <button
             id="ssl-check-btn"
-            class="bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="w-full sm:w-auto bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
           >Check SSL</button>
         </div>
 
@@ -39,37 +39,37 @@
             </div>
 
             <div class="divide-y divide-[#F9A825]/15">
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Issuer</span>
-                <span class="text-[#1B1B4B] font-medium" id="ssl-issuer"></span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Issuer</span>
+                <span class="text-[#1B1B4B] font-medium text-sm sm:text-base break-all" id="ssl-issuer"></span>
               </div>
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Subject</span>
-                <span class="text-[#1B1B4B] font-medium" id="ssl-subject"></span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Subject</span>
+                <span class="text-[#1B1B4B] font-medium text-sm sm:text-base break-all" id="ssl-subject"></span>
               </div>
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Valid From</span>
-                <span class="text-[#1B1B4B] font-medium" id="ssl-valid-from"></span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Valid From</span>
+                <span class="text-[#1B1B4B] font-medium text-sm sm:text-base" id="ssl-valid-from"></span>
               </div>
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Valid To</span>
-                <span class="text-[#1B1B4B] font-medium" id="ssl-valid-to"></span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Valid To</span>
+                <span class="text-[#1B1B4B] font-medium text-sm sm:text-base" id="ssl-valid-to"></span>
               </div>
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Days Until Expiry</span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Days Until Expiry</span>
                 <span class="font-semibold" id="ssl-days-left"></span>
               </div>
-              <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-[#4a4a6a]">Status</span>
+              <div class="px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
+                <span class="text-[#4a4a6a] text-sm sm:text-base">Status</span>
                 <span id="ssl-status-badge"></span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
-          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Never let your SSL expire again</h2>
-          <p class="text-[#4a4a6a] mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
+        <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Never let your SSL expire again</h2>
+          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
           <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>

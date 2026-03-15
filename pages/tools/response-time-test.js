@@ -3,11 +3,11 @@
 
   window.__pages['/tools/response-time-test'] = function() {
     return `
-      <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">Response Time Test</h1>
-        <p class="text-[#4a4a6a] text-lg mb-10">Test how fast a URL responds from your browser.</p>
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-3">Response Time Test</h1>
+        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Test how fast a URL responds from your browser.</p>
 
-        <div class="flex gap-3 mb-8">
+        <div class="flex flex-col sm:flex-row gap-3 mb-8">
           <label for="rt-url-input" class="sr-only">URL</label>
           <input
             id="rt-url-input"
@@ -17,7 +17,7 @@
           />
           <button
             id="rt-test-btn"
-            class="bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
+            class="w-full sm:w-auto bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
           >Test</button>
         </div>
 
@@ -74,9 +74,9 @@
           <p id="rt-url-display" class="text-[#6a6a8a] text-sm text-center"></p>
         </div>
 
-        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
-          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Monitor response times 24/7</h2>
-          <p class="text-[#4a4a6a] mb-6">Track performance from 330+ locations worldwide. Get alerts when things slow down.</p>
+        <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
+          <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Monitor response times 24/7</h2>
+          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">Track performance from 330+ locations worldwide. Get alerts when things slow down.</p>
           <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>

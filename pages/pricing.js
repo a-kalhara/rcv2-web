@@ -44,9 +44,9 @@
                     <div class="absolute inset-0 pattern-dots opacity-10 rounded-2xl"></div>
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-6">
-                            <h3 class="text-lg font-medium text-[#1B1B4B] mb-1">Free Forever</h3>
+                            <h3 class="text-base sm:text-lg font-medium text-[#1B1B4B] mb-1">Free Forever</h3>
                             <div class="flex items-baseline gap-1 mb-3">
-                                <span class="text-4xl sm:text-5xl font-bold text-[#1B1B4B]">$0</span>
+                                <span class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B4B]">$0</span>
                                 <span class="text-[#6a6a8a] text-sm">/month</span>
                             </div>
                             <p class="text-sm text-[#4a4a6a]">Perfect for personal projects and small sites.</p>
@@ -99,9 +99,9 @@
                     </div>
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-6">
-                            <h3 class="text-lg font-medium text-[#1B1B4B] mb-1">Pay-As-You-Scale</h3>
+                            <h3 class="text-base sm:text-lg font-medium text-[#1B1B4B] mb-1">Pay-As-You-Scale</h3>
                             <div class="flex items-baseline gap-1 mb-3">
-                                <span class="text-4xl sm:text-5xl font-bold text-[#1B1B4B]">$2</span>
+                                <span class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B4B]">$2</span>
                                 <span class="text-[#6a6a8a] text-sm">/monitor/month</span>
                             </div>
                             <p class="text-sm text-[#4a4a6a]">Everything you need for production monitoring.</p>
@@ -164,9 +164,9 @@
                     <div class="absolute inset-0 pattern-dots opacity-10 rounded-2xl"></div>
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-6">
-                            <h3 class="text-lg font-medium text-[#1B1B4B] mb-1">Enterprise</h3>
+                            <h3 class="text-base sm:text-lg font-medium text-[#1B1B4B] mb-1">Enterprise</h3>
                             <div class="flex items-baseline gap-1 mb-3">
-                                <span class="text-4xl sm:text-5xl font-bold text-[#1B1B4B]">Custom</span>
+                                <span class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B4B]">Custom</span>
                             </div>
                             <p class="text-sm text-[#4a4a6a]">For teams that need volume discounts and dedicated support.</p>
                         </div>
@@ -242,7 +242,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center gap-1">
-                    <div class="text-5xl sm:text-6xl font-bold text-[#1B1B4B] font-mono">
+                    <div class="text-3xl sm:text-5xl md:text-6xl font-bold text-[#1B1B4B] font-mono">
                         $<span id="monthly-cost">20</span>
                     </div>
                     <span class="text-sm text-[#6a6a8a]">/month</span>
@@ -261,7 +261,8 @@
                 <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-[#1B1B4B] mb-2">Feature comparison</h2>
                 <p class="text-sm text-[#4a4a6a]">Everything included at a glance.</p>
             </div>
-            <div class="border border-[#F9A825]/15 rounded-2xl overflow-hidden">
+            <div class="overflow-x-auto -mx-6 px-6">
+            <div class="border border-[#F9A825]/15 rounded-2xl overflow-hidden min-w-[600px]">
                 <!-- Table Header -->
                 <div class="grid grid-cols-4 bg-[#faf8f5] border-b border-[#F9A825]/15">
                     <div class="p-4 text-sm font-medium text-[#4a4a6a]">Feature</div>
@@ -473,6 +474,7 @@
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
+            </div>
             </div>
         </div>
     </section>

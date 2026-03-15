@@ -10,7 +10,7 @@
         </div>
         <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
           <span class="inline-block rounded-lg bg-[#F9A825]/10 border border-[#F9A825]/30 px-4 py-1.5 text-sm font-medium text-[#F9A825] mb-6 reveal-up">Browser Checks</span>
-          <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-[#1B1B4B] mb-4 reveal-up" style="animation-delay: 0.1s;">
+          <h1 class="text-[1.6rem] sm:text-[2.25rem] md:text-4xl lg:text-5xl font-semibold tracking-tighter text-[#1B1B4B] mb-4 reveal-up" style="animation-delay: 0.1s;">
             Use real browsers to check your web app
           </h1>
           <p class="text-base sm:text-lg text-[#4a4a6a] max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
@@ -76,7 +76,7 @@
       </section>
 
       <div class="mx-auto max-w-4xl px-6 pb-20">
-        <div class="grid md:grid-cols-2 gap-4 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Real browser execution</h3>
             <p class="text-sm text-[#4a4a6a]">Headless Chromium runs your checks exactly like a real user's browser. No simulations, no shortcuts — actual rendering and JavaScript execution.</p>
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="rounded-xl border border-[#F9A825]/20 bg-[#F9A825] p-10 text-center">
+        <div class="rounded-xl border border-[#F9A825]/20 bg-[#F9A825] p-5 sm:p-8 text-center">
           <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Try browser checks today</h2>
           <p class="text-[#1B1B4B]/70 mb-6">Included on all paid plans. Start with a free trial.</p>
           <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors cursor-pointer border-none">Start monitoring free</button>

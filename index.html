@@ -153,7 +153,7 @@ input:focus-visible { outline-offset: 0; }
             <button onclick="alert('Sign in coming soon')" class="hidden sm:block text-[13px] font-medium text-[#1B1B4B] hover:text-[#1B1B4B] transition-colors cursor-pointer bg-transparent border border-[#1B1B4B]/20 rounded-lg px-3 py-1.5 hover:border-[#1B1B4B]/40">Sign in</button>
             <button onclick="alert('Registration coming soon')" class="inline-flex text-[11px] sm:text-[12px] font-semibold bg-[#F9A825] text-[#1B1B4B] px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-lg hover:bg-[#FFB830] transition-colors shadow-sm shadow-[#F9A825]/30 cursor-pointer border-none">Start free</button>
             <!-- Mobile menu button -->
-            <button id="mobile-menu-btn" class="md:hidden p-3 -mr-3 text-[#4a4a6a] hover:text-[#1B1B4B] transition-colors" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button id="mobile-menu-btn" class="md:hidden p-3 text-[#4a4a6a] hover:text-[#1B1B4B] transition-colors" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
             </button>
         </div>
@@ -243,10 +243,10 @@ input:focus-visible { outline-offset: 0; }
         <div class="mb-10 max-w-md mx-auto text-center">
             <h4 class="text-sm font-medium text-white mb-2">Stay in the loop</h4>
             <p class="text-xs text-white/50 mb-4">Weekly monitoring tips, security alerts, and product updates.</p>
-            <form onsubmit="event.preventDefault(); alert('Newsletter signup coming soon')" class="flex gap-2">
+            <form onsubmit="event.preventDefault(); alert('Newsletter signup coming soon')" class="flex flex-col sm:flex-row gap-2">
                 <label for="footer-email" class="sr-only">Email address</label>
-                <input id="footer-email" type="email" placeholder="you@example.com" required class="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#F9A825] transition-colors" />
-                <button type="submit" class="bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-5 py-2 rounded-lg transition-colors text-sm cursor-pointer border-none whitespace-nowrap">Subscribe</button>
+                <input id="footer-email" type="email" placeholder="you@example.com" required class="w-full sm:flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#F9A825] transition-colors" />
+                <button type="submit" class="w-full sm:w-auto bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-5 py-2 rounded-lg transition-colors text-sm cursor-pointer border-none whitespace-nowrap">Subscribe</button>
             </form>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-xs text-white/30">

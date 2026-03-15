@@ -4,12 +4,12 @@
   window.__pages['/'] = function() {
     return `
     <!-- Hero Section — Split layout -->
-    <header class="pt-20 sm:pt-24 md:pt-28 pb-8 sm:pb-12 overflow-hidden relative">
+    <header class="pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-12 overflow-hidden relative">
         <div class="relative max-w-7xl mx-auto px-6 z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <!-- Left: Text -->
                 <div class="reveal-up" style="animation-delay: 0.05s;">
-                    <h1 class="text-[1.75rem] sm:text-[2.5rem] md:text-5xl lg:text-[3.5rem] xl:text-6xl font-bold tracking-tight text-[#1B1B4B] mb-6 leading-[1.1]">
+                    <h1 class="text-[1.6rem] sm:text-[2.25rem] md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#1B1B4B] mb-6 leading-[1.1]">
                         Catch downtime early, before users
                         <span class="text-[#F9A825]">start reporting it.</span>
                     </h1>
