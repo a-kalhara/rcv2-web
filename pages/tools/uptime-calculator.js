@@ -4,11 +4,11 @@
   window.__pages['/tools/uptime-calculator'] = function() {
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-white mb-3">SLA Uptime Calculator</h1>
-        <p class="text-zinc-300 text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
+        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">SLA Uptime Calculator</h1>
+        <p class="text-[#4a4a6a] text-lg mb-10">Calculate the allowed downtime for any uptime SLA percentage.</p>
 
         <div class="mb-6">
-          <label class="text-zinc-300 text-sm font-medium mb-2 block">Uptime Percentage</label>
+          <label class="text-[#4a4a6a] text-sm font-medium mb-2 block">Uptime Percentage</label>
           <div class="flex gap-3 items-center">
             <label for="uc-input" class="sr-only">Uptime percentage</label>
             <input
@@ -18,63 +18,63 @@
               step="0.001"
               min="0"
               max="100"
-              class="w-40 bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white text-lg font-mono focus:outline-none focus:border-emerald-500 transition-colors"
+              class="w-40 bg-white border border-[#F9A825]/20 rounded-lg px-4 py-3 text-[#1B1B4B] text-lg font-mono focus:outline-none focus:border-[#F9A825] transition-colors"
             />
-            <span class="text-zinc-300 text-lg">%</span>
+            <span class="text-[#4a4a6a] text-lg">%</span>
           </div>
         </div>
 
         <div class="flex flex-wrap gap-2 mb-10">
-          <button class="uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99">99%</button>
-          <button class="uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.5">99.5%</button>
-          <button class="uc-preset bg-emerald-500/20 text-emerald-400 text-sm font-mono px-4 py-2 rounded-lg transition-colors border border-emerald-500/30" data-value="99.9">99.9%</button>
-          <button class="uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.95">99.95%</button>
-          <button class="uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.99">99.99%</button>
-          <button class="uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.999">99.999%</button>
+          <button class="uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99">99%</button>
+          <button class="uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.5">99.5%</button>
+          <button class="uc-preset bg-[#F9A825]/20 text-[#F9A825] text-sm font-mono px-4 py-2 rounded-lg transition-colors border border-[#F9A825]/30" data-value="99.9">99.9%</button>
+          <button class="uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.95">99.95%</button>
+          <button class="uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.99">99.99%</button>
+          <button class="uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors" data-value="99.999">99.999%</button>
         </div>
 
-        <h3 class="text-white font-semibold text-lg mb-4">Allowed Downtime</h3>
+        <h3 class="text-[#1B1B4B] font-semibold text-lg mb-4">Allowed Downtime</h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12" id="uc-results">
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-300 text-sm mb-2">Daily</p>
-            <p class="text-xl font-bold text-white font-mono" id="uc-daily"></p>
+          <div class="bg-white border border-[#F9A825]/15 rounded-xl p-6 text-center">
+            <p class="text-[#4a4a6a] text-sm mb-2">Daily</p>
+            <p class="text-xl font-bold text-[#1B1B4B] font-mono" id="uc-daily"></p>
           </div>
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-300 text-sm mb-2">Weekly</p>
-            <p class="text-xl font-bold text-white font-mono" id="uc-weekly"></p>
+          <div class="bg-white border border-[#F9A825]/15 rounded-xl p-6 text-center">
+            <p class="text-[#4a4a6a] text-sm mb-2">Weekly</p>
+            <p class="text-xl font-bold text-[#1B1B4B] font-mono" id="uc-weekly"></p>
           </div>
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-300 text-sm mb-2">Monthly</p>
-            <p class="text-xl font-bold text-white font-mono" id="uc-monthly"></p>
+          <div class="bg-white border border-[#F9A825]/15 rounded-xl p-6 text-center">
+            <p class="text-[#4a4a6a] text-sm mb-2">Monthly</p>
+            <p class="text-xl font-bold text-[#1B1B4B] font-mono" id="uc-monthly"></p>
           </div>
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 text-center">
-            <p class="text-zinc-300 text-sm mb-2">Yearly</p>
-            <p class="text-xl font-bold text-white font-mono" id="uc-yearly"></p>
+          <div class="bg-white border border-[#F9A825]/15 rounded-xl p-6 text-center">
+            <p class="text-[#4a4a6a] text-sm mb-2">Yearly</p>
+            <p class="text-xl font-bold text-[#1B1B4B] font-mono" id="uc-yearly"></p>
           </div>
         </div>
 
-        <h3 class="text-white font-semibold text-lg mb-4">SLA Comparison</h3>
-        <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden mb-6">
+        <h3 class="text-[#1B1B4B] font-semibold text-lg mb-4">SLA Comparison</h3>
+        <div class="bg-white border border-[#F9A825]/15 rounded-xl overflow-hidden mb-6">
           <div class="overflow-x-auto">
             <table class="w-full text-left">
               <thead>
-                <tr class="border-b border-zinc-800">
-                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Uptime</th>
-                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Daily</th>
-                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Monthly</th>
-                  <th class="px-6 py-3 text-zinc-300 text-sm font-medium">Yearly</th>
+                <tr class="border-b border-[#F9A825]/15">
+                  <th class="px-6 py-3 text-[#4a4a6a] text-sm font-medium">Uptime</th>
+                  <th class="px-6 py-3 text-[#4a4a6a] text-sm font-medium">Daily</th>
+                  <th class="px-6 py-3 text-[#4a4a6a] text-sm font-medium">Monthly</th>
+                  <th class="px-6 py-3 text-[#4a4a6a] text-sm font-medium">Yearly</th>
                 </tr>
               </thead>
-              <tbody id="uc-comparison-body" class="divide-y divide-zinc-800">
+              <tbody id="uc-comparison-body" class="divide-y divide-[#F9A825]/15">
               </tbody>
             </table>
           </div>
         </div>
 
-        <div class="mt-16 text-center border-t border-zinc-800 pt-12">
-          <h2 class="text-2xl font-bold text-white mb-3">Hit your SLA targets with confidence</h2>
-          <p class="text-zinc-300 mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
+        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
+          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Hit your SLA targets with confidence</h2>
+          <p class="text-[#4a4a6a] mb-6">RapidCheck monitors uptime from 330+ locations and alerts you the moment something goes wrong.</p>
+          <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;
@@ -118,9 +118,9 @@
       presets.forEach(function(btn) {
         var v = parseFloat(btn.getAttribute('data-value'));
         if (v === value) {
-          btn.className = 'uc-preset bg-emerald-500/20 text-emerald-400 text-sm font-mono px-4 py-2 rounded-lg transition-colors border border-emerald-500/30';
+          btn.className = 'uc-preset bg-[#F9A825]/20 text-[#F9A825] text-sm font-mono px-4 py-2 rounded-lg transition-colors border border-[#F9A825]/30';
         } else {
-          btn.className = 'uc-preset bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-sm font-mono px-4 py-2 rounded-lg transition-colors';
+          btn.className = 'uc-preset bg-[#faf8f5] hover:bg-[#F9A825]/10 text-[#4a4a6a] text-sm font-mono px-4 py-2 rounded-lg transition-colors';
         }
       });
     }
@@ -152,9 +152,9 @@
         var isActive = pct === currentUptime;
 
         var rowClass = isActive
-          ? 'bg-emerald-500/10'
+          ? 'bg-[#F9A825]/10'
           : '';
-        var textClass = isActive ? 'text-emerald-400' : 'text-zinc-300';
+        var textClass = isActive ? 'text-[#F9A825]' : 'text-[#4a4a6a]';
 
         html += '<tr class="' + rowClass + '">' +
           '<td class="px-6 py-3 font-mono text-sm ' + textClass + '">' + pct + '%' + (isActive ? ' &#9664;' : '') + '</td>' +

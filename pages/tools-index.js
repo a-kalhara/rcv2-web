@@ -41,11 +41,11 @@
     ];
 
     var cardsHtml = tools.map(function(tool) {
-      return '<a href="' + tool.href + '" class="block border border-zinc-800 rounded-lg p-6 hover:border-emerald-500/50 transition-colors group">' +
-        '<div class="text-emerald-500 mb-4">' + tool.icon + '</div>' +
-        '<h3 class="text-base font-semibold text-white mb-2">' + tool.title + '</h3>' +
-        '<p class="text-sm text-zinc-300 leading-relaxed mb-4">' + tool.description + '</p>' +
-        '<span class="inline-flex items-center gap-1 text-sm text-emerald-500 group-hover:text-emerald-400 transition-colors">' +
+      return '<a href="' + tool.href + '" class="block border border-[#F9A825]/15 rounded-lg p-6 hover:border-[#F9A825]/50 transition-colors group">' +
+        '<div class="text-[#F9A825] mb-4">' + tool.icon + '</div>' +
+        '<h3 class="text-base font-semibold text-[#1B1B4B] mb-2">' + tool.title + '</h3>' +
+        '<p class="text-sm text-[#4a4a6a] leading-relaxed mb-4">' + tool.description + '</p>' +
+        '<span class="inline-flex items-center gap-1 text-sm text-[#F9A825] group-hover:text-[#FFB830] transition-colors">' +
           'Try it' +
           '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>' +
         '</span>' +
@@ -53,8 +53,8 @@
     }).join('');
 
     return '<div class="mx-auto max-w-4xl px-6 py-20">' +
-      '<h1 class="text-3xl font-bold text-white mb-2">Free Tools</h1>' +
-      '<p class="text-sm text-zinc-500 mb-10">Useful tools for developers and site owners — no account required.</p>' +
+      '<h1 class="text-3xl font-bold text-[#1B1B4B] mb-2">Free Tools</h1>' +
+      '<p class="text-sm text-[#6a6a8a] mb-10">Useful tools for developers and site owners — no account required.</p>' +
 
       '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">' +
         cardsHtml +

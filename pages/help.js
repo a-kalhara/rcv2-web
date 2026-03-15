@@ -46,34 +46,34 @@
 
     var cardsHtml = categories.map(function(cat) {
       var articlesHtml = cat.articles.map(function(article) {
-        return '<li><a href="/help" class="text-sm text-zinc-300 hover:text-emerald-500 transition-colors">' + article + '</a></li>';
+        return '<li><a href="/help" class="text-sm text-[#4a4a6a] hover:text-[#F9A825] transition-colors">' + article + '</a></li>';
       }).join('');
 
-      return '<div class="border border-zinc-800 rounded-lg p-5 hover:border-zinc-700 transition-colors">' +
+      return '<div class="border border-[#F9A825]/15 rounded-lg p-5 hover:border-[#F9A825]/30 transition-colors">' +
         '<div class="flex items-center gap-3 mb-4">' +
-          '<div class="text-emerald-500">' + cat.icon + '</div>' +
-          '<h3 class="text-sm font-semibold text-white">' + cat.title + '</h3>' +
+          '<div class="text-[#F9A825]">' + cat.icon + '</div>' +
+          '<h3 class="text-sm font-semibold text-[#1B1B4B]">' + cat.title + '</h3>' +
         '</div>' +
         '<ul class="space-y-2">' + articlesHtml + '</ul>' +
       '</div>';
     }).join('');
 
     return '<div class="mx-auto max-w-4xl px-6 py-20">' +
-      '<h1 class="text-3xl font-bold text-white mb-2">Help Center</h1>' +
-      '<p class="text-sm text-zinc-500 mb-8">Find answers to common questions</p>' +
+      '<h1 class="text-3xl font-bold text-[#1B1B4B] mb-2">Help Center</h1>' +
+      '<p class="text-sm text-[#6a6a8a] mb-8">Find answers to common questions</p>' +
 
       '<div class="mb-10">' +
-        '<input type="text" placeholder="Search help articles..." class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-zinc-300 placeholder-zinc-600 focus:outline-none focus:border-zinc-700">' +
+        '<input type="text" placeholder="Search help articles..." class="w-full bg-[#faf8f5] border border-[#F9A825]/15 rounded-lg px-4 py-3 text-sm text-[#4a4a6a] placeholder-[#6a6a8a] focus:outline-none focus:border-[#F9A825]/30">' +
       '</div>' +
 
       '<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">' +
         cardsHtml +
       '</div>' +
 
-      '<div class="border border-zinc-800 rounded-lg p-8 text-center">' +
-        '<h2 class="text-lg font-semibold text-white mb-2">Still need help?</h2>' +
-        '<p class="text-sm text-zinc-300 mb-4">Our support team is here to assist you.</p>' +
-        '<a href="mailto:support@rapidcheck.com" class="inline-flex items-center gap-2 text-sm text-emerald-500 hover:text-emerald-400 transition-colors">' +
+      '<div class="border border-[#F9A825]/15 rounded-lg p-8 text-center">' +
+        '<h2 class="text-lg font-semibold text-[#1B1B4B] mb-2">Still need help?</h2>' +
+        '<p class="text-sm text-[#4a4a6a] mb-4">Our support team is here to assist you.</p>' +
+        '<a href="mailto:support@rapidcheck.com" class="inline-flex items-center gap-2 text-sm text-[#F9A825] hover:text-[#FFB830] transition-colors">' +
           'support@rapidcheck.com' +
           '<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>' +
         '</a>' +

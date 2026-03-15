@@ -3,31 +3,112 @@
   window.__pages = window.__pages || {};
   window.__pages['/'] = function() {
     return `
-    <!-- Hero Section -->
-    <header class="md:pt-44 md:pb-24 overflow-hidden pt-24 sm:pt-28 pb-12 sm:pb-14 relative">
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-[-20%] left-[10%] w-[600px] h-[600px] bg-[#F9A825]/[0.06] rounded-full blur-[120px]"></div>
-            <div class="absolute top-[10%] right-[15%] w-[500px] h-[500px] bg-[#1B1B4B]/[0.04] rounded-full blur-[100px]"></div>
-        </div>
-        <div class="relative max-w-5xl mx-auto px-6 z-10">
-            <div class="max-w-3xl">
-                <h1 class="text-[1.75rem] sm:text-[2.5rem] md:text-5xl lg:text-7xl font-bold tracking-tight text-[#1B1B4B] mb-6 pb-2 leading-[1.1] reveal-up" style="animation-delay: 0.1s;">
-                    Catch downtime early, before users
-                    <span class="text-[#F9A825]">start reporting it.</span>
-                </h1>
-                <p class="text-lg md:text-xl text-[#4a4a6a] max-w-2xl mb-8 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
-                    Monitor uptime. Protect your domain. Get alerted instantly. We monitor your websites, APIs, and services from 330+ edge locations worldwide.
-                </p>
-                <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 reveal-up" style="animation-delay: 0.3s;">
-                    <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto justify-center h-12 sm:h-12 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-base font-semibold hover:bg-[#FFB830] transition-all flex items-center gap-2 group cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">
-                        Start for free
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
-                    </button>
-                    <a href="/pricing" class="w-full sm:w-auto justify-center h-12 sm:h-12 px-8 rounded-lg border border-[#1B1B4B]/20 text-[#1B1B4B] text-base font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center gap-2 no-underline">
-                        See pricing
-                    </a>
+    <!-- Hero Section — Split layout -->
+    <header class="pt-20 sm:pt-24 md:pt-28 pb-8 sm:pb-12 overflow-hidden relative">
+        <div class="relative max-w-7xl mx-auto px-6 z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <!-- Left: Text -->
+                <div class="reveal-up" style="animation-delay: 0.05s;">
+                    <h1 class="text-[1.75rem] sm:text-[2.5rem] md:text-5xl lg:text-[3.5rem] xl:text-6xl font-bold tracking-tight text-[#1B1B4B] mb-6 leading-[1.1]">
+                        Catch downtime early, before users
+                        <span class="text-[#F9A825]">start reporting it.</span>
+                    </h1>
+                    <p class="text-lg text-[#4a4a6a] max-w-lg mb-8 leading-relaxed reveal-up" style="animation-delay: 0.15s;">
+                        Monitor uptime. Protect your domain. Get alerted instantly — from 330+ edge locations worldwide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 reveal-up" style="animation-delay: 0.25s;">
+                        <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-base font-semibold hover:bg-[#FFB830] transition-all flex items-center gap-2 group cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">
+                            Start for free
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                        </button>
+                        <a href="/pricing" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg border border-[#1B1B4B]/20 text-[#1B1B4B] text-base font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center gap-2 no-underline">
+                            See pricing
+                        </a>
+                    </div>
+                    <p class="text-sm text-[#6a6a8a] mt-5 reveal-up" style="animation-delay: 0.3s;">3 monitors free forever. No credit card required.</p>
                 </div>
-                <p class="text-sm text-[#6a6a8a] mt-6 reveal-up" style="animation-delay: 0.35s;">3 monitors free forever. No credit card required.</p>
+                <!-- Right: Abstract gradient visual with floating dashboard card -->
+                <div class="relative hidden lg:block reveal-up" style="animation-delay: 0.2s;" aria-hidden="true">
+                    <!-- Gradient blob background -->
+                    <div class="absolute -inset-4 overflow-hidden rounded-3xl">
+                        <div class="absolute top-[10%] left-[10%] w-[300px] h-[300px] bg-[#F9A825]/20 rounded-full blur-[80px]"></div>
+                        <div class="absolute bottom-[10%] right-[5%] w-[250px] h-[250px] bg-[#1B1B4B]/15 rounded-full blur-[80px]"></div>
+                        <div class="absolute top-[40%] right-[30%] w-[200px] h-[200px] bg-[#F9A825]/10 rounded-full blur-[60px]"></div>
+                    </div>
+                    <!-- Floating dashboard mockup — white theme -->
+                    <div class="relative bg-white rounded-2xl border border-[#F9A825]/20 shadow-xl shadow-[#F9A825]/8 overflow-hidden">
+                        <!-- Browser chrome -->
+                        <div class="flex items-center gap-2 px-4 py-2.5 border-b border-[#F9A825]/15 bg-[#faf8f5]">
+                            <div class="flex items-center gap-1.5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-red-400/60"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-[#F9A825]/60"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-[#F9A825]/40"></div>
+                            </div>
+                            <div class="flex-1 flex justify-center">
+                                <div class="flex items-center gap-1.5 px-3 py-0.5 bg-white rounded border border-[#F9A825]/15">
+                                    <span class="text-[9px] text-[#6a6a8a] font-mono">app.rapidcheck.io</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dashboard content -->
+                        <div class="p-5">
+                            <!-- Stats row -->
+                            <div class="grid grid-cols-3 gap-3 mb-4">
+                                <div class="bg-[#faf8f5] rounded-lg p-3 border border-[#F9A825]/15">
+                                    <div class="text-[9px] text-[#6a6a8a] uppercase tracking-wider mb-1">Uptime</div>
+                                    <div class="text-lg font-bold text-[#1B1B4B]">99.98%</div>
+                                    <div class="text-[9px] text-[#F9A825]">operational</div>
+                                </div>
+                                <div class="bg-[#faf8f5] rounded-lg p-3 border border-[#F9A825]/15">
+                                    <div class="text-[9px] text-[#6a6a8a] uppercase tracking-wider mb-1">Response</div>
+                                    <div class="text-lg font-bold text-[#1B1B4B]">48ms</div>
+                                    <div class="text-[9px] text-[#F9A825]">-12ms</div>
+                                </div>
+                                <div class="bg-[#faf8f5] rounded-lg p-3 border border-[#F9A825]/15">
+                                    <div class="text-[9px] text-[#6a6a8a] uppercase tracking-wider mb-1">Health</div>
+                                    <div class="text-lg font-bold text-[#F9A825]">A+</div>
+                                    <div class="text-[9px] text-[#F9A825]">all pass</div>
+                                </div>
+                            </div>
+                            <!-- Monitor rows -->
+                            <div class="bg-white rounded-lg border border-[#F9A825]/20 overflow-hidden">
+                                <div class="flex items-center gap-3 px-3 py-2.5 border-b border-[#F9A825]/10">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
+                                    <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">api.rapidcheck.io</span>
+                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/40"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/60"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/40"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/55"></div></div>
+                                    <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">99.99%</span>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2.5 border-b border-[#F9A825]/10">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
+                                    <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">app.rapidcheck.io</span>
+                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-red-400/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/55"></div></div>
+                                    <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">99.94%</span>
+                                </div>
+                                <div class="flex items-center gap-3 px-3 py-2.5">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
+                                    <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">docs.rapidcheck.io</span>
+                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/55"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/45"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/60"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/45"></div></div>
+                                    <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating badge — bottom left -->
+                    <div class="absolute -bottom-4 -left-4 bg-white rounded-xl border border-[#F9A825]/20 shadow-lg shadow-[#F9A825]/10 p-3 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#F9A825]/10 flex items-center justify-center border border-[#F9A825]/30">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-[#1B1B4B]">All systems operational</div>
+                            <div class="text-[10px] text-[#6a6a8a]">12 monitors · 0 incidents</div>
+                        </div>
+                    </div>
+                    <!-- Floating badge — top right -->
+                    <div class="absolute -top-3 -right-3 bg-white rounded-lg border border-[#F9A825]/20 shadow-lg shadow-[#F9A825]/10 px-3 py-2 flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-[#F9A825] animate-pulse"></div>
+                        <span class="text-[10px] font-semibold text-[#1B1B4B]">330+ edge locations</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -125,19 +206,19 @@
         <div class="max-w-7xl mx-auto px-6 text-center">
             <p class="text-xs font-semibold text-[#6a6a8a] uppercase tracking-widest mb-8">Get alerted wherever you work</p>
             <div class="flex flex-wrap items-center justify-center gap-3">
-                <div class="flex items-center gap-2 px-5 py-3 bg-[#1B1B4B]/5 border border-[#1B1B4B]/10 rounded-lg hover:border-[#F9A825]/40 transition-colors">
+                <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                     <span class="text-sm text-[#1B1B4B] font-medium">Email</span>
                 </div>
-                <div class="flex items-center gap-2 px-5 py-3 bg-[#1B1B4B]/5 border border-[#1B1B4B]/10 rounded-lg hover:border-[#F9A825]/40 transition-colors">
+                <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     <span class="text-sm text-[#1B1B4B] font-medium">SMS & Phone</span>
                 </div>
-                <div class="flex items-center gap-2 px-5 py-3 bg-[#1B1B4B]/5 border border-[#1B1B4B]/10 rounded-lg hover:border-[#F9A825]/40 transition-colors">
+                <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                     <span class="text-sm text-[#1B1B4B] font-medium">Push Notifications</span>
                 </div>
-                <div class="flex items-center gap-2 px-5 py-3 bg-[#1B1B4B]/5 border border-[#1B1B4B]/10 rounded-lg hover:border-[#F9A825]/40 transition-colors">
+                <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                     <span class="text-sm text-[#1B1B4B] font-medium">Slack / Discord / Webhooks</span>
                 </div>
@@ -148,58 +229,58 @@
     <!-- Domain Intelligence — Split layout -->
     <section class="pt-16 pb-16 sm:py-16 relative reveal-on-scroll bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#1B1B4B]/10 rounded-2xl overflow-hidden shadow-sm">
-                <div class="relative min-h-[400px] p-6 sm:p-12 flex items-center justify-center overflow-hidden bg-[#1B1B4B]">
-                    <div class="absolute inset-0 z-20 w-full h-full bg-[#1B1B4B] flex flex-col items-center justify-center overflow-hidden">
-                        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(circle_at_center,black_60%,transparent_100%)]"></div>
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#F9A825]/10 blur-[90px] rounded-full pointer-events-none"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#F9A825]/20 rounded-2xl overflow-hidden shadow-sm">
+                <div class="relative min-h-[400px] p-6 sm:p-12 flex items-center justify-center overflow-hidden bg-[#faf8f5]">
+                    <div class="absolute inset-0 z-20 w-full h-full bg-[#faf8f5] flex flex-col items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-[linear-gradient(rgba(27,27,75,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(27,27,75,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(circle_at_center,black_60%,transparent_100%)]"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#F9A825]/8 blur-[90px] rounded-full pointer-events-none"></div>
                         <div class="relative mb-6">
-                            <div class="absolute inset-0 bg-[#F9A825]/15 blur-xl rounded-full opacity-50"></div>
-                            <div class="relative w-24 h-24 rounded-full bg-[#24245A] border border-[#F9A825]/30 flex flex-col items-center justify-center shadow-[0_0_30px_rgba(249,168,37,0.15)]">
+                            <div class="absolute inset-0 bg-[#F9A825]/10 blur-xl rounded-full opacity-50"></div>
+                            <div class="relative w-24 h-24 rounded-full bg-white border border-[#F9A825]/30 flex flex-col items-center justify-center shadow-lg shadow-[#F9A825]/10">
                                 <svg class="absolute inset-0" width="96" height="96" viewBox="0 0 96 96">
-                                    <circle cx="48" cy="48" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="3"/>
-                                    <circle cx="48" cy="48" r="42" fill="none" stroke="#F9A825" stroke-width="3" stroke-dasharray="242 264" stroke-linecap="round" transform="rotate(-90 48 48)" class="drop-shadow-[0_0_6px_rgba(249,168,37,0.5)]"/>
+                                    <circle cx="48" cy="48" r="42" fill="none" stroke="rgba(27,27,75,0.08)" stroke-width="3"/>
+                                    <circle cx="48" cy="48" r="42" fill="none" stroke="#F9A825" stroke-width="3" stroke-dasharray="242 264" stroke-linecap="round" transform="rotate(-90 48 48)"/>
                                 </svg>
-                                <span class="text-2xl font-bold text-white">A+</span>
+                                <span class="text-2xl font-bold text-[#1B1B4B]">A+</span>
                                 <span class="text-[8px] text-[#F9A825] uppercase tracking-wider">Health</span>
                             </div>
                             <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                                <div class="flex items-center gap-2 px-4 py-2 bg-[#24245A] border border-[#F9A825]/20 rounded-lg shadow-lg">
+                                <div class="flex items-center gap-2 px-4 py-2 bg-white border border-[#F9A825]/30 rounded-lg shadow-md">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                                    <span class="text-[10px] font-semibold text-[#F9A825] uppercase tracking-wide">SSL Valid — 247 days</span>
+                                    <span class="text-[10px] font-semibold text-[#1B1B4B] uppercase tracking-wide">SSL Valid — 247 days</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full max-w-[300px] translate-y-8 bg-[#141438] border border-white/10 rounded-xl shadow-2xl overflow-hidden relative">
-                            <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#F9A825]/40 to-transparent opacity-50"></div>
+                        <div class="w-full max-w-[300px] translate-y-8 bg-white border border-[#F9A825]/20 rounded-xl shadow-lg overflow-hidden relative">
+                            <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#F9A825]/40 to-transparent"></div>
                             <div class="p-5">
                                 <div class="flex justify-between items-start mb-4">
                                     <div>
-                                        <div class="text-[10px] text-white/40 font-medium mb-1 uppercase tracking-wider">Domain Health</div>
-                                        <div class="text-lg font-semibold text-white tracking-tight">example.com</div>
+                                        <div class="text-[10px] text-[#6a6a8a] font-medium mb-1 uppercase tracking-wider">Domain Health</div>
+                                        <div class="text-lg font-semibold text-[#1B1B4B] tracking-tight">example.com</div>
                                     </div>
-                                    <div class="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded font-medium flex items-center gap-1 border border-emerald-500/20">
-                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                                    <div class="text-[10px] text-[#F9A825] bg-[#F9A825]/10 px-2 py-1 rounded font-medium flex items-center gap-1 border border-[#F9A825]/30">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></span>
                                         All Clear
                                     </div>
                                 </div>
                                 <div class="space-y-2.5">
-                                    <div class="flex items-center justify-between text-[11px]"><span class="text-white/40">SSL Certificate</span><span class="text-emerald-400 font-medium">Valid — 247 days</span></div>
-                                    <div class="flex items-center justify-between text-[11px]"><span class="text-white/40">SPF / DKIM / DMARC</span><span class="text-emerald-400 font-medium">Pass</span></div>
-                                    <div class="flex items-center justify-between text-[11px]"><span class="text-white/40">Subdomains</span><span class="text-white/70 font-medium">8 found</span></div>
-                                    <div class="flex items-center justify-between text-[11px]"><span class="text-white/40">Blacklist Status</span><span class="text-emerald-400 font-medium">Clean</span></div>
-                                    <div class="flex items-center justify-between text-[11px]"><span class="text-white/40">WHOIS Expiry</span><span class="text-white/70 font-medium">Mar 2027</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-[#6a6a8a]">SSL Certificate</span><span class="text-[#F9A825] font-medium">Valid — 247 days</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-[#6a6a8a]">SPF / DKIM / DMARC</span><span class="text-[#F9A825] font-medium">Pass</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-[#6a6a8a]">Subdomains</span><span class="text-[#1B1B4B] font-medium">8 found</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-[#6a6a8a]">Blacklist Status</span><span class="text-[#F9A825] font-medium">Clean</span></div>
+                                    <div class="flex items-center justify-between text-[11px]"><span class="text-[#6a6a8a]">WHOIS Expiry</span><span class="text-[#1B1B4B] font-medium">Mar 2027</span></div>
                                 </div>
-                                <div class="mt-4 pt-3 border-t border-white/5">
-                                    <div class="text-[9px] text-white/40 uppercase tracking-wider mb-2">DNS Response (ms)</div>
+                                <div class="mt-4 pt-3 border-t border-[#F9A825]/15">
+                                    <div class="text-[9px] text-[#6a6a8a] uppercase tracking-wider mb-2">DNS Response (ms)</div>
                                     <div class="h-8 flex items-end gap-1">
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[40%]"></div>
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[35%]"></div>
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[45%]"></div>
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[30%]"></div>
-                                        <div class="flex-1 bg-[#F9A825] rounded-sm h-[25%] shadow-[0_0_8px_rgba(249,168,37,0.3)]"></div>
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[38%]"></div>
-                                        <div class="flex-1 bg-[#F9A825]/30 rounded-sm h-[32%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[40%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[35%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[45%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[30%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/60 rounded-sm h-[25%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[38%]"></div>
+                                        <div class="flex-1 bg-[#F9A825]/25 rounded-sm h-[32%]"></div>
                                     </div>
                                 </div>
                             </div>
@@ -235,98 +316,98 @@
         </div>
     </section>
 
-    <!-- Dashboard Preview — Navy background -->
-    <section class="pt-16 pb-16 relative reveal-on-scroll bg-[#1B1B4B]">
+    <!-- Dashboard Preview — White theme -->
+    <section class="pt-16 pb-16 relative reveal-on-scroll bg-[#faf8f5]">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">A dashboard that stays out of your way</h2>
-                <p class="text-white/60 max-w-xl mx-auto leading-relaxed">Clean, fast, and focused. Everything you need to know at a glance — nothing you don't.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1B1B4B] tracking-tight mb-4">A dashboard that stays out of your way</h2>
+                <p class="text-[#4a4a6a] max-w-xl mx-auto leading-relaxed">Clean, fast, and focused. Everything you need to know at a glance — nothing you don't.</p>
             </div>
             <div class="relative group" role="img" aria-label="Dashboard preview showing monitors with uptime statistics">
-                <div class="absolute -inset-1 bg-gradient-to-b from-[#F9A825]/15 via-[#F9A825]/5 to-transparent rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
-                <div aria-hidden="true" class="relative bg-[#141438] border border-white/10 rounded-xl overflow-hidden shadow-2xl">
-                    <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-[#1B1B4B]">
+                <div class="absolute -inset-1 bg-gradient-to-b from-[#F9A825]/10 via-[#F9A825]/5 to-transparent rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                <div aria-hidden="true" class="relative bg-white border border-[#F9A825]/20 rounded-xl overflow-hidden shadow-xl">
+                    <div class="flex items-center gap-2 px-4 py-3 border-b border-[#F9A825]/15 bg-[#faf8f5]">
                         <div class="flex items-center gap-1.5">
                             <div class="w-3 h-3 rounded-full bg-red-400/60"></div>
                             <div class="w-3 h-3 rounded-full bg-[#F9A825]/60"></div>
-                            <div class="w-3 h-3 rounded-full bg-emerald-400/60"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#F9A825]/40"></div>
                         </div>
                         <div class="flex-1 flex justify-center">
-                            <div class="flex items-center gap-2 px-3 py-1 bg-[#24245A] rounded-md border border-white/10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/30"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                                <span class="text-[10px] text-white/40 font-mono">app.rapidcheck.io/dashboard</span>
+                            <div class="flex items-center gap-2 px-3 py-1 bg-white rounded-md border border-[#1B1B4B]/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a]"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span class="text-[10px] text-[#6a6a8a] font-mono">app.rapidcheck.io/dashboard</span>
                             </div>
                         </div>
                     </div>
                     <div class="flex">
-                        <div class="w-48 border-r border-white/5 bg-[#141438] p-4 hidden md:block">
+                        <div class="w-48 border-r border-[#F9A825]/15 bg-[#faf8f5] p-4 hidden md:block">
                             <div class="flex items-center gap-2 mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#F9A825" stroke-width="2" stroke-linecap="round"/><path d="M12 16V5" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M8.5 8.5L12 5l3.5 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.4" cy="7.2" r="1.5" fill="#F9A825"/></svg>
-                                <span class="text-xs font-semibold text-white">RapidCheck</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#F9A825" stroke-width="2" stroke-linecap="round"/><path d="M12 16V5" stroke="#1B1B4B" stroke-width="2" stroke-linecap="round"/><path d="M8.5 8.5L12 5l3.5 3.5" stroke="#1B1B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.4" cy="7.2" r="1.5" fill="#F9A825"/></svg>
+                                <span class="text-xs font-semibold text-[#1B1B4B]">RapidCheck</span>
                             </div>
                             <div class="space-y-1">
                                 <div class="flex items-center gap-2 px-2 py-1.5 rounded-md bg-[#F9A825]/10 border border-[#F9A825]/20"><span class="text-[11px] text-[#F9A825] font-medium">Dashboard</span></div>
-                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-white/40">Monitors</span><span class="ml-auto text-[9px] text-white/30 bg-white/5 px-1.5 rounded">12</span></div>
-                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-white/40">Incidents</span></div>
-                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-white/40">Domains</span></div>
-                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-white/40">Status Pages</span></div>
-                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-white/40">Alerts</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-[#6a6a8a]">Monitors</span><span class="ml-auto text-[9px] text-[#6a6a8a] bg-[#1B1B4B]/5 px-1.5 rounded">12</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-[#6a6a8a]">Incidents</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-[#6a6a8a]">Domains</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-[#6a6a8a]">Status Pages</span></div>
+                                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md"><span class="text-[11px] text-[#6a6a8a]">Alerts</span></div>
                             </div>
                         </div>
-                        <div class="flex-1 p-6 bg-[#18183E]">
+                        <div class="flex-1 p-6 bg-white">
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                                <div class="bg-white/5 border border-white/5 rounded-lg p-3">
-                                    <div class="text-[10px] text-white/40 uppercase tracking-wider mb-1">Monitors</div>
-                                    <div class="text-lg font-semibold text-white">12</div>
-                                    <div class="text-[10px] text-emerald-400">all operational</div>
+                                <div class="bg-[#faf8f5] border border-[#F9A825]/20 rounded-lg p-3">
+                                    <div class="text-[10px] text-[#6a6a8a] uppercase tracking-wider mb-1">Monitors</div>
+                                    <div class="text-lg font-semibold text-[#1B1B4B]">12</div>
+                                    <div class="text-[10px] text-[#F9A825]">all operational</div>
                                 </div>
-                                <div class="bg-white/5 border border-white/5 rounded-lg p-3">
-                                    <div class="text-[10px] text-white/40 uppercase tracking-wider mb-1">Avg Response</div>
-                                    <div class="text-lg font-semibold text-white">48ms</div>
-                                    <div class="text-[10px] text-emerald-400">-12ms vs last week</div>
+                                <div class="bg-[#faf8f5] border border-[#F9A825]/20 rounded-lg p-3">
+                                    <div class="text-[10px] text-[#6a6a8a] uppercase tracking-wider mb-1">Avg Response</div>
+                                    <div class="text-lg font-semibold text-[#1B1B4B]">48ms</div>
+                                    <div class="text-[10px] text-[#F9A825]">-12ms vs last week</div>
                                 </div>
-                                <div class="bg-white/5 border border-white/5 rounded-lg p-3">
-                                    <div class="text-[10px] text-white/40 uppercase tracking-wider mb-1">Uptime (30d)</div>
-                                    <div class="text-lg font-semibold text-white">99.98%</div>
-                                    <div class="text-[10px] text-white/40">2 incidents</div>
+                                <div class="bg-[#faf8f5] border border-[#F9A825]/20 rounded-lg p-3">
+                                    <div class="text-[10px] text-[#6a6a8a] uppercase tracking-wider mb-1">Uptime (30d)</div>
+                                    <div class="text-lg font-semibold text-[#1B1B4B]">99.98%</div>
+                                    <div class="text-[10px] text-[#6a6a8a]">2 incidents</div>
                                 </div>
-                                <div class="bg-white/5 border border-white/5 rounded-lg p-3">
-                                    <div class="text-[10px] text-white/40 uppercase tracking-wider mb-1">Domain Health</div>
+                                <div class="bg-[#faf8f5] border border-[#F9A825]/20 rounded-lg p-3">
+                                    <div class="text-[10px] text-[#6a6a8a] uppercase tracking-wider mb-1">Domain Health</div>
                                     <div class="text-lg font-semibold text-[#F9A825]">A+</div>
-                                    <div class="text-[10px] text-emerald-400">all checks pass</div>
+                                    <div class="text-[10px] text-[#F9A825]">all checks pass</div>
                                 </div>
                             </div>
-                            <div class="bg-white/[0.03] border border-white/5 rounded-lg overflow-hidden">
-                                <div class="flex items-center justify-between px-4 py-2.5 border-b border-white/5">
-                                    <span class="text-[11px] font-semibold text-white/60 uppercase tracking-wider">Monitors</span>
-                                    <span class="text-[10px] text-white/30">Last 24h</span>
+                            <div class="bg-white border border-[#F9A825]/20 rounded-lg overflow-hidden">
+                                <div class="flex items-center justify-between px-4 py-2.5 border-b border-[#F9A825]/15">
+                                    <span class="text-[11px] font-semibold text-[#4a4a6a] uppercase tracking-wider">Monitors</span>
+                                    <span class="text-[10px] text-[#6a6a8a]">Last 24h</span>
                                 </div>
-                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
                                     <div class="flex items-center gap-3 min-w-0">
-                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.5)]"></div>
-                                        <div class="min-w-0"><div class="text-[11px] text-white/80 font-medium truncate">api.rapidcheck.io</div><div class="text-[9px] text-white/30">HTTPS · 30s · 3 regions</div></div>
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-[#F9A825]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-[#1B1B4B] font-medium truncate">api.rapidcheck.io</div><div class="text-[9px] text-[#6a6a8a]">HTTPS · 30s · 3 regions</div></div>
                                     </div>
-                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/50"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/55"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/65"></div></div>
-                                    <span class="text-[10px] text-white/40 font-mono text-right">32ms</span>
-                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">99.99%</span>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-[11px] rounded-sm bg-[#F9A825]/40"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/55"></div><div class="flex-1 h-[11px] rounded-sm bg-[#F9A825]/45"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-[13px] rounded-sm bg-[#F9A825]/55"></div></div>
+                                    <span class="text-[10px] text-[#6a6a8a] font-mono text-right">32ms</span>
+                                    <span class="text-[10px] text-[#F9A825] font-medium text-right w-12">99.99%</span>
                                 </div>
-                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-white/[0.03] hover:bg-white/[0.02] transition-colors">
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
                                     <div class="flex items-center gap-3 min-w-0">
-                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.5)]"></div>
-                                        <div class="min-w-0"><div class="text-[11px] text-white/80 font-medium truncate">app.rapidcheck.io</div><div class="text-[9px] text-white/30">HTTPS · 30s · 3 regions</div></div>
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-[#F9A825]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-[#1B1B4B] font-medium truncate">app.rapidcheck.io</div><div class="text-[9px] text-[#6a6a8a]">HTTPS · 30s · 3 regions</div></div>
                                     </div>
-                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-amber-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div></div>
-                                    <span class="text-[10px] text-white/40 font-mono text-right">87ms</span>
-                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">99.94%</span>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-red-400/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div></div>
+                                    <span class="text-[10px] text-[#6a6a8a] font-mono text-right">87ms</span>
+                                    <span class="text-[10px] text-[#F9A825] font-medium text-right w-12">99.94%</span>
                                 </div>
-                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 hover:bg-white/[0.02] transition-colors">
+                                <div class="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[180px_1fr_40px_48px] items-center gap-4 px-4 py-3 hover:bg-[#faf8f5] transition-colors">
                                     <div class="flex items-center gap-3 min-w-0">
-                                        <div class="w-2 h-2 shrink-0 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.5)]"></div>
-                                        <div class="min-w-0"><div class="text-[11px] text-white/80 font-medium truncate">docs.rapidcheck.io</div><div class="text-[9px] text-white/30">HTTPS · 3m · 1 region</div></div>
+                                        <div class="w-2 h-2 shrink-0 rounded-full bg-[#F9A825]"></div>
+                                        <div class="min-w-0"><div class="text-[11px] text-[#1B1B4B] font-medium truncate">docs.rapidcheck.io</div><div class="text-[9px] text-[#6a6a8a]">HTTPS · 3m · 1 region</div></div>
                                     </div>
-                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/65"></div><div class="flex-1 h-[13px] rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/55"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-[11px] rounded-sm bg-emerald-500/50"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div><div class="flex-1 h-3 rounded-sm bg-emerald-500/60"></div></div>
-                                    <span class="text-[10px] text-white/40 font-mono text-right">145ms</span>
-                                    <span class="text-[10px] text-emerald-400 font-medium text-right w-12">100%</span>
+                                    <div class="hidden sm:flex items-center gap-[2px]"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/55"></div><div class="flex-1 h-[13px] rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/45"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-[11px] rounded-sm bg-[#F9A825]/40"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div></div>
+                                    <span class="text-[10px] text-[#6a6a8a] font-mono text-right">145ms</span>
+                                    <span class="text-[10px] text-[#F9A825] font-medium text-right w-12">100%</span>
                                 </div>
                             </div>
                         </div>
@@ -342,17 +423,17 @@
             <h2 class="text-3xl md:text-4xl font-bold text-[#1B1B4B] tracking-tight mb-4 text-center">Why teams switch to RapidCheck</h2>
             <p class="text-[#4a4a6a] mb-12 max-w-xl mx-auto text-center leading-relaxed">Monitoring shouldn't cost a fortune or take a week to set up.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white border border-[#1B1B4B]/10 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
+                <div class="bg-white border border-[#F9A825]/15 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
                     <div class="text-3xl font-bold text-[#F9A825] mb-2">$2/mo</div>
                     <h3 class="text-base font-semibold text-[#1B1B4B] mb-2">Per monitor, flat rate</h3>
                     <p class="text-sm text-[#4a4a6a]">No seat-based pricing, no tier gates. 10 monitors = $20/mo. Competitors charge $20-50/mo for comparable plans.</p>
                 </div>
-                <div class="bg-white border border-[#1B1B4B]/10 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
+                <div class="bg-white border border-[#F9A825]/15 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
                     <div class="text-3xl font-bold text-[#F9A825] mb-2">330+</div>
                     <h3 class="text-base font-semibold text-[#1B1B4B] mb-2">Edge locations, not 10</h3>
                     <p class="text-sm text-[#4a4a6a]">Most competitors check from 10-20 data centers. We run on Cloudflare's entire edge network for truly global coverage.</p>
                 </div>
-                <div class="bg-white border border-[#1B1B4B]/10 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
+                <div class="bg-white border border-[#F9A825]/15 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
                     <div class="text-3xl font-bold text-[#F9A825] mb-2">Free</div>
                     <h3 class="text-base font-semibold text-[#1B1B4B] mb-2">Domain intelligence included</h3>
                     <p class="text-sm text-[#4a4a6a]">SSL, DNS, WHOIS, and blacklist monitoring on every plan. Others charge extra or don't offer it at all.</p>
@@ -410,35 +491,35 @@
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-[#1B1B4B] tracking-tight mb-12 text-center">Frequently asked questions</h2>
             <div class="space-y-3">
-                <details class="group border border-[#1B1B4B]/10 rounded-xl bg-white overflow-hidden">
+                <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
                         What happens when my free trial ends?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Your workspace downgrades to the free plan. Monitors beyond the free limit (3) are paused — not deleted. Upgrade anytime to resume them instantly.</div>
                 </details>
-                <details class="group border border-[#1B1B4B]/10 rounded-xl bg-white overflow-hidden">
+                <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
                         How do you prevent false positives?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Every check runs from 3 edge regions simultaneously. We require 2-of-3 to confirm failure across 2 consecutive checks before triggering an alert.</div>
                 </details>
-                <details class="group border border-[#1B1B4B]/10 rounded-xl bg-white overflow-hidden">
+                <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
                         Is domain intelligence really free?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Yes. SSL monitoring, DNS checks, WHOIS tracking, blacklist scanning, and the domain health score are included on every plan — including free.</div>
                 </details>
-                <details class="group border border-[#1B1B4B]/10 rounded-xl bg-white overflow-hidden">
+                <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
                         Where are checks run from?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Checks run from Cloudflare's global edge network — 330+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
                 </details>
-                <details class="group border border-[#1B1B4B]/10 rounded-xl bg-white overflow-hidden">
+                <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
                         Is my data secure?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>

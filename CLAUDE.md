@@ -95,3 +95,8 @@ Inherits all workflow orchestration from root CLAUDE.md. Additionally:
 ## Skills
 
 - `/add-page` — Scaffold a new marketing page
+- `/design` — Design and build elegant UI sections, pages, components, and interactive demos
+
+## Agents
+
+- `design-auditor` — Audit all pages for design system compliance and visual drift

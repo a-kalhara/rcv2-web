@@ -6,7 +6,6 @@
 <title>RapidCheck — Uptime Monitoring & Domain Intelligence</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<script src="https://www.aura.build/FxFilter.js"></script>
 <script>
 tailwind.config = {
   theme: {
@@ -61,14 +60,6 @@ input:focus-visible { outline-offset: 0; }
 </style>
 </head>
 <body class="bg-white text-[#4a4a6a] antialiased selection:bg-amber-500/20 selection:text-[#1B1B4B] overflow-x-hidden">
-
-<!-- Aura animated background -->
-<div aria-hidden="true" class="aura-background-component w-full h-screen absolute opacity-20" data-alpha-mask="80" style="top: -15%; mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 60%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 60%, transparent 100%)"><div class="aura-background-component top-0 w-full -z-10 absolute h-full">
-  <div data-us-project="EET25BiXxR2StNXZvAzF" class="absolute w-full h-full left-0 top-0 -z-10"></div>
-  <script type="text/javascript">
-    !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
-  </script>
-</div></div>
 
 <!-- Sticky Navigation -->
 <nav class="fixed top-0 inset-x-0 z-50 border-b border-[#1B1B4B]/10 bg-white/90 backdrop-blur-md">
@@ -315,10 +306,6 @@ function navigate(pushState) {
     window.scrollTo(0, 0);
     const menu = document.getElementById('mobile-menu');
     if (menu) menu.classList.add('hidden');
-
-    // Only show aura background on homepage
-    const auraBg = document.querySelector('.aura-background-component');
-    if (auraBg) auraBg.style.display = route === '/' ? '' : 'none';
 
     initReveal();
     if (pageFn && pageFn.init) pageFn.init();

@@ -25,19 +25,19 @@
     ];
 
     var cardsHtml = sections.map(function(section) {
-      return '<div class="border border-zinc-800 rounded-lg p-6 hover:border-zinc-700 transition-colors">' +
+      return '<div class="border border-[#F9A825]/15 rounded-lg p-6 hover:border-[#F9A825]/30 transition-colors">' +
         '<div class="flex items-start justify-between mb-4">' +
-          '<div class="text-emerald-500">' + section.icon + '</div>' +
-          '<span class="text-xs font-medium text-zinc-600 bg-zinc-900 border border-zinc-800 rounded-full px-3 py-1">Coming soon</span>' +
+          '<div class="text-[#F9A825]">' + section.icon + '</div>' +
+          '<span class="text-xs font-medium text-[#6a6a8a] bg-[#faf8f5] border border-[#F9A825]/15 rounded-full px-3 py-1">Coming soon</span>' +
         '</div>' +
-        '<h3 class="text-base font-semibold text-white mb-2">' + section.title + '</h3>' +
-        '<p class="text-sm text-zinc-300 leading-relaxed">' + section.description + '</p>' +
+        '<h3 class="text-base font-semibold text-[#1B1B4B] mb-2">' + section.title + '</h3>' +
+        '<p class="text-sm text-[#4a4a6a] leading-relaxed">' + section.description + '</p>' +
       '</div>';
     }).join('');
 
     return '<div class="mx-auto max-w-4xl px-6 py-20">' +
-      '<h1 class="text-3xl font-bold text-white mb-2">Documentation</h1>' +
-      '<p class="text-sm text-zinc-500 mb-10">Everything you need to integrate and use RapidCheck</p>' +
+      '<h1 class="text-3xl font-bold text-[#1B1B4B] mb-2">Documentation</h1>' +
+      '<p class="text-sm text-[#6a6a8a] mb-10">Everything you need to integrate and use RapidCheck</p>' +
 
       '<div class="grid grid-cols-1 md:grid-cols-2 gap-4">' +
         cardsHtml +

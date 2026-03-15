@@ -4,8 +4,8 @@
   window.__pages['/tools/ssl-checker'] = function() {
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-white mb-3">SSL Certificate Checker</h1>
-        <p class="text-zinc-300 text-lg mb-10">Check SSL certificate details for any domain.</p>
+        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">SSL Certificate Checker</h1>
+        <p class="text-[#4a4a6a] text-lg mb-10">Check SSL certificate details for any domain.</p>
 
         <div class="flex gap-3 mb-8">
           <label for="ssl-domain-input" class="sr-only">Domain</label>
@@ -13,17 +13,17 @@
             id="ssl-domain-input"
             type="text"
             placeholder="example.com"
-            class="flex-1 bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors"
+            class="flex-1 bg-white border border-[#F9A825]/20 rounded-lg px-4 py-3 text-[#1B1B4B] placeholder-[#6a6a8a] focus:outline-none focus:border-[#F9A825] transition-colors"
           />
           <button
             id="ssl-check-btn"
-            class="bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
+            class="bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
           >Check SSL</button>
         </div>
 
         <div id="ssl-loading" class="hidden text-center py-16">
-          <div class="inline-block w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin mb-4"></div>
-          <p class="text-zinc-300">Checking SSL certificate...</p>
+          <div class="inline-block w-8 h-8 border-2 border-[#F9A825] border-t-transparent rounded-full animate-spin mb-4"></div>
+          <p class="text-[#4a4a6a]">Checking SSL certificate...</p>
         </div>
 
         <div id="ssl-error" class="hidden bg-red-500/10 border border-red-500/30 rounded-xl p-6 mb-6">
@@ -31,46 +31,46 @@
         </div>
 
         <div id="ssl-results" class="hidden">
-          <p class="text-xs text-zinc-500 mb-3 text-center italic">Example result — sign up for real-time SSL monitoring</p>
-          <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden mb-6">
-            <div class="px-6 py-4 border-b border-zinc-800">
-              <h3 class="text-white font-semibold">Certificate Details</h3>
-              <p id="ssl-domain-display" class="text-zinc-500 text-sm"></p>
+          <p class="text-xs text-[#6a6a8a] mb-3 text-center italic">Example result — sign up for real-time SSL monitoring</p>
+          <div class="bg-white border border-[#F9A825]/15 rounded-xl overflow-hidden mb-6">
+            <div class="px-6 py-4 border-b border-[#F9A825]/15">
+              <h3 class="text-[#1B1B4B] font-semibold">Certificate Details</h3>
+              <p id="ssl-domain-display" class="text-[#6a6a8a] text-sm"></p>
             </div>
 
-            <div class="divide-y divide-zinc-800">
+            <div class="divide-y divide-[#F9A825]/15">
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Issuer</span>
-                <span class="text-white font-medium" id="ssl-issuer"></span>
+                <span class="text-[#4a4a6a]">Issuer</span>
+                <span class="text-[#1B1B4B] font-medium" id="ssl-issuer"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Subject</span>
-                <span class="text-white font-medium" id="ssl-subject"></span>
+                <span class="text-[#4a4a6a]">Subject</span>
+                <span class="text-[#1B1B4B] font-medium" id="ssl-subject"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Valid From</span>
-                <span class="text-white font-medium" id="ssl-valid-from"></span>
+                <span class="text-[#4a4a6a]">Valid From</span>
+                <span class="text-[#1B1B4B] font-medium" id="ssl-valid-from"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Valid To</span>
-                <span class="text-white font-medium" id="ssl-valid-to"></span>
+                <span class="text-[#4a4a6a]">Valid To</span>
+                <span class="text-[#1B1B4B] font-medium" id="ssl-valid-to"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Days Until Expiry</span>
+                <span class="text-[#4a4a6a]">Days Until Expiry</span>
                 <span class="font-semibold" id="ssl-days-left"></span>
               </div>
               <div class="px-6 py-4 flex justify-between items-center">
-                <span class="text-zinc-300">Status</span>
+                <span class="text-[#4a4a6a]">Status</span>
                 <span id="ssl-status-badge"></span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="mt-16 text-center border-t border-zinc-800 pt-12">
-          <h2 class="text-2xl font-bold text-white mb-3">Never let your SSL expire again</h2>
-          <p class="text-zinc-300 mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
+        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
+          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Never let your SSL expire again</h2>
+          <p class="text-[#4a4a6a] mb-6">RapidCheck monitors your certificates and alerts you before they expire.</p>
+          <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;
@@ -85,14 +85,14 @@
     var errorMsg = document.getElementById('ssl-error-msg');
 
     function getDaysColor(days) {
-      if (days > 30) return 'text-emerald-400';
+      if (days > 30) return 'text-[#F9A825]';
       if (days > 7) return 'text-amber-400';
       return 'text-red-400';
     }
 
     function getStatusBadge(days) {
       if (days > 30) {
-        return '<span class="inline-block bg-emerald-500/20 text-emerald-400 text-sm font-medium px-3 py-1 rounded-full">Valid</span>';
+        return '<span class="inline-block bg-[#F9A825]/20 text-[#F9A825] text-sm font-medium px-3 py-1 rounded-full">Valid</span>';
       }
       if (days > 7) {
         return '<span class="inline-block bg-amber-500/20 text-amber-400 text-sm font-medium px-3 py-1 rounded-full">Expiring Soon</span>';

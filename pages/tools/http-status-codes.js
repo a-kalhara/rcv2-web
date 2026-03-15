@@ -4,8 +4,8 @@
   window.__pages['/tools/http-status-codes'] = function() {
     return `
       <div class="mx-auto max-w-4xl px-6 py-20">
-        <h1 class="text-4xl font-bold text-white mb-3">HTTP Status Codes Reference</h1>
-        <p class="text-zinc-300 text-lg mb-10">Quick reference for all common HTTP status codes.</p>
+        <h1 class="text-4xl font-bold text-[#1B1B4B] mb-3">HTTP Status Codes Reference</h1>
+        <p class="text-[#4a4a6a] text-lg mb-10">Quick reference for all common HTTP status codes.</p>
 
         <div class="mb-8">
           <label for="hsc-search" class="sr-only">Search status codes</label>
@@ -13,20 +13,20 @@
             id="hsc-search"
             type="text"
             placeholder="Search by code, name, or description..."
-            class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors"
+            class="w-full bg-white border border-[#F9A825]/20 rounded-lg px-4 py-3 text-[#1B1B4B] placeholder-[#6a6a8a] focus:outline-none focus:border-[#F9A825] transition-colors"
           />
         </div>
 
         <div id="hsc-results"></div>
 
         <div id="hsc-empty" class="hidden text-center py-12">
-          <p class="text-zinc-500 text-lg">No matching status codes found.</p>
+          <p class="text-[#6a6a8a] text-lg">No matching status codes found.</p>
         </div>
 
-        <div class="mt-16 text-center border-t border-zinc-800 pt-12">
-          <h2 class="text-2xl font-bold text-white mb-3">Monitor your HTTP responses</h2>
-          <p class="text-zinc-300 mb-6">Get alerted when your endpoints return unexpected status codes.</p>
-          <a href="/register" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors">Start Free Monitoring</a>
+        <div class="mt-16 text-center border-t border-[#F9A825]/15 pt-12">
+          <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Monitor your HTTP responses</h2>
+          <p class="text-[#4a4a6a] mb-6">Get alerted when your endpoints return unexpected status codes.</p>
+          <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
         </div>
       </div>
     `;
@@ -74,7 +74,7 @@
 
     var categoryMeta = {
       '1xx': { label: '1xx Informational', color: 'text-blue-400', border: 'border-blue-400/30', bg: 'bg-blue-400/10', badge: 'bg-blue-500/20 text-blue-400' },
-      '2xx': { label: '2xx Success', color: 'text-emerald-400', border: 'border-emerald-400/30', bg: 'bg-emerald-400/10', badge: 'bg-emerald-500/20 text-emerald-400' },
+      '2xx': { label: '2xx Success', color: 'text-[#F9A825]', border: 'border-[#F9A825]/30', bg: 'bg-[#F9A825]/10', badge: 'bg-[#F9A825]/20 text-[#F9A825]' },
       '3xx': { label: '3xx Redirection', color: 'text-amber-400', border: 'border-amber-400/30', bg: 'bg-amber-400/10', badge: 'bg-amber-500/20 text-amber-400' },
       '4xx': { label: '4xx Client Error', color: 'text-orange-400', border: 'border-orange-400/30', bg: 'bg-orange-400/10', badge: 'bg-orange-500/20 text-orange-400' },
       '5xx': { label: '5xx Server Error', color: 'text-red-400', border: 'border-red-400/30', bg: 'bg-red-400/10', badge: 'bg-red-500/20 text-red-400' }
@@ -123,12 +123,12 @@
         html += '<div class="space-y-3">';
 
         grouped[cat].forEach(function(c) {
-          html += '<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors">';
+          html += '<div class="bg-white border border-[#F9A825]/15 rounded-xl p-5 hover:border-[#F9A825]/30 transition-colors">';
           html += '<div class="flex items-start gap-4">';
           html += '<span class="inline-block text-sm font-mono font-bold px-3 py-1 rounded-lg shrink-0 ' + meta.badge + '">' + c.code + '</span>';
           html += '<div>';
-          html += '<p class="text-white font-medium">' + escapeHtml(c.name) + '</p>';
-          html += '<p class="text-zinc-300 text-sm mt-1">' + escapeHtml(c.desc) + '</p>';
+          html += '<p class="text-[#1B1B4B] font-medium">' + escapeHtml(c.name) + '</p>';
+          html += '<p class="text-[#4a4a6a] text-sm mt-1">' + escapeHtml(c.desc) + '</p>';
           html += '</div>';
           html += '</div>';
           html += '</div>';
