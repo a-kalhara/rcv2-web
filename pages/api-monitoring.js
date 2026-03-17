@@ -14,7 +14,7 @@
             Your API might be up, but is the data correct?
           </h1>
           <p class="text-base sm:text-lg text-[#4a4a6a] max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
-            Go beyond status codes. Validate response bodies, headers, and latency with custom assertions from 330+ global locations.
+            Go beyond status codes. Validate response bodies, headers, and latency with custom assertions from 300+ global locations.
           </p>
 
           <!-- Animated API request/response -->
@@ -64,7 +64,7 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">Start monitoring free</button>
+            <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors no-underline shadow-lg shadow-[#F9A825]/25">Start for free</a>
             <a href="/pricing" class="rounded-lg border border-[#1B1B4B]/20 px-6 py-3 text-sm font-medium text-[#1B1B4B] hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-colors">View pricing</a>
           </div>
         </div>
@@ -94,7 +94,7 @@
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Global edge execution</h3>
-            <p class="text-sm text-[#4a4a6a]">API checks run from 330+ locations. Verify your API performs well for users everywhere, not just near your origin server.</p>
+            <p class="text-sm text-[#4a4a6a]">API checks run from 300+ locations. Verify your API performs well for users everywhere, not just near your origin server.</p>
           </div>
         </div>
 
@@ -124,7 +124,7 @@
         <div class="rounded-xl border border-[#F9A825]/20 bg-[#F9A825] p-5 sm:p-8 text-center">
           <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Monitor your APIs in 2 minutes</h2>
           <p class="text-[#1B1B4B]/70 mb-6">3 monitors free forever. No credit card required.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors cursor-pointer border-none">Start monitoring free</button>
+          <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors no-underline">Start for free</a>
         </div>
       </div>
     `;

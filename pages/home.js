@@ -15,13 +15,13 @@
                     </h1>
                     <p class="text-base sm:text-lg text-[#4a4a6a] max-w-lg mb-8 leading-relaxed reveal-up" style="animation-delay: 0.15s;">
                         Monitor uptime. Protect your domain.<br>
-                        Get alerted instantly — from 330+ edge locations worldwide.
+                        Get alerted instantly — from 300+ edge locations worldwide.
                     </p>
                     <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 reveal-up" style="animation-delay: 0.25s;">
-                        <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-base font-semibold hover:bg-[#FFB830] transition-all flex items-center gap-2 group cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-base font-semibold hover:bg-[#FFB830] transition-all flex items-center gap-2 group no-underline shadow-lg shadow-[#F9A825]/25">
                             Start for free
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
-                        </button>
+                        </a>
                         <a href="/pricing" class="w-full sm:w-auto justify-center h-12 px-8 rounded-lg border border-[#1B1B4B]/20 text-[#1B1B4B] text-base font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center gap-2 no-underline">
                             See pricing
                         </a>
@@ -76,19 +76,19 @@
                                 <div class="flex items-center gap-3 px-3 py-2.5 border-b border-[#F9A825]/10">
                                     <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
                                     <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">api.rapidcheck.io</span>
-                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/40"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/60"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/40"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/55"></div></div>
+                                    <div class="flex items-center gap-[2px] w-20"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/40"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/55"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/45"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div></div>
                                     <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">99.99%</span>
                                 </div>
                                 <div class="flex items-center gap-3 px-3 py-2.5 border-b border-[#F9A825]/10">
                                     <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
                                     <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">app.rapidcheck.io</span>
-                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-red-400/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/55"></div></div>
+                                    <div class="flex items-center gap-[2px] w-20"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-red-400/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div></div>
                                     <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">99.94%</span>
                                 </div>
                                 <div class="flex items-center gap-3 px-3 py-2.5">
                                     <div class="w-1.5 h-1.5 rounded-full bg-[#F9A825]"></div>
                                     <span class="text-[10px] text-[#1B1B4B] font-medium flex-1">docs.rapidcheck.io</span>
-                                    <div class="flex gap-[1px]"><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/55"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/45"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-3.5 rounded-sm bg-[#F9A825]/60"></div><div class="w-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="w-1 h-2.5 rounded-sm bg-[#F9A825]/45"></div></div>
+                                    <div class="flex items-center gap-[2px] w-20"><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/55"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/45"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/55"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div><div class="flex-1 h-3 rounded-sm bg-[#F9A825]/50"></div></div>
                                     <span class="text-[9px] text-[#F9A825] font-medium w-10 text-right">100%</span>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                     <!-- Floating badge — top right -->
                     <div class="absolute -top-3 -right-3 bg-white rounded-lg border border-[#F9A825]/20 shadow-lg shadow-[#F9A825]/10 px-3 py-2 flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-[#F9A825] animate-pulse"></div>
-                        <span class="text-[10px] font-semibold text-[#1B1B4B]">330+ edge locations</span>
+                        <span class="text-[10px] font-semibold text-[#1B1B4B]">300+ edge locations</span>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
             <p class="text-center text-[10px] font-semibold text-[#1B1B4B]/60 uppercase tracking-widest mb-8">Built for scale. Trusted by teams worldwide.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
                 <div class="text-center">
-                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-1">330+</div>
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-1">300+</div>
                     <div class="text-sm text-[#1B1B4B]/80">Edge Locations</div>
                     <div class="text-xs text-[#1B1B4B]/50 mt-0.5">Global monitoring coverage</div>
                 </div>
@@ -147,15 +147,15 @@
     <!-- Infrastructure Trust -->
     <section class="py-6 relative bg-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <p class="text-[10px] font-medium text-[#6a6a8a] uppercase tracking-widest mb-5">Built on infrastructure you trust</p>
+            <p class="text-[10px] font-medium text-[#6a6a8a] uppercase tracking-widest mb-5">Enterprise-grade infrastructure</p>
             <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#4a4a6a] font-medium">
                 <span class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
-                    Cloudflare Workers
+                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    300+ Edge Locations
                 </span>
                 <span class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="10" ry="4"></ellipse><path d="M2 12v4c0 2.2 4.5 4 10 4s10-1.8 10-4v-4"></path><path d="M2 8v4c0 2.2 4.5 4 10 4s10-1.8 10-4V8"></path></svg>
-                    Neon PostgreSQL
+                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                    99.99% Platform Uptime
                 </span>
                 <span class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
@@ -188,14 +188,14 @@
                     <div class="w-12 h-12 rounded-xl bg-[#F9A825]/15 flex items-center justify-center mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-white mb-2 tracking-tight">Native mobile app</h3>
+                    <h3 class="text-lg font-semibold text-white mb-2 tracking-tight">Native mobile app <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></h3>
                     <p class="text-sm text-white/60 leading-relaxed">iOS and Android. Push notifications, incident acknowledgment, and real-time dashboard in your pocket.</p>
                 </div>
                 <div class="group relative bg-white/5 border border-white/10 rounded-xl p-7 hover:bg-white/10 hover:border-[#F9A825]/30 transition-all duration-300">
                     <div class="w-12 h-12 rounded-xl bg-[#F9A825]/15 flex items-center justify-center mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
                     </div>
-                    <h3 class="text-lg font-semibold text-white mb-2 tracking-tight">Branded status pages</h3>
+                    <h3 class="text-lg font-semibold text-white mb-2 tracking-tight">Branded status pages <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></h3>
                     <p class="text-sm text-white/60 leading-relaxed">Beautiful public status pages with custom domains. Keep your users informed automatically.</p>
                 </div>
             </div>
@@ -213,15 +213,15 @@
                 </div>
                 <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span class="text-sm text-[#1B1B4B] font-medium">SMS & Phone</span>
+                    <span class="text-sm text-[#1B1B4B] font-medium">SMS & Phone <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></span>
                 </div>
                 <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-                    <span class="text-sm text-[#1B1B4B] font-medium">Push Notifications</span>
+                    <span class="text-sm text-[#1B1B4B] font-medium">Push Notifications <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></span>
                 </div>
                 <div class="flex items-center gap-2 px-5 py-3 bg-[#F9A825]/5 border border-[#F9A825]/20 rounded-lg hover:border-[#F9A825]/40 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                    <span class="text-sm text-[#1B1B4B] font-medium">Slack / Discord / Webhooks</span>
+                    <span class="text-sm text-[#1B1B4B] font-medium">Slack / Discord / Webhooks <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></span>
                 </div>
             </div>
         </div>
@@ -430,9 +430,9 @@
                     <p class="text-sm text-[#4a4a6a]">No seat-based pricing, no tier gates. 10 monitors = $20/mo. Competitors charge $20-50/mo for comparable plans.</p>
                 </div>
                 <div class="bg-white border border-[#F9A825]/15 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
-                    <div class="text-3xl font-bold text-[#F9A825] mb-2">330+</div>
+                    <div class="text-3xl font-bold text-[#F9A825] mb-2">300+</div>
                     <h3 class="text-base font-semibold text-[#1B1B4B] mb-2">Edge locations, not 10</h3>
-                    <p class="text-sm text-[#4a4a6a]">Most competitors check from 10-20 data centers. We run on Cloudflare's entire edge network for truly global coverage.</p>
+                    <p class="text-sm text-[#4a4a6a]">Most competitors check from 10-20 data centers. We run on our global edge network for truly worldwide coverage.</p>
                 </div>
                 <div class="bg-white border border-[#F9A825]/15 rounded-xl p-7 hover:border-[#F9A825]/40 hover:shadow-lg hover:shadow-[#F9A825]/10 transition-all duration-300">
                     <div class="text-3xl font-bold text-[#F9A825] mb-2">Free</div>
@@ -461,7 +461,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#F9A825]"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                     </div>
                     <h3 class="text-base font-semibold text-[#1B1B4B] mb-2">DevOps & SRE</h3>
-                    <p class="text-xs text-[#4a4a6a]">On-call scheduling, escalation policies, and incident management in one place.</p>
+                    <p class="text-xs text-[#4a4a6a]">On-call scheduling <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, escalation policies, and incident management in one place.</p>
                 </div>
                 <div class="bg-white/90 backdrop-blur rounded-xl p-6 text-center hover:bg-white transition-all duration-300 shadow-sm">
                     <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-[#1B1B4B] flex items-center justify-center">
@@ -479,10 +479,10 @@
                 </div>
             </div>
             <div class="mt-12">
-                <button onclick="alert('Registration coming soon')" class="inline-flex items-center gap-2 text-base font-semibold bg-[#1B1B4B] text-white px-8 py-3 rounded-lg hover:bg-[#24245A] transition-all cursor-pointer border-none shadow-lg shadow-[#1B1B4B]/25">
-                    Start monitoring free
+                <a href="https://app.rapidcheck.io/signup" class="inline-flex items-center gap-2 text-base font-semibold bg-[#1B1B4B] text-white px-8 py-3 rounded-lg hover:bg-[#24245A] transition-all no-underline shadow-lg shadow-[#1B1B4B]/25">
+                    Start for free
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -504,7 +504,7 @@
                         How do you prevent false positives?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Every check runs from 3 edge regions simultaneously. We require 2-of-3 to confirm failure across 2 consecutive checks before triggering an alert.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Checks run from multiple global locations. We verify results across consecutive checks before triggering an alert, minimizing false positives.</div>
                 </details>
                 <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
@@ -518,7 +518,7 @@
                         Where are checks run from?
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#6a6a8a] group-open:rotate-180 transition-transform shrink-0"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
-                    <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Checks run from Cloudflare's global edge network — 330+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
+                    <div class="px-4 sm:px-6 pb-4 text-sm text-[#4a4a6a] leading-relaxed">Checks run from our global edge network — 300+ locations in 100+ countries. Free plans use 3 regions; paid plans can use all of them.</div>
                 </details>
                 <details class="group border border-[#F9A825]/20 rounded-xl bg-white overflow-hidden">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer px-4 sm:px-6 py-4 text-sm font-medium text-[#1B1B4B] hover:text-[#F9A825] transition-colors list-none">
@@ -537,10 +537,10 @@
             <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-4">Ready to stop guessing?</h2>
             <p class="text-white/60 mb-8 leading-relaxed text-lg">Start with 3 free monitors. No credit card required.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button onclick="alert('Registration coming soon')" class="inline-flex items-center gap-2 text-base font-semibold bg-[#F9A825] text-[#1B1B4B] px-8 py-3.5 rounded-lg hover:bg-[#FFB830] transition-all cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">
+                <a href="https://app.rapidcheck.io/signup" class="inline-flex items-center gap-2 text-base font-semibold bg-[#F9A825] text-[#1B1B4B] px-8 py-3.5 rounded-lg hover:bg-[#FFB830] transition-all no-underline shadow-lg shadow-[#F9A825]/25">
                     Start for free
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-7-7l7 7-7 7"></path></svg>
-                </button>
+                </a>
                 <a href="/pricing" class="inline-flex items-center gap-2 text-base font-medium text-white px-8 py-3.5 rounded-lg border border-white/20 hover:border-white/40 hover:bg-white/5 transition-all no-underline">
                     See pricing
                 </a>

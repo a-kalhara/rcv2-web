@@ -32,7 +32,7 @@
             <div>
               <p class="text-amber-400 font-medium mb-2">CORS Blocked</p>
               <p class="text-[#4a4a6a] text-sm">This URL cannot be tested from the browser due to CORS (Cross-Origin Resource Sharing) restrictions. This is a client-side limitation.</p>
-              <p class="text-[#4a4a6a] text-sm mt-2">For accurate server-side response time checks from 330+ global locations, use RapidCheck's full monitoring platform.</p>
+              <p class="text-[#4a4a6a] text-sm mt-2">For accurate server-side response time checks from 300+ global locations, use RapidCheck's full monitoring platform.</p>
             </div>
           </div>
         </div>
@@ -76,8 +76,8 @@
 
         <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
           <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Monitor response times 24/7</h2>
-          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">Track performance from 330+ locations worldwide. Get alerts when things slow down.</p>
-          <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">Track performance from 300+ locations worldwide. Get alerts when things slow down.</p>
+          <a href="https://app.rapidcheck.io/signup" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors no-underline">Start for free</a>
         </div>
       </div>
     `;

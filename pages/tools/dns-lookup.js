@@ -5,7 +5,7 @@
     return `
       <div class="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-3">DNS Lookup</h1>
-        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Look up DNS records for any domain using Cloudflare DNS.</p>
+        <p class="text-[#4a4a6a] text-base sm:text-lg mb-10">Look up DNS records for any domain using global DNS infrastructure.</p>
 
         <div class="flex flex-col sm:flex-row gap-3 mb-8">
           <label for="dns-domain-input" class="sr-only">Domain</label>
@@ -59,7 +59,7 @@
         <div class="mt-12 sm:mt-16 text-center border-t border-[#F9A825]/15 pt-8 sm:pt-12">
           <h2 class="text-xl sm:text-2xl font-bold text-[#1B1B4B] mb-3">Track DNS changes automatically</h2>
           <p class="text-[#4a4a6a] text-sm sm:text-base mb-6">Get alerted when DNS records change unexpectedly. Catch hijacking and misconfigurations.</p>
-          <a href="/register" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors">Start Free Monitoring</a>
+          <a href="https://app.rapidcheck.io/signup" class="inline-block bg-[#F9A825] hover:bg-[#FFB830] text-[#1B1B4B] font-semibold px-6 py-3 rounded-lg transition-colors no-underline">Start for free</a>
         </div>
       </div>
     `;

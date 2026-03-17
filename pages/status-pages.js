@@ -13,6 +13,11 @@
           <h1 class="text-[1.6rem] sm:text-[2.25rem] md:text-4xl lg:text-5xl font-semibold tracking-tighter text-[#1B1B4B] mb-4 reveal-up" style="animation-delay: 0.1s;">
             Keep your customers informed and build trust
           </h1>
+          <div class="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#F9A825]/10 border border-[#F9A825]/30">
+              <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span class="text-sm font-medium text-[#F9A825]">Coming Soon</span>
+              <span class="text-sm text-[#4a4a6a]">— We're building this. Join the waitlist to be first.</span>
+          </div>
           <p class="text-base sm:text-lg text-[#4a4a6a] max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
             Beautiful, branded status pages that update automatically from your monitors. Custom domains, subscriber notifications, and incident timelines.
           </p>
@@ -72,7 +77,7 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">Start monitoring free</button>
+            <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors no-underline shadow-lg shadow-[#F9A825]/25">Start for free</a>
             <a href="/pricing" class="rounded-lg border border-[#1B1B4B]/20 px-6 py-3 text-sm font-medium text-[#1B1B4B] hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-colors">View pricing</a>
           </div>
         </div>
@@ -82,7 +87,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Custom domains</h3>
-            <p class="text-sm text-[#4a4a6a]">Host your status page on status.yourcompany.com with a simple CNAME record. SSL included automatically via Cloudflare.</p>
+            <p class="text-sm text-[#4a4a6a]">Host your status page on status.yourcompany.com with a simple CNAME record. SSL included automatically.</p>
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Component groups</h3>
@@ -128,7 +133,7 @@
         <div class="rounded-xl border border-[#F9A825]/20 bg-[#F9A825] p-5 sm:p-8 text-center">
           <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Launch your status page today</h2>
           <p class="text-[#1B1B4B]/70 mb-6">1 status page free. Unlimited on paid plans.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors cursor-pointer border-none">Start monitoring free</button>
+          <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors no-underline">Start for free</a>
         </div>
       </div>
     `;

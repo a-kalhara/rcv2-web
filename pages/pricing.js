@@ -85,9 +85,9 @@
                                 1 team member
                             </li>
                         </ul>
-                        <button onclick="alert('Registration coming soon')" class="w-full h-11 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 transition-colors cursor-pointer">
-                            Start free
-                        </button>
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-11 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 transition-colors flex items-center justify-center no-underline">
+                            Start for free
+                        </a>
                     </div>
                 </div>
 
@@ -117,7 +117,7 @@
                             </li>
                             <li class="flex items-start gap-3 text-sm text-[#4a4a6a]">
                                 <svg class="w-4 h-4 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                All 330+ check regions
+                                All 300+ check regions
                             </li>
                             <li class="flex items-start gap-3 text-sm text-[#4a4a6a]">
                                 <svg class="w-4 h-4 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -141,20 +141,20 @@
                             </li>
                             <li class="flex items-start gap-3 text-sm text-[#4a4a6a]">
                                 <svg class="w-4 h-4 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                Browser checks
+                                Browser checks <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-[#4a4a6a]">
                                 <svg class="w-4 h-4 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                On-call scheduling
+                                On-call scheduling <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span>
                             </li>
                             <li class="flex items-start gap-3 text-sm text-[#4a4a6a]">
                                 <svg class="w-4 h-4 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                SSO / SAML
+                                SSO / SAML <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span>
                             </li>
                         </ul>
-                        <button onclick="alert('Registration coming soon')" class="w-full h-11 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors cursor-pointer border-none">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-11 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline">
                             Start free trial
-                        </button>
+                        </a>
                         <p class="text-xs text-[#6a6a8a] text-center mt-3">1 month free trial. No credit card required.</p>
                     </div>
                 </div>
@@ -204,9 +204,9 @@
                                 SOC 2 report access
                             </li>
                         </ul>
-                        <button onclick="alert('Contact form coming soon')" class="w-full h-11 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 transition-colors cursor-pointer">
+                        <a href="mailto:sales@rapidcheck.io" class="w-full h-11 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 transition-colors flex items-center justify-center no-underline">
                             Contact sales
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -290,8 +290,8 @@
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
                     <div class="p-4 text-sm text-[#4a4a6a]">Check regions</div>
                     <div class="p-4 text-sm text-[#4a4a6a] text-center font-mono">3</div>
-                    <div class="p-4 text-sm text-[#F9A825] text-center font-mono">330+</div>
-                    <div class="p-4 text-sm text-[#F9A825] text-center font-mono">330+</div>
+                    <div class="p-4 text-sm text-[#F9A825] text-center font-mono">300+</div>
+                    <div class="p-4 text-sm text-[#F9A825] text-center font-mono">300+</div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
                     <div class="p-4 text-sm text-[#4a4a6a]">Multi-region verification</div>
@@ -300,13 +300,13 @@
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Browser checks</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Browser checks <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Heartbeat / cron monitoring</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Heartbeat / cron monitoring <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
@@ -358,37 +358,37 @@
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Slack integration</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Slack integration <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Discord integration</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Discord integration <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Webhook alerts</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Webhook alerts <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">SMS alerts</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">SMS alerts <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Phone call alerts</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Phone call alerts <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">On-call scheduling</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">On-call scheduling <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
@@ -399,19 +399,19 @@
                     <div class="col-span-4 px-4 py-2.5 text-xs font-semibold text-[#6a6a8a] uppercase tracking-wider">Status Pages</div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Public status pages</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Public status pages <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-sm text-[#4a4a6a] text-center font-mono">1</div>
                     <div class="p-4 text-sm text-[#F9A825] text-center font-mono">Unlimited</div>
                     <div class="p-4 text-sm text-[#F9A825] text-center font-mono">Unlimited</div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Custom domain</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Custom domain <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">Custom branding</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">Custom branding <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
@@ -434,7 +434,7 @@
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                 </div>
                 <div class="grid grid-cols-4 border-b border-[#F9A825]/15 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a]">SSO / SAML</div>
+                    <div class="p-4 text-sm text-[#4a4a6a]">SSO / SAML <span class="text-[10px] text-[#F9A825] ml-1">(coming soon)</span></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#6a6a8a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                     <div class="p-4 text-center"><svg class="w-4 h-4 mx-auto text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
@@ -567,10 +567,10 @@
             <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-[#1B1B4B] mb-3">Start monitoring in under a minute</h2>
             <p class="text-sm text-[#4a4a6a] mb-8 max-w-lg mx-auto">3 monitors free forever. Full domain intelligence included. No credit card required.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <button onclick="alert('Registration coming soon')" class="w-full sm:w-auto h-11 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors cursor-pointer border-none flex items-center justify-center gap-2 group">
-                    Get started free
+                <a href="https://app.rapidcheck.io/signup" class="w-full sm:w-auto h-11 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center gap-2 group no-underline">
+                    Start for free
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
-                </button>
+                </a>
                 <a href="/pricing" class="w-full sm:w-auto h-11 px-6 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 transition-colors flex items-center justify-center gap-2 no-underline">
                     Compare plans
                 </a>

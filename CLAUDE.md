@@ -37,34 +37,36 @@ The router in `index.html` intercepts navigation, looks up the route in `window.
 - No build step, no bundler, no package manager
 - All pages are functions returning HTML template literals
 - Use Tailwind utility classes for all styling
-- Color scheme: emerald accent (#10b981), dark background (#050505)
+- Color scheme: amber/gold accent (#F9A825), white background, navy (#1B1B4B) for headings and dark sections
 - Responsive: mobile-first with Tailwind breakpoints
 
 ## Design System
 
 ### Colors
-- Background: `#050505` (near-black)
-- Surface/cards: `bg-zinc-900/20` to `bg-zinc-900/40`
-- Primary accent: `emerald-500` (#10b981)
-- Body text: `text-zinc-300` (#d4d4d8) — NOT zinc-400 (too low contrast)
-- Headings: `text-white`
-- Secondary/metadata: `text-zinc-400` (timestamps, labels only)
-- Borders: `border-white/5` (cards), `border-white/10` (buttons, inputs)
+- Background: `#ffffff` (white)
+- Surface/cards: `bg-white` with `border-[#F9A825]/15` or `bg-[#faf8f5]`
+- Primary accent: `#F9A825` (amber/gold)
+- Navy: `#1B1B4B` (headings, dark sections)
+- Body text: `text-[#4a4a6a]`
+- Headings: `text-[#1B1B4B]`
+- Muted/metadata: `text-[#6a6a8a]`
+- Borders: `border-[#F9A825]/15` (cards), `border-[#1B1B4B]/10` (nav, subtle)
 
 ### Typography
 - Display: Inter 300-700
 - Mono: IBM Plex Mono 400-600
-- Body paragraphs: `text-zinc-300` (never zinc-400 for readability)
+- Body paragraphs: `text-[#4a4a6a]`
 
 ### Accessibility
-- Focus states: Global `focus-visible` with emerald outline (defined in index.html `<style>`)
+- Focus states: Global focus-visible with orange outline (#fb923c) (defined in index.html <style>)
 - Form inputs: Must have `<label>` elements (use `sr-only` class for visually hidden labels)
 - All interactive elements must have hover + focus states
 - `prefers-reduced-motion` is supported globally
 
 ### Cards
-- Feature cards: `rounded-xl border border-white/5 bg-zinc-900/20 p-6 hover:bg-zinc-900/30 hover:border-white/10 transition-colors`
-- Demo cards: `rounded-xl border border-white/5 bg-zinc-900/40 backdrop-blur-sm p-5`
+- Feature cards: `rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm`
+- Demo cards: `rounded-xl border border-[#F9A825]/20 bg-white shadow-xl`
+- Dark section cards: `rounded-xl border border-white/10 bg-white/5 p-7 hover:bg-white/10 hover:border-[#F9A825]/30`
 
 ### Dropdowns
 - Use `min-w-[min(Xpx,90vw)]` to prevent viewport overflow on mobile
@@ -73,14 +75,14 @@ The router in `index.html` intercepts navigation, looks up the route in `window.
 
 All buttons site-wide must use consistent styles. Do NOT deviate from these patterns:
 
-- **Primary CTA (emerald):** `rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-black hover:bg-emerald-400 transition-colors cursor-pointer border-none`
-- **Secondary CTA (outline):** `rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white hover:border-white/20 hover:bg-white/[0.06] transition-colors`
-- **Form action button (inline with input):** `bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap`
-- **Bottom page CTA link:** `inline-block bg-emerald-500 hover:bg-emerald-400 text-black font-semibold px-6 py-3 rounded-full transition-colors`
+- **Primary CTA (gold):** `rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-all shadow-lg shadow-[#F9A825]/25`
+- **Secondary CTA (outline):** `rounded-lg border border-[#1B1B4B]/20 px-6 py-3 text-sm font-medium text-[#1B1B4B] hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all`
+- **Dark section CTA:** `rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#24245A] transition-colors`
+- **Gold section CTA (inverted):** `rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#24245A] transition-colors`
 
 Key rules:
-- Always `rounded-full` (pill shape) — never `rounded-lg` for buttons
-- Always `hover:bg-emerald-400` for emerald buttons — never `hover:opacity-90`
+- Always `rounded-lg` for buttons
+- Always `hover:bg-[#FFB830]` for gold buttons — never `hover:opacity-90`
 - Always include a hover state — no buttons without hover
 - Consistent padding: `px-6 py-3` for all standard buttons
 

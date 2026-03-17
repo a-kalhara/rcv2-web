@@ -14,7 +14,7 @@
             Know your website is down before your customers do
           </h1>
           <p class="text-base sm:text-lg text-[#4a4a6a] max-w-2xl mx-auto mb-10 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
-            Monitor any URL from 330+ edge locations. Get alerted in seconds via email, Slack, SMS, or phone — with zero false positives.
+            Monitor any URL from 300+ edge locations. Get alerted in seconds via email, Slack, SMS, or phone — with near-zero false positives.
           </p>
 
           <!-- Animated uptime visualization -->
@@ -58,7 +58,7 @@
           </div>
 
           <div class="flex flex-wrap justify-center gap-4 reveal-up" style="animation-delay: 0.4s;">
-            <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors cursor-pointer border-none shadow-lg shadow-[#F9A825]/25">Start monitoring free</button>
+            <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#F9A825] px-6 py-3 text-sm font-semibold text-[#1B1B4B] hover:bg-[#FFB830] transition-colors no-underline shadow-lg shadow-[#F9A825]/25">Start for free</a>
             <a href="/pricing" class="rounded-lg border border-[#1B1B4B]/20 px-6 py-3 text-sm font-medium text-[#1B1B4B] hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-colors">View pricing</a>
           </div>
         </div>
@@ -67,16 +67,16 @@
       <div class="mx-auto max-w-4xl px-6 pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
-            <h3 class="text-[#1B1B4B] font-semibold mb-2">330+ global edge locations</h3>
-            <p class="text-sm text-[#4a4a6a]">Checks run from Cloudflare's worldwide network, so you see performance and availability from your users' perspective — not just one data center.</p>
+            <h3 class="text-[#1B1B4B] font-semibold mb-2">300+ global edge locations</h3>
+            <p class="text-sm text-[#4a4a6a]">Checks run from our global edge network, so you see performance and availability from your users' perspective — not just one data center.</p>
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">30-second check intervals</h3>
             <p class="text-sm text-[#4a4a6a]">Paid plans check every 30 seconds, so you catch downtime fast. Free plans check every 3 minutes — still faster than most competitors.</p>
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
-            <h3 class="text-[#1B1B4B] font-semibold mb-2">Zero false positives</h3>
-            <p class="text-sm text-[#4a4a6a]">Every check runs from 3 regions simultaneously. 2-of-3 must confirm failure before we alert you. No more 3 AM wake-ups for a network blip.</p>
+            <h3 class="text-[#1B1B4B] font-semibold mb-2">Near-zero false positives</h3>
+            <p class="text-sm text-[#4a4a6a]">Checks run from multiple global locations. We verify results before alerting to minimize false positives. No more 3 AM wake-ups for a network blip.</p>
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Custom assertions</h3>
@@ -88,7 +88,7 @@
           </div>
           <div class="rounded-xl border border-[#F9A825]/15 bg-white p-6 hover:bg-[#faf8f5] hover:border-[#F9A825]/30 transition-colors shadow-sm">
             <h3 class="text-[#1B1B4B] font-semibold mb-2">Instant alerts</h3>
-            <p class="text-sm text-[#4a4a6a]">Email, Slack, Discord, SMS, phone calls, and webhooks. Route alerts to the right people at the right time with escalation policies.</p>
+            <p class="text-sm text-[#4a4a6a]">Email, Slack <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, Discord <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, SMS <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, phone calls <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, and webhooks <span class="text-[10px] text-[#F9A825]">(coming soon)</span>. Route alerts to the right people at the right time with escalation policies.</p>
           </div>
         </div>
 
@@ -103,12 +103,12 @@
             <div class="text-center">
               <div class="w-10 h-10 rounded-full bg-[#F9A825]/10 border border-[#F9A825]/30 flex items-center justify-center text-[#F9A825] font-bold mx-auto mb-4">2</div>
               <h3 class="text-[#1B1B4B] font-semibold mb-2">We monitor from the edge</h3>
-              <p class="text-sm text-[#4a4a6a]">Our global network checks your site from 330+ locations every 30 seconds. Three regions verify each result to eliminate false positives.</p>
+              <p class="text-sm text-[#4a4a6a]">Our global network checks your site from 300+ locations every 30 seconds. We verify results before alerting to minimize false positives.</p>
             </div>
             <div class="text-center">
               <div class="w-10 h-10 rounded-full bg-[#F9A825]/10 border border-[#F9A825]/30 flex items-center justify-center text-[#F9A825] font-bold mx-auto mb-4">3</div>
               <h3 class="text-[#1B1B4B] font-semibold mb-2">Get alerted instantly</h3>
-              <p class="text-sm text-[#4a4a6a]">When something goes wrong, you know immediately. Email, Slack, SMS, phone — however you want to be reached.</p>
+              <p class="text-sm text-[#4a4a6a]">When something goes wrong, you know immediately. Email, Slack <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, SMS <span class="text-[10px] text-[#F9A825]">(coming soon)</span>, phone <span class="text-[10px] text-[#F9A825]">(coming soon)</span> — however you want to be reached.</p>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
         <div class="rounded-xl border border-[#F9A825]/20 bg-[#F9A825] p-5 sm:p-8 text-center">
           <h2 class="text-2xl font-bold text-[#1B1B4B] mb-3">Start monitoring in 2 minutes</h2>
           <p class="text-[#1B1B4B]/70 mb-6">3 monitors free forever. No credit card required.</p>
-          <button onclick="alert('Registration coming soon')" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors cursor-pointer border-none">Start monitoring free</button>
+          <a href="https://app.rapidcheck.io/signup" class="rounded-lg bg-[#1B1B4B] px-6 py-3 text-sm font-semibold text-white hover:bg-[#2a2a5b] transition-colors no-underline">Start for free</a>
         </div>
       </div>
     `;
