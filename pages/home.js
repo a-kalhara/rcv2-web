@@ -338,7 +338,7 @@
                     <div class="flex">
                         <div class="w-48 border-r border-[#F9A825]/15 bg-[#faf8f5] p-4 hidden md:block">
                             <div class="flex items-center gap-2 mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4" stroke="#F9A825" stroke-width="2" stroke-linecap="round"/><path d="M12 16V5" stroke="#1B1B4B" stroke-width="2" stroke-linecap="round"/><path d="M8.5 8.5L12 5l3.5 3.5" stroke="#1B1B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.4" cy="7.2" r="1.5" fill="#F9A825"/></svg>
+                                <div class="w-5 h-5 rounded bg-[#F9A825] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1B1B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                                 <span class="text-xs font-semibold text-[#1B1B4B]">RapidCheck</span>
                             </div>
                             <div class="space-y-1">
