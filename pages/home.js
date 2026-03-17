@@ -119,7 +119,7 @@
     <section class="bg-[#F9A825] py-10 relative">
         <div class="max-w-6xl mx-auto px-6">
             <p class="text-center text-[10px] font-semibold text-[#1B1B4B]/60 uppercase tracking-widest mb-8">Built for scale. Trusted by teams worldwide.</p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
                 <div class="text-center">
                     <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1B1B4B] mb-1">300+</div>
                     <div class="text-sm text-[#1B1B4B]/80">Edge Locations</div>
@@ -141,17 +141,23 @@
                     <div class="text-xs text-[#1B1B4B]/50 mt-0.5">Full intelligence on every plan</div>
                 </div>
             </div>
-            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-[#1B1B4B]/70 font-medium border-t border-[#1B1B4B]/15 pt-6">
-                <span class="flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+    </section>
+
+    <!-- Security Trust Strip -->
+    <section class="py-6 relative bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#4a4a6a] font-medium">
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                     AES-256 Encryption
                 </span>
-                <span class="flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     GDPR Compliant
                 </span>
-                <span class="flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                     SOC 2 Compliant
                 </span>
             </div>
