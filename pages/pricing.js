@@ -12,12 +12,6 @@
             <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1B1B4B] mb-1 reveal-up">
                 $2 per monitor. That's it.
             </h1>
-            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-[#6a6a8a]">
-                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card</span>
-                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial</span>
-                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
-                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>GDPR</span>
-            </div>
         </div>
     </section>
 
@@ -150,6 +144,13 @@
                         Contact sales
                     </a>
                 </div>
+            </div>
+
+            <!-- Trust signals -->
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 mt-4 text-xs text-[#6a6a8a]">
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card required</span>
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial</span>
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
             </div>
         </div>
     </section>
