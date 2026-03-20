@@ -26,10 +26,10 @@
     <!-- Plan Cards: Free + Paid (side by side) -->
     <section class="pb-5 relative">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
 
-                <!-- Free Plan (narrower) -->
-                <div class="md:col-span-4 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 sm:p-5 flex flex-col order-2 md:order-1">
+                <!-- Free Plan (narrow) -->
+                <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1">
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-4">
                             <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Free Forever</h3>
@@ -76,7 +76,7 @@
                 </div>
 
                 <!-- Paid Plan (wider, with slider + add-ons) -->
-                <div class="md:col-span-8 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2">
+                <div class="md:col-span-7 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2">
                         <span class="bg-[#F9A825] text-[#1B1B4B] text-[10px] font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Pay per monitor</span>
                     </div>
@@ -204,38 +204,35 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Security Add-ons Banner -->
-    <section class="pb-6">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-[#1B1B4B] rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 relative overflow-hidden">
-                <div class="absolute inset-0 overflow-hidden pointer-events-none">
-                    <div class="absolute top-[-30%] right-[-10%] w-[300px] h-[300px] bg-[#F9A825]/[0.08] rounded-full blur-[80px]"></div>
-                </div>
-                <div class="relative z-10 flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                        <svg class="w-5 h-5 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <!-- Security Add-ons (vertical column) -->
+                <div class="md:col-span-2 relative bg-[#1B1B4B] rounded-2xl p-4 flex flex-col order-3 overflow-hidden">
+                    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                        <div class="absolute top-[-20%] right-[-30%] w-[200px] h-[200px] bg-[#F9A825]/[0.08] rounded-full blur-[60px]"></div>
                     </div>
-                    <div>
-                        <h3 class="text-sm font-semibold text-white">Security Add-ons</h3>
-                        <p class="text-xs text-white/60">Protect your attack surface</p>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="mb-4">
+                            <svg class="w-5 h-5 text-[#F9A825] mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <h3 class="text-[10px] font-semibold text-white/60 uppercase tracking-wider">Security</h3>
+                        </div>
+
+                        <div class="space-y-4 flex-1">
+                            <div>
+                                <div class="text-xs font-semibold text-white mb-0.5">ASM Scanning</div>
+                                <div class="text-[10px] text-white/50 leading-relaxed mb-1.5">Attack surface monitoring. Subdomains, exposed assets, vulnerabilities.</div>
+                                <div class="text-sm font-mono font-bold text-[#F9A825]">$49<span class="text-xs font-normal text-white/40">/mo</span></div>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-white mb-0.5">OWASP Top 10</div>
+                                <div class="text-[10px] text-white/50 leading-relaxed mb-1.5">Automated security audits for your web apps.</div>
+                                <div class="text-sm font-mono font-bold text-[#F9A825]">$29<span class="text-xs font-normal text-white/40">/mo</span></div>
+                            </div>
+                        </div>
+
+                        <a href="mailto:sales@rapidcheck.io" class="w-full h-8 mt-4 rounded-lg border border-white/20 text-white text-[10px] font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
+                            Learn more
+                        </a>
                     </div>
-                </div>
-                <div class="relative z-10 flex flex-wrap items-center gap-6">
-                    <div>
-                        <div class="text-xs text-white/60">ASM Scanning</div>
-                        <div class="text-sm font-mono font-semibold text-white">from $49<span class="text-white/50 font-normal">/mo</span></div>
-                    </div>
-                    <div>
-                        <div class="text-xs text-white/60">OWASP Scanning</div>
-                        <div class="text-sm font-mono font-semibold text-white">from $29<span class="text-white/50 font-normal">/mo</span></div>
-                    </div>
-                    <a href="mailto:sales@rapidcheck.io" class="h-8 px-4 rounded-lg border border-white/20 text-white text-xs font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
-                        Learn more
-                    </a>
                 </div>
             </div>
         </div>
