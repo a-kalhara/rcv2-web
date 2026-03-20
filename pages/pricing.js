@@ -26,7 +26,7 @@
     <!-- Three-column: Free | Paid | Add-ons + Security -->
     <section class="pb-4 relative">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:items-start">
 
                 <!-- Free Plan -->
                 <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1">
@@ -39,7 +39,7 @@
                             </div>
                             <p class="text-[11px] text-[#4a4a6a]">For personal projects.</p>
                         </div>
-                        <ul class="space-y-1.5 flex-1">
+                        <ul class="space-y-1.5 mb-4">
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3 monitors</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3-minute checks</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1 region + retry</li>
@@ -48,12 +48,9 @@
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Email alerts</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>30-day retention</li>
                         </ul>
-                        <div class="mt-auto pt-4 border-t border-[#F9A825]/10">
-                            <p class="text-[10px] text-[#6a6a8a] text-center mb-3">Need more? Upgrade anytime.</p>
-                            <a href="https://app.rapidcheck.io/signup" class="w-full h-8 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-[11px] font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
-                                Start for free
-                            </a>
-                        </div>
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-8 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-[11px] font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
+                            Start for free
+                        </a>
                     </div>
                 </div>
 
