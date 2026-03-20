@@ -147,7 +147,7 @@
             </div>
 
             <!-- Trust signals -->
-            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 mt-4 text-xs text-[#6a6a8a]">
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 mt-6 text-xs text-[#6a6a8a]">
                 <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card required</span>
                 <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial</span>
                 <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
