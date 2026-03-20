@@ -107,48 +107,36 @@
                     </div>
                 </div>
 
-                <!-- Right column: Security Add-ons (full height) -->
-                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-5 flex flex-col order-3 overflow-hidden">
+                <!-- Right column: Security Add-ons -->
+                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-4 flex flex-col order-3 overflow-hidden">
                     <div class="absolute inset-0 overflow-hidden pointer-events-none">
                         <div class="absolute top-[-10%] right-[-20%] w-[300px] h-[300px] bg-[#F9A825]/[0.06] rounded-full blur-[80px]"></div>
-                        <div class="absolute bottom-[-10%] left-[-20%] w-[200px] h-[200px] bg-[#F9A825]/[0.04] rounded-full blur-[60px]"></div>
                     </div>
-                    <div class="relative z-10 flex flex-col h-full">
-                        <div class="mb-5">
-                            <div class="flex items-center gap-2.5 mb-2">
-                                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                                    <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-2 mb-3">
+                            <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <h3 class="text-xs font-semibold text-white">Security Add-ons</h3>
+                        </div>
+
+                        <div class="space-y-3 mb-3">
+                            <div class="bg-white/5 rounded-lg p-3 border border-white/10">
+                                <div class="flex items-baseline justify-between mb-1">
+                                    <span class="text-xs font-semibold text-white">ASM Scanning</span>
+                                    <span class="text-sm font-mono font-bold text-[#F9A825]">$49<span class="text-[10px] font-normal text-white/40">/mo</span></span>
                                 </div>
-                                <div>
-                                    <h3 class="text-sm font-semibold text-white">Security</h3>
-                                    <p class="text-[10px] text-white/40">Protect your attack surface</p>
+                                <p class="text-[10px] text-white/40 leading-relaxed">Discover subdomains, exposed assets &amp; vulnerabilities. 5 domains included, 25 from $99/mo.</p>
+                            </div>
+
+                            <div class="bg-white/5 rounded-lg p-3 border border-white/10">
+                                <div class="flex items-baseline justify-between mb-1">
+                                    <span class="text-xs font-semibold text-white">OWASP Top 10</span>
+                                    <span class="text-sm font-mono font-bold text-[#F9A825]">$29<span class="text-[10px] font-normal text-white/40">/mo</span></span>
                                 </div>
+                                <p class="text-[10px] text-white/40 leading-relaxed">SQL injection, XSS, broken auth scanning. 5 targets included, 25 from $79/mo.</p>
                             </div>
                         </div>
 
-                        <div class="space-y-5 flex-1">
-                            <div class="bg-white/5 rounded-xl p-4 border border-white/10">
-                                <div class="text-xs font-semibold text-white mb-1">ASM Scanning</div>
-                                <p class="text-[11px] text-white/50 leading-relaxed mb-2">Continuous attack surface monitoring. Discover subdomains, exposed assets, open ports, and vulnerabilities before attackers do.</p>
-                                <div class="flex items-baseline gap-1">
-                                    <span class="text-xl font-mono font-bold text-[#F9A825]">$49</span>
-                                    <span class="text-xs text-white/40">/mo &middot; 5 domains</span>
-                                </div>
-                                <div class="text-[10px] text-white/30 mt-1">25 domains from $99/mo</div>
-                            </div>
-
-                            <div class="bg-white/5 rounded-xl p-4 border border-white/10">
-                                <div class="text-xs font-semibold text-white mb-1">OWASP Top 10 Scanning</div>
-                                <p class="text-[11px] text-white/50 leading-relaxed mb-2">Automated security audits against OWASP Top 10 vulnerabilities. SQL injection, XSS, broken auth, and more.</p>
-                                <div class="flex items-baseline gap-1">
-                                    <span class="text-xl font-mono font-bold text-[#F9A825]">$29</span>
-                                    <span class="text-xs text-white/40">/mo &middot; 5 targets</span>
-                                </div>
-                                <div class="text-[10px] text-white/30 mt-1">25 targets from $79/mo</div>
-                            </div>
-                        </div>
-
-                        <a href="mailto:sales@rapidcheck.io" class="w-full h-9 mt-4 rounded-lg border border-white/20 text-white text-xs font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
+                        <a href="mailto:sales@rapidcheck.io" class="w-full h-8 rounded-lg border border-white/20 text-white text-[11px] font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
                             Contact sales
                         </a>
                     </div>
