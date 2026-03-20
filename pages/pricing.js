@@ -15,10 +15,10 @@
                 Simple, per-monitor pricing
             </h1>
             <p class="text-base sm:text-lg text-[#4a4a6a] max-w-xl mx-auto mb-2 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
-                Pay only for what you monitor. Volume discounts kick in automatically.
+                $2 per monitor per month. Everything included.
             </p>
             <p class="text-sm text-[#6a6a8a] reveal-up" style="animation-delay: 0.25s;">
-                No tiers. No packages. No per-seat charges.
+                No tiers. No packages. No per-seat charges. No surprises.
             </p>
         </div>
     </section>
@@ -97,7 +97,7 @@
                         <div class="mb-6">
                             <h3 class="text-base sm:text-lg font-medium text-[#1B1B4B] mb-1">Pay-As-You-Go</h3>
                             <div class="flex items-baseline gap-1 mb-1">
-                                <span class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B4B]">$<span id="hero-price">2.00</span></span>
+                                <span class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B4B]">$2</span>
                                 <span class="text-[#6a6a8a] text-sm">/monitor/month</span>
                             </div>
                             <p class="text-sm text-[#4a4a6a]">Everything you need for production monitoring.</p>
@@ -132,7 +132,7 @@
                                 <span class="text-sm text-[#4a4a6a]">Monthly total</span>
                                 <span class="text-2xl font-bold font-mono text-[#1B1B4B]">$<span id="hero-total">20.00</span></span>
                             </div>
-                            <p class="text-[10px] text-[#6a6a8a] text-right mt-1" id="hero-breakdown">10 monitors &times; $2.00/ea</p>
+                            <p class="text-[10px] text-[#6a6a8a] text-right mt-1" id="hero-breakdown">10 monitors &times; $2/ea</p>
                         </div>
 
                         <ul class="space-y-3 mb-8 flex-1">
@@ -184,49 +184,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Volume Pricing Table -->
-    <section class="pb-20 relative">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-8">
-                <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-[#1B1B4B] mb-2">Volume discounts, automatic</h2>
-                <p class="text-sm text-[#4a4a6a]">The more you monitor, the less each monitor costs. No negotiation needed.</p>
-            </div>
-            <div class="border border-[#F9A825]/15 rounded-2xl overflow-hidden bg-white">
-                <div class="grid grid-cols-3 bg-[#faf8f5] border-b border-[#F9A825]/15">
-                    <div class="p-4 text-xs font-semibold text-[#6a6a8a] uppercase tracking-wider">Monitors</div>
-                    <div class="p-4 text-xs font-semibold text-[#6a6a8a] uppercase tracking-wider text-center">Per Monitor</div>
-                    <div class="p-4 text-xs font-semibold text-[#6a6a8a] uppercase tracking-wider text-right">Example Bill</div>
-                </div>
-                <div class="grid grid-cols-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a] font-mono">1 &ndash; 10</div>
-                    <div class="p-4 text-sm text-[#1B1B4B] text-center font-mono font-semibold">$2.00</div>
-                    <div class="p-4 text-sm text-[#4a4a6a] text-right font-mono">$20 <span class="text-[#6a6a8a] text-xs">/10 monitors</span></div>
-                </div>
-                <div class="grid grid-cols-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a] font-mono">11 &ndash; 25</div>
-                    <div class="p-4 text-sm text-[#1B1B4B] text-center font-mono font-semibold">$1.75</div>
-                    <div class="p-4 text-sm text-[#4a4a6a] text-right font-mono">$37.50 <span class="text-[#6a6a8a] text-xs">/20 monitors</span></div>
-                </div>
-                <div class="grid grid-cols-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a] font-mono">26 &ndash; 50</div>
-                    <div class="p-4 text-sm text-[#1B1B4B] text-center font-mono font-semibold">$1.50</div>
-                    <div class="p-4 text-sm text-[#4a4a6a] text-right font-mono">$75 <span class="text-[#6a6a8a] text-xs">/50 monitors</span></div>
-                </div>
-                <div class="grid grid-cols-3 border-b border-[#F9A825]/10 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a] font-mono">51 &ndash; 100</div>
-                    <div class="p-4 text-sm text-[#1B1B4B] text-center font-mono font-semibold">$1.25</div>
-                    <div class="p-4 text-sm text-[#4a4a6a] text-right font-mono">$125 <span class="text-[#6a6a8a] text-xs">/100 monitors</span></div>
-                </div>
-                <div class="grid grid-cols-3 hover:bg-[#faf8f5] transition-colors">
-                    <div class="p-4 text-sm text-[#4a4a6a] font-mono">101+</div>
-                    <div class="p-4 text-sm text-[#1B1B4B] text-center font-mono font-semibold">$1.00</div>
-                    <div class="p-4 text-sm text-[#4a4a6a] text-right font-mono">$200 <span class="text-[#6a6a8a] text-xs">/200 monitors</span></div>
-                </div>
-            </div>
-            <p class="text-xs text-[#6a6a8a] text-center mt-4">Volume discount is tiered &mdash; first 10 at $2.00, next 15 at $1.75, and so on.</p>
         </div>
     </section>
 
@@ -506,8 +463,8 @@
                     <div class="absolute top-[-30%] right-[-10%] w-[400px] h-[400px] bg-[#F9A825]/[0.08] rounded-full blur-[100px]"></div>
                 </div>
                 <div class="relative z-10">
-                    <h2 class="text-xl sm:text-2xl font-semibold text-white mb-2">Need 100+ monitors?</h2>
-                    <p class="text-sm text-white/70 mb-6 max-w-md mx-auto">Get custom volume pricing, a dedicated account manager, custom SLA, priority support, and invoice billing.</p>
+                    <h2 class="text-xl sm:text-2xl font-semibold text-white mb-2">Need enterprise features?</h2>
+                    <p class="text-sm text-white/70 mb-6 max-w-md mx-auto">Get a dedicated account manager, custom SLA, priority support, and invoice billing.</p>
                     <a href="mailto:sales@rapidcheck.io" class="inline-flex h-11 px-8 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25">
                         Contact sales
                     </a>
@@ -532,23 +489,12 @@
                     </button>
                     <div class="faq-content hidden">
                         <div class="px-5 pb-5 text-sm text-[#4a4a6a] leading-relaxed">
-                            You pay per monitor per month. Every monitor includes 30-second checks, 250 browser checks, 5 SMS alerts, SSL monitoring, and all alert channels. Volume discounts apply automatically &mdash; the more monitors you add, the lower the per-monitor price. No tiers, no packages to choose between.
+                            Simple &mdash; every monitor costs $2/month. That includes 30-second checks, 250 browser checks, 5 SMS alerts, SSL monitoring, and all alert channels. 10 monitors = $20/month. 50 monitors = $100/month. No tiers, no packages, no surprises.
                         </div>
                     </div>
                 </div>
                 <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
                     <button class="faq-trigger w-full flex items-center justify-between p-5 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="1">
-                        <span class="text-sm font-medium text-[#1B1B4B] pr-4">How does volume pricing work?</span>
-                        <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </button>
-                    <div class="faq-content hidden">
-                        <div class="px-5 pb-5 text-sm text-[#4a4a6a] leading-relaxed">
-                            Volume pricing is tiered, not flat. Your first 10 monitors cost $2.00 each, the next 15 cost $1.75 each, and so on. For example, 20 monitors = (10 &times; $2.00) + (10 &times; $1.75) = $37.50/mo. The discount kicks in automatically &mdash; you never have to commit to a plan.
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
-                    <button class="faq-trigger w-full flex items-center justify-between p-5 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="2">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">What counts as a monitor?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </button>
@@ -638,19 +584,13 @@
   };
 
   window.__pages['/pricing'].init = function() {
-    // Volume pricing calculator
-    var tiers = [
-      { max: 10, price: 2.00 },
-      { max: 25, price: 1.75 },
-      { max: 50, price: 1.50 },
-      { max: 100, price: 1.25 },
-      { max: Infinity, price: 1.00 }
-    ];
+    // Flat $2/monitor pricing calculator
+    var PRICE = 2;
 
     // Non-linear slider: 0-600 range, stops at 0/100/200/300/400/500/600
     // Maps to monitor counts: 1, 5, 10, 25, 50, 100, 200
     var stops = [1, 5, 10, 25, 50, 100, 200];
-    var SEG = 100; // each segment is exactly 100 units
+    var SEG = 100;
 
     function sliderToMonitors(sliderVal) {
       var segIndex = Math.min(Math.floor(sliderVal / SEG), stops.length - 2);
@@ -659,77 +599,24 @@
       return Math.round(stops[segIndex] + t * (stops[segIndex + 1] - stops[segIndex]));
     }
 
-    function monitorsToSlider(count) {
-      for (var i = 0; i < stops.length - 1; i++) {
-        if (count <= stops[i + 1]) {
-          var t = (count - stops[i]) / (stops[i + 1] - stops[i]);
-          return Math.round(i * SEG + t * SEG);
-        }
-      }
-      return 600;
-    }
-
-    function calcCost(count) {
-      var total = 0;
-      var remaining = count;
-      var prevMax = 0;
-      for (var i = 0; i < tiers.length; i++) {
-        var tierSize = tiers[i].max - prevMax;
-        var inTier = Math.min(remaining, tierSize);
-        total += inTier * tiers[i].price;
-        remaining -= inTier;
-        prevMax = tiers[i].max;
-        if (remaining <= 0) break;
-      }
-      return total;
-    }
-
-    function getEffectiveRate(count) {
-      if (count <= 10) return 2.00;
-      if (count <= 25) return 1.75;
-      if (count <= 50) return 1.50;
-      if (count <= 100) return 1.25;
-      return 1.00;
-    }
-
-    function buildBreakdown(count) {
-      var parts = [];
-      var remaining = count;
-      var prevMax = 0;
-      for (var i = 0; i < tiers.length; i++) {
-        var tierSize = tiers[i].max === Infinity ? remaining : tiers[i].max - prevMax;
-        var inTier = Math.min(remaining, tierSize);
-        if (inTier > 0) {
-          parts.push(inTier + ' &times; $' + tiers[i].price.toFixed(2));
-        }
-        remaining -= inTier;
-        prevMax = tiers[i].max;
-        if (remaining <= 0) break;
-      }
-      return parts.join(' + ');
-    }
-
     // Hero slider
     var heroSlider = document.getElementById('hero-slider');
     var heroCount = document.getElementById('hero-count');
-    var heroPrice = document.getElementById('hero-price');
     var heroTotal = document.getElementById('hero-total');
     var heroBreakdown = document.getElementById('hero-breakdown');
 
     function updateSlider() {
       var sliderVal = parseInt(heroSlider.value, 10);
       var count = sliderToMonitors(sliderVal);
-      var total = calcCost(count);
-      var rate = getEffectiveRate(count);
+      var total = count * PRICE;
       heroCount.textContent = count;
-      heroPrice.textContent = rate.toFixed(2);
-      heroTotal.textContent = total.toFixed(2);
-      heroBreakdown.innerHTML = buildBreakdown(count);
+      heroTotal.textContent = total;
+      heroBreakdown.innerHTML = count + ' monitors &times; $' + PRICE + '/ea';
     }
 
     if (heroSlider) {
       heroSlider.addEventListener('input', updateSlider);
-      updateSlider(); // initialize
+      updateSlider();
 
       // Clickable stop labels
       document.querySelectorAll('.slider-stop').forEach(function(el) {
