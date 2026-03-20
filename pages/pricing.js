@@ -26,7 +26,7 @@
     <!-- Three-column: Free | Paid | Add-ons + Security -->
     <section class="pb-4 relative">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:items-start">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:items-stretch">
 
                 <!-- Free Plan -->
                 <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1">
@@ -39,7 +39,7 @@
                             </div>
                             <p class="text-[11px] text-[#4a4a6a]">For personal projects.</p>
                         </div>
-                        <ul class="space-y-1.5 mb-4">
+                        <ul class="space-y-1.5 flex-1">
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3 monitors</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3-minute checks</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1 region + retry</li>
@@ -48,7 +48,7 @@
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Email alerts</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>30-day retention</li>
                         </ul>
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-8 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-[11px] font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 mt-auto rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
                             Start for free
                         </a>
                     </div>
@@ -112,13 +112,13 @@
                     <div class="absolute inset-0 overflow-hidden pointer-events-none">
                         <div class="absolute top-[-10%] right-[-20%] w-[300px] h-[300px] bg-[#F9A825]/[0.06] rounded-full blur-[80px]"></div>
                     </div>
-                    <div class="relative z-10">
+                    <div class="relative z-10 flex flex-col h-full">
                         <div class="flex items-center gap-2 mb-3">
                             <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                             <h3 class="text-xs font-semibold text-white">Security Add-ons</h3>
                         </div>
 
-                        <div class="space-y-3 mb-3">
+                        <div class="space-y-3 flex-1">
                             <div class="bg-white/5 rounded-lg p-3 border border-white/10">
                                 <div class="flex items-baseline justify-between mb-1">
                                     <span class="text-xs font-semibold text-white">ASM Scanning</span>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
 
-                        <a href="mailto:sales@rapidcheck.io" class="w-full h-8 rounded-lg border border-white/20 text-white text-[11px] font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
+                        <a href="mailto:sales@rapidcheck.io" class="w-full h-9 mt-auto rounded-lg border border-white/20 text-white text-xs font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
                             Contact sales
                         </a>
                     </div>
