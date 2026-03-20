@@ -119,7 +119,7 @@
                                 class="w-full h-1.5 bg-[#F9A825]/20 rounded-full appearance-none cursor-pointer"
                                 style="accent-color: #F9A825;"
                             >
-                            <div class="flex justify-between text-[10px] mt-1.5 px-0.5">
+                            <div class="flex justify-between text-[10px] mt-1.5 px-[10px]">
                                 <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="0">1</span>
                                 <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="1">5</span>
                                 <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="2">10</span>
