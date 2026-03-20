@@ -48,9 +48,6 @@
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Email alerts</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>30-day retention</li>
                         </ul>
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 mt-auto rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
-                            Start for free
-                        </a>
                     </div>
                 </div>
 
@@ -83,13 +80,9 @@
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>API access</li>
                         </ul>
 
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mt-auto">
-                            Start free trial &mdash; 1 month free
-                        </a>
-
-                        <!-- Add-ons dropdown (below CTA) -->
-                        <div class="mt-2.5">
-                            <button id="addon-trigger" class="w-full flex items-center justify-center gap-1.5 py-1 text-left cursor-pointer bg-transparent border-none hover:opacity-80 transition-opacity">
+                        <!-- Add-ons dropdown -->
+                        <div class="mt-auto pt-2">
+                            <button id="addon-trigger" class="w-full flex items-center justify-center gap-1.5 py-1 cursor-pointer bg-transparent border-none hover:opacity-80 transition-opacity">
                                 <span class="text-[10px] text-[#6a6a8a]">Extra volumes available as <strong class="text-[#1B1B4B]">add-ons</strong></span>
                                 <svg id="addon-chevron" class="w-3 h-3 text-[#6a6a8a] transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </button>
@@ -136,10 +129,26 @@
                             </div>
                         </div>
 
-                        <a href="mailto:sales@rapidcheck.io" class="w-full h-9 mt-auto rounded-lg border border-white/20 text-white text-xs font-medium hover:border-white/40 hover:bg-white/5 transition-all flex items-center justify-center no-underline">
-                            Contact sales
-                        </a>
                     </div>
+                </div>
+            </div>
+
+            <!-- CTA Row — aligned below all cards -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-3">
+                <div class="md:col-span-3">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
+                        Start for free
+                    </a>
+                </div>
+                <div class="md:col-span-5">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25">
+                        Start free trial &mdash; 1 month free
+                    </a>
+                </div>
+                <div class="md:col-span-4">
+                    <a href="mailto:sales@rapidcheck.io" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-[#1B1B4B] text-white text-xs font-medium hover:bg-[#24245A] transition-all flex items-center justify-center no-underline">
+                        Contact sales
+                    </a>
                 </div>
             </div>
         </div>
