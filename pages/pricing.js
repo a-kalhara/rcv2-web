@@ -3,211 +3,198 @@
   window.__pages = window.__pages || {};
   window.__pages['/pricing'] = function() {
     return `
-    <!-- Pricing Hero -->
-    <section class="pt-24 sm:pt-28 md:pt-32 pb-12 relative">
+    <!-- Compact Hero + Trust -->
+    <section class="pt-20 sm:pt-24 pb-6 relative">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-[-10%] left-[30%] w-[500px] h-[500px] bg-[#F9A825]/[0.06] rounded-full blur-[120px]"></div>
-            <div class="absolute top-[20%] right-[20%] w-[400px] h-[400px] bg-[#F9A825]/[0.04] rounded-full blur-[100px]"></div>
         </div>
-        <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
         <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
-            <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold tracking-tighter text-[#1B1B4B] mb-4 reveal-up" style="animation-delay: 0.1s;">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1B1B4B] mb-1.5 reveal-up">
                 $2 per monitor. That's it.
             </h1>
-            <p class="text-base sm:text-lg text-[#4a4a6a] max-w-xl mx-auto mb-2 leading-relaxed reveal-up" style="animation-delay: 0.2s;">
-                Everything included. No tiers. No per-seat charges.
-            </p>
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-[#6a6a8a]">
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card</span>
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial</span>
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
+                <span class="flex items-center gap-1"><svg class="w-3 h-3 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>GDPR</span>
+            </div>
         </div>
     </section>
 
     <main>
 
-    <!-- Trust Signals -->
-    <div class="max-w-3xl mx-auto px-6 text-center pb-10">
-        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs text-[#6a6a8a] border border-[#F9A825]/15 rounded-full px-8 py-3.5 bg-[#faf8f5]">
-            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>No credit card required</span>
-            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1-month free trial</span>
-            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Cancel anytime</span>
-            <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>GDPR compliant</span>
-        </div>
-    </div>
-
     <!-- Plan Cards: Free + Paid (side by side) -->
-    <section class="pb-8 relative">
+    <section class="pb-5 relative">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
 
                 <!-- Free Plan (narrower) -->
-                <div class="md:col-span-4 relative bg-white border border-[#F9A825]/15 rounded-2xl p-7 flex flex-col order-2 md:order-1">
+                <div class="md:col-span-4 relative bg-white border border-[#F9A825]/15 rounded-2xl p-5 sm:p-6 flex flex-col order-2 md:order-1">
                     <div class="relative z-10 flex flex-col h-full">
-                        <div class="mb-5">
-                            <h3 class="text-sm font-medium text-[#6a6a8a] uppercase tracking-wider mb-1">Free Forever</h3>
-                            <div class="flex items-baseline gap-1 mb-2">
-                                <span class="text-3xl sm:text-4xl font-bold text-[#1B1B4B]">$0</span>
-                                <span class="text-[#6a6a8a] text-sm">/month</span>
+                        <div class="mb-4">
+                            <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Free Forever</h3>
+                            <div class="flex items-baseline gap-1 mb-1">
+                                <span class="text-2xl sm:text-3xl font-bold text-[#1B1B4B]">$0</span>
+                                <span class="text-[#6a6a8a] text-xs">/month</span>
                             </div>
-                            <p class="text-xs text-[#4a4a6a]">For personal projects and side hustles.</p>
+                            <p class="text-[11px] text-[#4a4a6a]">For personal projects.</p>
                         </div>
-                        <ul class="space-y-2.5 mb-6 flex-1">
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <ul class="space-y-1.5 mb-5 flex-1">
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 3 monitors
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 3-minute checks
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 1 region + retry
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 SSL monitoring
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 1 status page
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 Email alerts
                             </li>
-                            <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 30-day retention
                             </li>
                         </ul>
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
                             Start for free
                         </a>
                     </div>
                 </div>
 
                 <!-- Paid Plan (wider, with slider + add-ons) -->
-                <div class="md:col-span-8 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-7 sm:p-8 flex flex-col order-1 md:order-2">
-                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                        <span class="bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold px-4 py-1 rounded-full whitespace-nowrap">Pay per monitor</span>
+                <div class="md:col-span-8 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-5 sm:p-6 flex flex-col order-1 md:order-2">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                        <span class="bg-[#F9A825] text-[#1B1B4B] text-[10px] font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Pay per monitor</span>
                     </div>
                     <div class="relative z-10 flex flex-col h-full">
-                        <div class="mb-5">
-                            <h3 class="text-sm font-medium text-[#6a6a8a] uppercase tracking-wider mb-1">Pay-As-You-Go</h3>
-                            <div class="flex items-baseline gap-1 mb-2">
-                                <span class="text-3xl sm:text-4xl font-bold text-[#1B1B4B]">$2</span>
-                                <span class="text-[#6a6a8a] text-sm">/monitor/month</span>
+                        <div class="mb-4">
+                            <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Pay-As-You-Go</h3>
+                            <div class="flex items-baseline gap-1 mb-1">
+                                <span class="text-2xl sm:text-3xl font-bold text-[#1B1B4B]">$2</span>
+                                <span class="text-[#6a6a8a] text-xs">/monitor/month</span>
                             </div>
-                            <p class="text-xs text-[#4a4a6a]">Everything you need for production monitoring.</p>
+                            <p class="text-[11px] text-[#4a4a6a]">Everything included for production monitoring.</p>
                         </div>
 
-                        <!-- Two-column: Features + Slider -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <!-- Two-column: Features + Cost -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                             <!-- Features list -->
-                            <ul class="space-y-2.5">
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <ul class="space-y-1.5">
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span><strong class="text-[#1B1B4B]">30-sec</strong> checks</span>
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span>1 region + <strong class="text-[#1B1B4B]">7 retry</strong></span>
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span><strong class="text-[#1B1B4B]">250</strong> browser checks/mon</span>
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     <span><strong class="text-[#1B1B4B]">5 SMS</strong>/monitor/mo</span>
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     SSL &amp; domain monitoring
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     All alert channels
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     Maintenance windows
                                 </li>
-                                <li class="flex items-start gap-2.5 text-sm text-[#4a4a6a]">
-                                    <svg class="w-3.5 h-3.5 mt-0.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <li class="flex items-center gap-2 text-xs text-[#4a4a6a]">
+                                    <svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     Unlimited team, 12-mo retention
                                 </li>
                             </ul>
 
                             <!-- Quick cost examples -->
-                            <div class="bg-[#faf8f5] border border-[#F9A825]/15 rounded-xl p-5 flex flex-col justify-between">
-                                <div class="text-xs font-semibold text-[#6a6a8a] uppercase tracking-wider mb-3">Simple math</div>
-                                <div class="space-y-2.5">
+                            <div class="bg-[#faf8f5] border border-[#F9A825]/15 rounded-xl p-4 flex flex-col justify-between">
+                                <div class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-2">Simple math</div>
+                                <div class="space-y-1.5">
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-[#4a4a6a]">5 monitors</span>
-                                        <span class="text-sm font-mono font-semibold text-[#1B1B4B]">$10/mo</span>
+                                        <span class="text-xs text-[#4a4a6a]">5 monitors</span>
+                                        <span class="text-xs font-mono font-semibold text-[#1B1B4B]">$10/mo</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-[#4a4a6a]">10 monitors</span>
-                                        <span class="text-sm font-mono font-semibold text-[#1B1B4B]">$20/mo</span>
+                                        <span class="text-xs text-[#4a4a6a]">10 monitors</span>
+                                        <span class="text-xs font-mono font-semibold text-[#1B1B4B]">$20/mo</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-[#4a4a6a]">25 monitors</span>
-                                        <span class="text-sm font-mono font-semibold text-[#1B1B4B]">$50/mo</span>
+                                        <span class="text-xs text-[#4a4a6a]">25 monitors</span>
+                                        <span class="text-xs font-mono font-semibold text-[#1B1B4B]">$50/mo</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-[#4a4a6a]">50 monitors</span>
-                                        <span class="text-sm font-mono font-semibold text-[#1B1B4B]">$100/mo</span>
+                                        <span class="text-xs text-[#4a4a6a]">50 monitors</span>
+                                        <span class="text-xs font-mono font-semibold text-[#1B1B4B]">$100/mo</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span class="text-sm text-[#4a4a6a]">100 monitors</span>
-                                        <span class="text-sm font-mono font-semibold text-[#1B1B4B]">$200/mo</span>
+                                        <span class="text-xs text-[#4a4a6a]">100 monitors</span>
+                                        <span class="text-xs font-mono font-semibold text-[#1B1B4B]">$200/mo</span>
                                     </div>
                                 </div>
-                                <div class="mt-3 pt-3 border-t border-[#F9A825]/15">
-                                    <p class="text-[11px] text-[#6a6a8a] text-center">monitors &times; $2 = your bill</p>
+                                <div class="mt-2 pt-2 border-t border-[#F9A825]/15">
+                                    <p class="text-[10px] text-[#6a6a8a] text-center">monitors &times; $2 = your bill</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- CTA -->
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-11 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mb-4" id="hero-cta">
-                            Start free trial
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mb-3" id="hero-cta">
+                            Start free trial &mdash; 1 month free
                         </a>
-                        <p class="text-xs text-[#6a6a8a] text-center mb-5">1 month free. No credit card required.</p>
 
-                        <!-- Add-ons accordion -->
-                        <div class="border-t border-[#F9A825]/15 pt-1">
-                            <button id="addon-trigger" class="w-full flex items-center justify-between py-3 text-left cursor-pointer bg-transparent border-none hover:opacity-80 transition-opacity">
-                                <span class="text-xs font-semibold text-[#1B1B4B] uppercase tracking-wider">Customize with add-ons</span>
-                                <svg id="addon-chevron" class="w-4 h-4 text-[#6a6a8a] transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </button>
-                            <div id="addon-content" class="hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pb-2">
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                        <!-- Add-ons (visible by default) -->
+                        <div class="border-t border-[#F9A825]/15 pt-3">
+                            <div class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-2">Add-ons</div>
+                            <div>
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pb-1">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Multi-Region</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Quorum from 3-8 regions</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$0.50<span class="font-normal text-[#6a6a8a]">/region/mon</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Browser Checks</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Beyond 250/mon included</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$3<span class="font-normal text-[#6a6a8a]">/1,000 runs</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Extra SMS</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Beyond 5/mon included</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$0.10<span class="font-normal text-[#6a6a8a]">/message</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Status Pages</div>
                                         <div class="text-[11px] text-[#6a6a8a]">1 free, add more</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$5<span class="font-normal text-[#6a6a8a]">/page/mo</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Custom Domain</div>
                                         <div class="text-[11px] text-[#6a6a8a]">status.yoursite.com</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$5<span class="font-normal text-[#6a6a8a]">/mo</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-3">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">White-Label</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Remove branding</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$15<span class="font-normal text-[#6a6a8a]">/mo</span></div>
@@ -222,9 +209,9 @@
     </section>
 
     <!-- Security Add-ons Banner -->
-    <section class="pb-12">
+    <section class="pb-6">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-[#1B1B4B] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative overflow-hidden">
+            <div class="bg-[#1B1B4B] rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 relative overflow-hidden">
                 <div class="absolute inset-0 overflow-hidden pointer-events-none">
                     <div class="absolute top-[-30%] right-[-10%] w-[300px] h-[300px] bg-[#F9A825]/[0.08] rounded-full blur-[80px]"></div>
                 </div>
@@ -462,24 +449,6 @@
   };
 
   window.__pages['/pricing'].init = function() {
-    // Add-on accordion
-    var addonTrigger = document.getElementById('addon-trigger');
-    var addonContent = document.getElementById('addon-content');
-    var addonChevron = document.getElementById('addon-chevron');
-
-    if (addonTrigger) {
-      addonTrigger.addEventListener('click', function() {
-        var isOpen = !addonContent.classList.contains('hidden');
-        if (isOpen) {
-          addonContent.classList.add('hidden');
-          addonChevron.style.transform = 'rotate(0deg)';
-        } else {
-          addonContent.classList.remove('hidden');
-          addonChevron.style.transform = 'rotate(180deg)';
-        }
-      });
-    }
-
     // Compare plans accordion
     var compareTrigger = document.getElementById('compare-trigger');
     var compareContent = document.getElementById('compare-content');
