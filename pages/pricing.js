@@ -113,19 +113,20 @@
                                 type="range"
                                 id="hero-slider"
                                 min="0"
-                                max="100"
-                                value="14"
+                                max="600"
+                                value="200"
+                                step="1"
                                 class="w-full h-1.5 bg-[#F9A825]/20 rounded-full appearance-none cursor-pointer"
                                 style="accent-color: #F9A825;"
                             >
-                            <div class="flex justify-between text-[10px] text-[#6a6a8a] mt-1.5 px-0.5">
-                                <span>1</span>
-                                <span>5</span>
-                                <span>10</span>
-                                <span>25</span>
-                                <span>50</span>
-                                <span>100</span>
-                                <span>200</span>
+                            <div class="flex justify-between text-[10px] mt-1.5 px-0.5">
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="0">1</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="1">5</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="2">10</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="3">25</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="4">50</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="5">100</span>
+                                <span class="slider-stop text-[#6a6a8a] cursor-pointer hover:text-[#1B1B4B] transition-colors" data-stop="6">200</span>
                             </div>
                             <div class="flex items-center justify-between mt-4 pt-4 border-t border-[#F9A825]/15">
                                 <span class="text-sm text-[#4a4a6a]">Monthly total</span>
@@ -646,16 +647,26 @@
       { max: Infinity, price: 1.00 }
     ];
 
-    // Non-linear slider stops — evenly spaced on the slider, mapped to real monitor counts
+    // Non-linear slider: 0-600 range, stops at 0/100/200/300/400/500/600
+    // Maps to monitor counts: 1, 5, 10, 25, 50, 100, 200
     var stops = [1, 5, 10, 25, 50, 100, 200];
-    var segmentSize = 100 / (stops.length - 1); // each segment = ~16.67 units on 0-100 slider
+    var SEG = 100; // each segment is exactly 100 units
 
     function sliderToMonitors(sliderVal) {
-      var segIndex = Math.floor(sliderVal / segmentSize);
-      if (segIndex >= stops.length - 1) return stops[stops.length - 1];
-      var segStart = segIndex * segmentSize;
-      var t = (sliderVal - segStart) / segmentSize;
+      var segIndex = Math.min(Math.floor(sliderVal / SEG), stops.length - 2);
+      var segStart = segIndex * SEG;
+      var t = (sliderVal - segStart) / SEG;
       return Math.round(stops[segIndex] + t * (stops[segIndex + 1] - stops[segIndex]));
+    }
+
+    function monitorsToSlider(count) {
+      for (var i = 0; i < stops.length - 1; i++) {
+        if (count <= stops[i + 1]) {
+          var t = (count - stops[i]) / (stops[i + 1] - stops[i]);
+          return Math.round(i * SEG + t * SEG);
+        }
+      }
+      return 600;
     }
 
     function calcCost(count) {
@@ -719,6 +730,15 @@
     if (heroSlider) {
       heroSlider.addEventListener('input', updateSlider);
       updateSlider(); // initialize
+
+      // Clickable stop labels
+      document.querySelectorAll('.slider-stop').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var stopIndex = parseInt(this.getAttribute('data-stop'), 10);
+          heroSlider.value = stopIndex * SEG;
+          updateSlider();
+        });
+      });
     }
 
     // FAQ accordion
