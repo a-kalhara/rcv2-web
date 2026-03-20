@@ -4,7 +4,7 @@
   window.__pages['/pricing'] = function() {
     return `
     <!-- Compact Hero + Trust -->
-    <section class="pt-16 sm:pt-20 pb-4 relative">
+    <section class="pt-16 sm:pt-20 pb-6 relative">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-[-10%] left-[30%] w-[500px] h-[500px] bg-[#F9A825]/[0.06] rounded-full blur-[120px]"></div>
         </div>
@@ -29,7 +29,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:items-stretch">
 
                 <!-- Free Plan -->
-                <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1">
+                <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1 shadow-sm hover:shadow-md hover:border-[#F9A825]/25 transition-all duration-200">
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-3">
                             <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Free Forever</h3>
@@ -52,7 +52,7 @@
                 </div>
 
                 <!-- Paid Plan (center) -->
-                <div class="md:col-span-5 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2">
+                <div class="md:col-span-5 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2 shadow-md shadow-[#F9A825]/10 hover:shadow-lg hover:shadow-[#F9A825]/15 transition-all duration-200">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2">
                         <span class="bg-[#F9A825] text-[#1B1B4B] text-[10px] font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Pay per monitor</span>
                     </div>
@@ -67,7 +67,7 @@
                         </div>
 
                         <!-- 2-column features -->
-                        <ul class="grid grid-cols-2 gap-x-3 gap-y-1.5 mb-4">
+                        <ul class="grid grid-cols-2 gap-x-4 gap-y-2 mb-4">
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><strong class="text-[#1B1B4B]">30-sec</strong>&nbsp;checks</li>
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1 region + <strong class="text-[#1B1B4B]">7 retry</strong></li>
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><strong class="text-[#1B1B4B]">250</strong>&nbsp;browser checks</li>
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Right column: Security Add-ons -->
-                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-4 flex flex-col order-3 overflow-hidden">
+                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-4 flex flex-col order-3 overflow-hidden shadow-md hover:shadow-lg transition-all duration-200">
                     <div class="absolute inset-0 overflow-hidden pointer-events-none">
                         <div class="absolute top-[-10%] right-[-20%] w-[300px] h-[300px] bg-[#F9A825]/[0.06] rounded-full blur-[80px]"></div>
                     </div>
@@ -112,20 +112,20 @@
                         </div>
 
                         <div class="space-y-3 flex-1">
-                            <div class="bg-white/5 rounded-lg p-3 border border-white/10">
+                            <div class="bg-white/[0.07] rounded-lg p-3 border border-white/10 hover:border-white/20 transition-colors duration-200">
                                 <div class="flex items-baseline justify-between mb-1">
                                     <span class="text-xs font-semibold text-white">ASM Scanning</span>
-                                    <span class="text-sm font-mono font-bold text-[#F9A825]">$49<span class="text-[10px] font-normal text-white/40">/mo</span></span>
+                                    <span class="text-base font-mono font-bold text-[#F9A825]">$49<span class="text-[10px] font-normal text-white/40">/mo</span></span>
                                 </div>
-                                <p class="text-[10px] text-white/40 leading-relaxed">Discover subdomains, exposed assets &amp; vulnerabilities. 5 domains included, 25 from $99/mo.</p>
+                                <p class="text-[10px] text-white/50 leading-relaxed">Discover subdomains, exposed assets &amp; vulnerabilities. 5 domains included, 25 from $99/mo.</p>
                             </div>
 
-                            <div class="bg-white/5 rounded-lg p-3 border border-white/10">
+                            <div class="bg-white/[0.07] rounded-lg p-3 border border-white/10 hover:border-white/20 transition-colors duration-200">
                                 <div class="flex items-baseline justify-between mb-1">
                                     <span class="text-xs font-semibold text-white">OWASP Top 10</span>
-                                    <span class="text-sm font-mono font-bold text-[#F9A825]">$29<span class="text-[10px] font-normal text-white/40">/mo</span></span>
+                                    <span class="text-base font-mono font-bold text-[#F9A825]">$29<span class="text-[10px] font-normal text-white/40">/mo</span></span>
                                 </div>
-                                <p class="text-[10px] text-white/40 leading-relaxed">SQL injection, XSS, broken auth scanning. 5 targets included, 25 from $79/mo.</p>
+                                <p class="text-[10px] text-white/50 leading-relaxed">SQL injection, XSS, broken auth scanning. 5 targets included, 25 from $79/mo.</p>
                             </div>
                         </div>
 
@@ -136,17 +136,17 @@
             <!-- CTA Row — aligned below all cards -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-3">
                 <div class="md:col-span-3">
-                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all flex items-center justify-center no-underline">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
                         Start for free
                     </a>
                 </div>
                 <div class="md:col-span-5">
-                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-all duration-200 shadow-lg shadow-[#F9A825]/25 hover:shadow-xl hover:shadow-[#F9A825]/30 flex items-center justify-center no-underline">
                         Start free trial &mdash; 1 month free
                     </a>
                 </div>
                 <div class="md:col-span-4">
-                    <a href="mailto:sales@rapidcheck.io" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-[#1B1B4B] text-white text-xs font-medium hover:bg-[#24245A] transition-all flex items-center justify-center no-underline">
+                    <a href="mailto:sales@rapidcheck.io" class="w-full h-10 rounded-lg border border-white/10 bg-[#1B1B4B] text-white text-xs font-medium hover:bg-[#24245A] transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
                         Contact sales
                     </a>
                 </div>
@@ -157,7 +157,7 @@
     <!-- Feature Comparison (collapsible) -->
     <section class="py-12 relative">
         <div class="max-w-4xl mx-auto px-6">
-            <button id="compare-trigger" class="w-full flex items-center justify-center gap-2 py-3 cursor-pointer bg-transparent border border-[#F9A825]/15 rounded-xl hover:bg-[#faf8f5] transition-colors">
+            <button id="compare-trigger" class="w-full flex items-center justify-center gap-2 py-3 cursor-pointer bg-transparent border border-[#F9A825]/15 rounded-xl hover:bg-[#faf8f5] transition-all duration-200 shadow-sm hover:shadow-md">
                 <span class="text-sm font-medium text-[#1B1B4B]">Compare plans in detail</span>
                 <svg id="compare-chevron" class="w-4 h-4 text-[#6a6a8a] transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
@@ -273,7 +273,7 @@
                 <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-[#1B1B4B] mb-2">Frequently asked questions</h2>
             </div>
             <div id="faq-list" class="space-y-2.5">
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="0">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">How does per-monitor pricing work?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -284,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="1">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">What counts as a monitor?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="2">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">What are browser checks?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -306,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="3">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">What is multi-region quorum?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -317,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="4">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">Do paused monitors cost anything?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -328,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden">
+                <div class="faq-item border border-[#F9A825]/15 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                     <button class="faq-trigger w-full flex items-center justify-between p-4 text-left cursor-pointer bg-transparent border-none text-[#1B1B4B] hover:bg-[#faf8f5] transition-colors" data-faq="5">
                         <span class="text-sm font-medium text-[#1B1B4B] pr-4">Can I cancel anytime?</span>
                         <svg class="faq-chevron w-4 h-4 text-[#6a6a8a] shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
