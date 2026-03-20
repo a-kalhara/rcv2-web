@@ -4,12 +4,12 @@
   window.__pages['/pricing'] = function() {
     return `
     <!-- Compact Hero + Trust -->
-    <section class="pt-20 sm:pt-24 pb-6 relative">
+    <section class="pt-16 sm:pt-20 pb-4 relative">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-[-10%] left-[30%] w-[500px] h-[500px] bg-[#F9A825]/[0.06] rounded-full blur-[120px]"></div>
         </div>
         <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1B1B4B] mb-1.5 reveal-up">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1B1B4B] mb-1 reveal-up">
                 $2 per monitor. That's it.
             </h1>
             <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-[#6a6a8a]">
@@ -29,7 +29,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
 
                 <!-- Free Plan (narrower) -->
-                <div class="md:col-span-4 relative bg-white border border-[#F9A825]/15 rounded-2xl p-5 sm:p-6 flex flex-col order-2 md:order-1">
+                <div class="md:col-span-4 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 sm:p-5 flex flex-col order-2 md:order-1">
                     <div class="relative z-10 flex flex-col h-full">
                         <div class="mb-4">
                             <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Free Forever</h3>
@@ -76,7 +76,7 @@
                 </div>
 
                 <!-- Paid Plan (wider, with slider + add-ons) -->
-                <div class="md:col-span-8 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-5 sm:p-6 flex flex-col order-1 md:order-2">
+                <div class="md:col-span-8 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2">
                         <span class="bg-[#F9A825] text-[#1B1B4B] text-[10px] font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Pay per monitor</span>
                     </div>
@@ -160,41 +160,41 @@
                         </div>
 
                         <!-- CTA -->
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mb-3" id="hero-cta">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mb-2.5" id="hero-cta">
                             Start free trial &mdash; 1 month free
                         </a>
 
                         <!-- Add-ons (visible by default) -->
-                        <div class="border-t border-[#F9A825]/15 pt-3">
-                            <div class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-2">Add-ons</div>
+                        <div class="border-t border-[#F9A825]/15 pt-2">
+                            <div class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-1.5">Add-ons</div>
                             <div>
-                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pb-1">
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Multi-Region</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Quorum from 3-8 regions</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$0.50<span class="font-normal text-[#6a6a8a]">/region/mon</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Browser Checks</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Beyond 250/mon included</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$3<span class="font-normal text-[#6a6a8a]">/1,000 runs</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Extra SMS</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Beyond 5/mon included</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$0.10<span class="font-normal text-[#6a6a8a]">/message</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Status Pages</div>
                                         <div class="text-[11px] text-[#6a6a8a]">1 free, add more</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$5<span class="font-normal text-[#6a6a8a]">/page/mo</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">Custom Domain</div>
                                         <div class="text-[11px] text-[#6a6a8a]">status.yoursite.com</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$5<span class="font-normal text-[#6a6a8a]">/mo</span></div>
                                     </div>
-                                    <div class="bg-[#faf8f5] rounded-lg p-2.5">
+                                    <div class="bg-[#faf8f5] rounded-lg p-2">
                                         <div class="text-xs font-semibold text-[#1B1B4B] mb-0.5">White-Label</div>
                                         <div class="text-[11px] text-[#6a6a8a]">Remove branding</div>
                                         <div class="text-xs font-mono font-semibold text-[#F9A825] mt-1.5">$15<span class="font-normal text-[#6a6a8a]">/mo</span></div>
