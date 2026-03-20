@@ -112,14 +112,15 @@
                             <input
                                 type="range"
                                 id="hero-slider"
-                                min="1"
-                                max="200"
-                                value="10"
+                                min="0"
+                                max="100"
+                                value="14"
                                 class="w-full h-1.5 bg-[#F9A825]/20 rounded-full appearance-none cursor-pointer"
                                 style="accent-color: #F9A825;"
                             >
                             <div class="flex justify-between text-[10px] text-[#6a6a8a] mt-1.5 px-0.5">
                                 <span>1</span>
+                                <span>5</span>
                                 <span>10</span>
                                 <span>25</span>
                                 <span>50</span>
@@ -645,6 +646,18 @@
       { max: Infinity, price: 1.00 }
     ];
 
+    // Non-linear slider stops — evenly spaced on the slider, mapped to real monitor counts
+    var stops = [1, 5, 10, 25, 50, 100, 200];
+    var segmentSize = 100 / (stops.length - 1); // each segment = ~16.67 units on 0-100 slider
+
+    function sliderToMonitors(sliderVal) {
+      var segIndex = Math.floor(sliderVal / segmentSize);
+      if (segIndex >= stops.length - 1) return stops[stops.length - 1];
+      var segStart = segIndex * segmentSize;
+      var t = (sliderVal - segStart) / segmentSize;
+      return Math.round(stops[segIndex] + t * (stops[segIndex + 1] - stops[segIndex]));
+    }
+
     function calcCost(count) {
       var total = 0;
       var remaining = count;
@@ -692,16 +705,20 @@
     var heroTotal = document.getElementById('hero-total');
     var heroBreakdown = document.getElementById('hero-breakdown');
 
+    function updateSlider() {
+      var sliderVal = parseInt(heroSlider.value, 10);
+      var count = sliderToMonitors(sliderVal);
+      var total = calcCost(count);
+      var rate = getEffectiveRate(count);
+      heroCount.textContent = count;
+      heroPrice.textContent = rate.toFixed(2);
+      heroTotal.textContent = total.toFixed(2);
+      heroBreakdown.innerHTML = buildBreakdown(count);
+    }
+
     if (heroSlider) {
-      heroSlider.addEventListener('input', function() {
-        var count = parseInt(this.value, 10);
-        var total = calcCost(count);
-        var rate = getEffectiveRate(count);
-        heroCount.textContent = count;
-        heroPrice.textContent = rate.toFixed(2);
-        heroTotal.textContent = total.toFixed(2);
-        heroBreakdown.innerHTML = buildBreakdown(count);
-      });
+      heroSlider.addEventListener('input', updateSlider);
+      updateSlider(); // initialize
     }
 
     // FAQ accordion
