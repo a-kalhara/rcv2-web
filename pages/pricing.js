@@ -83,11 +83,15 @@
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>API access</li>
                         </ul>
 
-                        <!-- Add-ons dropdown -->
-                        <div class="border-t border-[#F9A825]/15 pt-2 mb-3">
-                            <button id="addon-trigger" class="w-full flex items-center justify-between py-1.5 text-left cursor-pointer bg-transparent border-none hover:opacity-80 transition-opacity">
+                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mt-auto">
+                            Start free trial &mdash; 1 month free
+                        </a>
+
+                        <!-- Add-ons dropdown (below CTA) -->
+                        <div class="mt-2.5">
+                            <button id="addon-trigger" class="w-full flex items-center justify-center gap-1.5 py-1 text-left cursor-pointer bg-transparent border-none hover:opacity-80 transition-opacity">
                                 <span class="text-[10px] text-[#6a6a8a]">Extra volumes available as <strong class="text-[#1B1B4B]">add-ons</strong></span>
-                                <svg id="addon-chevron" class="w-3.5 h-3.5 text-[#6a6a8a] transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                <svg id="addon-chevron" class="w-3 h-3 text-[#6a6a8a] transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </button>
                             <div id="addon-content" class="hidden mt-1.5">
                                 <div class="bg-[#faf8f5] rounded-lg p-3 space-y-1.5">
@@ -100,10 +104,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <a href="https://app.rapidcheck.io/signup" class="w-full h-9 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-colors flex items-center justify-center no-underline shadow-lg shadow-[#F9A825]/25 mt-auto">
-                            Start free trial &mdash; 1 month free
-                        </a>
                     </div>
                 </div>
 
