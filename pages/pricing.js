@@ -10,7 +10,7 @@
         </div>
         <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
             <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1B1B4B] mb-1 reveal-up">
-                $2 per monitor. That's it.
+                Simple, transparent pricing.
             </h1>
         </div>
     </section>
@@ -23,18 +23,18 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:items-stretch">
 
                 <!-- Free Plan -->
-                <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-4 flex flex-col order-2 md:order-1 shadow-sm hover:shadow-md hover:border-[#F9A825]/25 transition-all duration-200">
+                <div class="md:col-span-3 relative bg-white border border-[#F9A825]/15 rounded-2xl p-5 sm:p-6 flex flex-col order-2 md:order-1 shadow-sm hover:shadow-md hover:border-[#F9A825]/25 transition-all duration-200">
                     <div class="relative z-10 flex flex-col h-full">
-                        <div class="mb-3">
-                            <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Free Forever</h3>
-                            <div class="flex items-baseline gap-1 mb-1">
-                                <span class="text-2xl font-bold text-[#1B1B4B]">$0</span>
+                        <div class="mb-4">
+                            <h3 class="text-[11px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-1">Free Forever</h3>
+                            <div class="flex items-baseline gap-1 mb-1.5">
+                                <span class="text-3xl font-bold text-[#1B1B4B]">$0</span>
                                 <span class="text-[#6a6a8a] text-xs">/month</span>
                             </div>
-                            <p class="text-[11px] text-[#4a4a6a]">For personal projects.</p>
+                            <p class="text-xs text-[#4a4a6a]">For personal projects.</p>
                         </div>
-                        <ul class="space-y-1.5 flex-1">
-                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3 monitors</li>
+                        <ul class="space-y-2.5 flex-1">
+                            <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3.5 h-3.5 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3 monitors</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>3-minute checks</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1 region + retry</li>
                             <li class="flex items-center gap-2 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>SSL monitoring</li>
@@ -46,22 +46,22 @@
                 </div>
 
                 <!-- Paid Plan (center) -->
-                <div class="md:col-span-5 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-4 sm:p-5 flex flex-col order-1 md:order-2 shadow-md shadow-[#F9A825]/10 hover:shadow-lg hover:shadow-[#F9A825]/15 transition-all duration-200">
+                <div class="md:col-span-5 relative bg-white border-2 border-[#F9A825]/40 rounded-2xl p-5 sm:p-6 flex flex-col order-1 md:order-2 shadow-md shadow-[#F9A825]/10 hover:shadow-lg hover:shadow-[#F9A825]/15 transition-all duration-200">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2">
                         <span class="bg-[#F9A825] text-[#1B1B4B] text-[10px] font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Pay per monitor</span>
                     </div>
                     <div class="relative z-10 flex flex-col h-full">
-                        <div class="mb-2">
-                            <h3 class="text-[10px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-0.5">Pay-As-You-Go</h3>
+                        <div class="mb-4">
+                            <h3 class="text-[11px] font-semibold text-[#6a6a8a] uppercase tracking-wider mb-1">Pay-As-You-Go</h3>
                             <div class="flex items-baseline gap-1">
-                                <span class="text-2xl sm:text-3xl font-bold text-[#1B1B4B]">$2</span>
-                                <span class="text-[#6a6a8a] text-xs">/monitor/month</span>
+                                <span class="text-3xl sm:text-4xl font-bold text-[#1B1B4B]">$2</span>
+                                <span class="text-[#6a6a8a] text-sm">/monitor/month</span>
                             </div>
-                            <p class="text-[10px] text-[#6a6a8a] mt-0.5">5 monitors = $10 &middot; 25 = $50 &middot; 100 = $200</p>
+                            <p class="text-[11px] text-[#6a6a8a] mt-1">5 monitors = $10 &middot; 25 = $50 &middot; 100 = $200</p>
                         </div>
 
                         <!-- 2-column features -->
-                        <ul class="grid grid-cols-2 gap-x-4 gap-y-2 mb-4">
+                        <ul class="grid grid-cols-2 gap-x-4 gap-y-2.5 mb-5">
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><strong class="text-[#1B1B4B]">30-sec</strong>&nbsp;checks</li>
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>1 region + <strong class="text-[#1B1B4B]">7 retry</strong></li>
                             <li class="flex items-center gap-1.5 text-xs text-[#4a4a6a]"><svg class="w-3 h-3 text-[#F9A825] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><strong class="text-[#1B1B4B]">250</strong>&nbsp;browser checks</li>
@@ -95,31 +95,39 @@
                 </div>
 
                 <!-- Right column: Security Add-ons -->
-                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-4 flex flex-col order-3 overflow-hidden shadow-md hover:shadow-lg transition-all duration-200">
+                <div class="md:col-span-4 relative bg-[#1B1B4B] rounded-2xl p-5 sm:p-6 flex flex-col order-3 overflow-hidden shadow-md hover:shadow-lg transition-all duration-200">
                     <div class="absolute inset-0 overflow-hidden pointer-events-none">
                         <div class="absolute top-[-10%] right-[-20%] w-[300px] h-[300px] bg-[#F9A825]/[0.06] rounded-full blur-[80px]"></div>
                     </div>
                     <div class="relative z-10 flex flex-col h-full">
-                        <div class="flex items-center gap-2 mb-3">
+                        <div class="flex items-center gap-2 mb-4">
                             <svg class="w-4 h-4 text-[#F9A825]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                            <h3 class="text-xs font-semibold text-white">Security Add-ons</h3>
+                            <h3 class="text-sm font-semibold text-white">Security Add-ons</h3>
                         </div>
 
-                        <div class="space-y-3 flex-1">
-                            <div class="bg-white/[0.07] rounded-lg p-3 border border-white/10 hover:border-white/20 transition-colors duration-200">
-                                <div class="flex items-baseline justify-between mb-1">
-                                    <span class="text-xs font-semibold text-white">ASM Scanning</span>
-                                    <span class="text-base font-mono font-bold text-[#F9A825]">$49<span class="text-[10px] font-normal text-white/40">/mo</span></span>
+                        <div class="space-y-4 flex-1">
+                            <div class="bg-white/[0.07] rounded-lg p-4 border border-white/10 hover:border-white/20 transition-colors duration-200">
+                                <div class="flex items-baseline justify-between mb-1.5">
+                                    <span class="text-sm font-semibold text-white">Discover (ASM)</span>
+                                    <span class="text-lg font-mono font-bold text-[#F9A825]">$10<span class="text-[10px] font-normal text-white/40">/domain/mo</span></span>
                                 </div>
-                                <p class="text-[10px] text-white/50 leading-relaxed">Discover subdomains, exposed assets &amp; vulnerabilities. 5 domains included, 25 from $99/mo.</p>
+                                <p class="text-[11px] text-white/50 leading-relaxed">Subdomain discovery, port scanning, technology fingerprinting, WAF detection, change tracking.</p>
                             </div>
 
-                            <div class="bg-white/[0.07] rounded-lg p-3 border border-white/10 hover:border-white/20 transition-colors duration-200">
-                                <div class="flex items-baseline justify-between mb-1">
-                                    <span class="text-xs font-semibold text-white">OWASP Top 10</span>
-                                    <span class="text-base font-mono font-bold text-[#F9A825]">$29<span class="text-[10px] font-normal text-white/40">/mo</span></span>
+                            <div class="bg-white/[0.07] rounded-lg p-4 border border-white/10 hover:border-white/20 transition-colors duration-200">
+                                <div class="flex items-baseline justify-between mb-1.5">
+                                    <span class="text-sm font-semibold text-white">Secure (VA Scan)</span>
+                                    <span class="text-lg font-mono font-bold text-[#F9A825]">$10<span class="text-[10px] font-normal text-white/40">/domain/mo</span></span>
                                 </div>
-                                <p class="text-[10px] text-white/50 leading-relaxed">SQL injection, XSS, broken auth scanning. 5 targets included, 25 from $79/mo.</p>
+                                <p class="text-[11px] text-white/50 leading-relaxed">Covers ALL subdomains. 4 scans/month, OWASP Top 10, AI-powered analysis, PoC generation.</p>
+                            </div>
+
+                            <div class="bg-[#F9A825]/10 rounded-lg p-3 border border-[#F9A825]/20">
+                                <div class="flex items-baseline justify-between mb-0.5">
+                                    <span class="text-[11px] font-semibold text-[#F9A825]">Bundle: ASM + VA</span>
+                                    <span class="text-sm font-mono font-bold text-[#F9A825]">$15<span class="text-[10px] font-normal text-white/40">/domain/mo</span></span>
+                                </div>
+                                <p class="text-[10px] text-white/40">Save $5/domain when you use both together.</p>
                             </div>
                         </div>
 
@@ -128,19 +136,19 @@
             </div>
 
             <!-- CTA Row — aligned below all cards -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-3">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mt-4">
                 <div class="md:col-span-3">
-                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-xs font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-11 rounded-lg border border-[#1B1B4B]/20 bg-white text-[#1B1B4B] text-sm font-medium hover:border-[#1B1B4B]/40 hover:bg-[#1B1B4B]/5 transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
                         Start for free
                     </a>
                 </div>
                 <div class="md:col-span-5">
-                    <a href="https://app.rapidcheck.io/signup" class="w-full h-10 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-xs font-semibold hover:bg-[#FFB830] transition-all duration-200 shadow-lg shadow-[#F9A825]/25 hover:shadow-xl hover:shadow-[#F9A825]/30 flex items-center justify-center no-underline">
+                    <a href="https://app.rapidcheck.io/signup" class="w-full h-11 rounded-lg bg-[#F9A825] text-[#1B1B4B] text-sm font-semibold hover:bg-[#FFB830] transition-all duration-200 shadow-lg shadow-[#F9A825]/25 hover:shadow-xl hover:shadow-[#F9A825]/30 flex items-center justify-center no-underline">
                         Start free trial &mdash; 1 month free
                     </a>
                 </div>
                 <div class="md:col-span-4">
-                    <a href="mailto:sales@rapidcheck.io" class="w-full h-10 rounded-lg border border-white/10 bg-[#1B1B4B] text-white text-xs font-medium hover:bg-[#24245A] transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
+                    <a href="mailto:sales@rapidcheck.io" class="w-full h-11 rounded-lg border border-white/10 bg-[#1B1B4B] text-white text-sm font-medium hover:bg-[#24245A] transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center no-underline">
                         Contact sales
                     </a>
                 </div>
